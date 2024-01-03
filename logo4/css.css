@@ -1,23 +1,671 @@
-body
-{
-    min-height: 100vh;
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Shantell+Sans:wght@600&display=swap');
+
+body {
+    overflow-x: hidden;
+    font-family: Arial, Helvetica, sans-serif;
 }
-.container
-{
-height: 100vh;
-    display:flex;
-    justify-content: space-between;
-align-items: center;
+
+a {
+    padding: 30px 40px;
 }
-.box1
-{
+
+header {
+    font-weight: bolder;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: x-large;
+    color: #bbbbbb;
+    margin-left: 24%;
+    margin-top: 15px;
+    height: 1px;
+}
+
+/* section1 */
+.sect1 {
+    position: relative;
+    background-image: url(vvv-min.png);
+    height: 100dvh;
+    background-size: contain;
+
+    background-repeat: no-repeat;
+    background-color: #e5e5e5;
+    text-align: center;
+    font-size: 18px;
+    word-spacing: 6px;
+}
+
+.sect1 h1 {
+    color: white;
+    font-size: 5rem;
+    position: relative;
+    top: 45%;
+    text-shadow: 2px 1px 1px black;
+}
+
+.links {
+    position: relative;
+    top: 50%;
+    background-color: white;
+    display: inline-block;
+    padding: 20px 50px;
+    border-radius: 35px;
+}
+
+
+
+.sect1 a {
+
+    color: lightskyblue;
+    margin-left: 11px;
+    border-spacing: 10px;
+    text-decoration: none;
+
+}
+
+/* section2 */
+.sect2 {
+    padding-top: 20px;
+    padding-bottom: 60px;
+    position: relative;
+    background-color: #e5e5e5;
+    text-align: center;
+    color: white;
+}
+
+.sect2 h1 {
+    color: black;
+    width: 60%;
+    font-size: xxx-large;
+    margin-left: 20%;
+}
+
+.sect2 div {
+
+    margin-left: 10px;
+    text-align: left;
+    display: inline-block;
+
+    height: 26vh;
+    border-radius: 40px;
+    padding: 10px 25px 40px 25px;
+    width: 20vw;
+
+
+}
+
+.sect2 div:hover {
+    box-shadow: 2px 2px 2px 2px black;
+}
+
+.workcard {
+    font-size: 18px;
+}
+
+.wc1 {
+    color: black;
+    background-color: white;
+}
+
+.wc1 a {
+    color: black;
+}
+
+.wc2 {
+    background-color: #2abbca;
+    position: relative;
+    top: 23px;
+}
+
+.wc2 a {
+    color: white;
+}
+
+.wc3 {
+    background-color: red;
+
+}
+
+.wc3 a {
+    color: white;
+}
+
+.wc4 {
+    color: black;
+    background-color: white;
+    position: relative;
+    top: 21px;
+}
+
+.wc4 a {
+    color: black;
+}
+
+/* section3 */
+.sect3 {
+
+    padding: 50px 50px;
+    background-color: #2abbca;
+    text-align: center;
+    color: white;
+}
+
+.sect3 h1 {
+    font-size: 60px;
+}
+
+.sect3 h2 {
+    margin-left: 70px;
+    width: 80vw;
+}
+
+.sect3 h2 a {
+    color: #c1dde0;
+}
+
+.sect3 div {
+    margin-top: 20px;
+    padding: 10px 30px;
+    position: relative;
+    background-color: white;
+    width: 21vw;
+    margin-left: 60px;
+    height: 80vh;
+    display: inline-block;
+    text-align: left;
+    border-radius: 30px;
+    color: black;
+}
+
+.brandC img {
+    height: 30vh;
+    width: 19vw;
+    margin-left: 20px;
+}
+
+.brandC h3 {
+    color: goldenrod;
+    margin-left: 30px;
+}
+
+.brandC h4 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+    font-size: 19px;
+}
+
+.b3 {
+    position: relative;
+    top: 53px;
+}
+
+/* sect4 */
+
+.aboutus {
+    display: inline-block;
+    width: 20vw;
+    position: relative;
+    left: 7%;
+}
+
+.aboutus h3 {
+    font-size: 30px;
+    position: relative;
+    top: 40px;
+}
+
+.aboutus p {
+    font-size: 60px;
+    font-weight: bold;
+    width: 40vw;
+}
+
+.aboutus h2 {
+    font-size: xx-large;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    color: cadetblue;
+    width: 47vw;
+    margin-top: -30px;
+}
+
+.aboutus h4 {
+    font-weight: 500;
+    font-size: large;
+    width: 35vw;
+}
+
+.aboutus2 {
+    width: 40vw;
+
+    position: relative;
+    left: 35%;
+    top: -8px;
+    display: inline-block;
+}
+
+.perc {
+    color: white;
+    border-radius: 20px;
+    margin-top: 20px;
+    margin-left: 20px;
+    display: inline-block;
+    width: 16vw;
+    height: 41vh;
+    text-align: center;
     background-color: black;
 }
-.box2
-{
-    background-color: blue;
+
+
+.perc p {
+    font-size: 58px;
+    transform: scale(1.3);
+    font-weight: 900;
 }
-.box3
-{
+
+.perc h5 {
+    margin-top: -10px;
+    font-size: 16px;
+}
+
+.perc1 {
+    background-color: cadetblue;
+}
+
+.perc2 {
+    background-color: #2abbca;
+}
+
+.perc3 {
+    background-color: #2abbca;
+}
+
+.perc4 {
     background-color: red;
+}
+
+.aboutus3 {
+
+    position: relative;
+    left: 7%;
+    top: 50px;
+    width: 40vw;
+    height: 50vh;
+
+}
+
+.aboutus3 img {
+    width: 34vw;
+    border-radius: 20px;
+}
+
+.aboutus3 p {
+    font-size: 50px;
+    font-weight: 800;
+}
+
+.aboutus3 h3 {
+    width: 440px;
+    margin-top: -20px;
+    font-weight: 100;
+}
+
+.aboutus4 {
+
+    background-color: #f2f2f2;
+    width: 40vw;
+    height: 50vh;
+    padding: 10px 30px;
+    border-radius: 30px;
+    background-size: 60px;
+
+    position: relative;
+    left: 50%;
+    top: -270px;
+}
+
+.aboutus4 h1 {
+    position: relative;
+    top: 60px;
+    font-size: 24px;
+    font-weight: 100;
+}
+
+.exp {
+    position: relative;
+    top: 70%;
+}
+
+.exp p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 26px;
+    color: #e5521d;
+    width: 34vw;
+
+}
+
+.exp h3 {
+    position: relative;
+    display: block;
+    width: 38vw;
+}
+
+.exp button {
+    border-radius: 30px;
+    height: 60px;
+    width: 15vw;
+    background-color: black;
+}
+
+.exp button a {
+    color: white;
+    text-decoration: none;
+    font-size: large;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+}
+
+
+
+/* sect5 */
+.sect5 {
+    background-color: #e5521d;
+    position: relative;
+    top: 140px;
+    height: 155dvh;
+    width: 100%;
+
+}
+
+.title {
+    display: inline-block;
+    position: relative;
+    top: 30px;
+    height: 5vh;
+    width: 100%;
+    font-weight: bolder;
+
+    font-size: 50px;
+    text-align: center;
+    color: white;
+}
+
+.emps {
+    position: relative;
+    left: 6.7%;
+    top: 20%;
+    display: inline-block;
+    flex-direction: row;
+
+}
+
+.emp img {
+    width: 11vw;
+    height: 25vh;
+    position: absolute;
+    margin-top: 40px;
+    margin-left: 20px;
+}
+
+.emp {
+    border-radius: 20px;
+    margin-left: 20px;
+    height: 36vh;
+    margin-top: 50px;
+    display: inline-block;
+    width: 40vw;
+    height: 45vh;
+    background-color: white;
+}
+
+.emp p {
+    margin-top: 40px;
+    font-size: 19px;
+    margin-left: 200px;
+    font-weight: 300;
+    width: 290px;
+}
+
+.empname {
+    margin-left: 200px;
+    margin-top: 10px;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.field {
+    margin-left: 200px;
+    margin-top: 20px;
+    font-weight: 200;
+}
+
+/* section 6 */
+.sect6 {
+    background-image: url(shapes.png);
+    background-size: 700px;
+    background-repeat: no-repeat;
+    background-position: 90%;
+    position: relative;
+    top: 90px;
+    height: 120vh;
+}
+
+.sect6 p {
+    font-size: 50px;
+    width: 45%;
+    font-weight: 900;
+}
+
+.sect6 h4 {
+    width: 30%;
+    font-size: 22px;
+    font-weight: 100;
+}
+
+.sect6 button {
+    border-radius: 30px;
+    height: 60px;
+    width: 15vw;
+    background-color: black;
+}
+
+.sect6 a {
+    font-size: large;
+    color: white;
+    font-weight: 50px;
+    text-decoration: none;
+    padding: 35px;
+}
+
+button:hover {
+    background-color: white;
+
+}
+
+button a:hover {
+    font-weight: lighter;
+    transition: all 1s ease-out;
+    color: black;
+
+}
+
+.sect6text {
+    position: relative;
+    top: 25%;
+    left: 10%;
+}
+
+/* section7 */
+.contactcont {
+    background-image: url(sect7.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: #e5e5e5;
+    height: 180vh;
+    padding-bottom: 10xp;
+}
+
+.contacts {
+    background-color: white;
+    position: relative;
+    top: 40%;
+    left: 7%;
+    border-radius: 20px;
+    display: inline-block;
+    width: 43%;
+    height: 100vh;
+}
+
+.contacts p {
+    font-weight: bolder;
+    font-size: xxx-large;
+    margin-left: 20px;
+}
+
+.contacts h5 {
+    font-size: 20px;
+    font-weight: 500;
+    width: 460px;
+    margin-left: 20px;
+}
+
+.line {
+    width: 80%;
+    height: 2.4px;
+    margin-left: 20px;
+    background-color: black;
+}
+
+.info {
+
+    margin-left: 70px;
+}
+
+.info1 {
+    font-weight: 100;
+    display: inline-block;
+    font-size: 15px;
+    width: 50%;
+}
+
+.info i {
+    color: goldenrod;
+    margin-left: -50px;
+    margin-top: 20px;
+    position: absolute;
+    display: inline-block;
+}
+
+.info2 {
+    font-weight: light;
+    display: inline-block;
+    font-size: 15px;
+    width: 50%;
+}
+
+.contactform {
+    background-color: #2abbca;
+    position: relative;
+    left: 53%;
+    top: -17%;
+    border-radius: 20px;
+    height: 100vh;
+    width: 43%;
+}
+
+.contactform h1 {
+    color: white;
+    font-size: x-large;
+    text-align: center;
+    position: relative;
+    top: 10%;
+}
+
+.contactform input {
+    border: none;
+    border-radius: 10px;
+    position: relative;
+    top: 50px;
+    left: 60px;
+    width: 80%;
+    height: 60px;
+    margin-top: 30px;
+}
+
+::placeholder {
+    font-size: larger;
+    font-weight: 100;
+}
+
+.contactform label {
+    color: white;
+    position: relative;
+    top: 60px;
+    left: 60px;
+    display: block;
+}
+
+textarea {
+    border: none;
+    border-radius: 10px;
+    width: 80%;
+    height: 100px;
+    position: relative;
+    top: 13%;
+    left: 60px;
+    margin-top: 70px;
+}
+
+.contactform p {
+    margin: 0px;
+    padding: 0px;
+    position: relative;
+    top: -120PX;
+    left: -40px;
+
+    width: 100%;
+}
+
+.radio input {
+    position: relative;
+    left: 21%;
+    top: 100px;
+    width: 20px;
+}
+
+.contactform h5 {
+    color: white;
+    position: absolute;
+    left: 20%;
+    margin-top: -60px;
+}
+
+.contactcont a {
+    text-decoration: none;
+    color: #c1dde0;
+    padding: 0px;
+}
+
+.contactform button {
+    width: 80%;
+    height: 58px;
+    position: relative;
+    left: 60px;
+    background-color: #e5521d;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    font-size: larger;
+}
+
+footer {
+    padding-top: 90px;
+    color: white;
+    background-color: #333333;
+    width: 1400px;
+    height: 20vh;
+    text-align: center;
+    padding-bottom: 40px;
+    position: relative;
+    top: 15px;
+    margin-left: -10px;
 }
