@@ -1,4 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&family=Shantell+Sans:wght@600&display=swap');
+.msg
+{
+    display: none;
+}
 
 body {
     overflow-x: hidden;
