@@ -1,0 +1,114 @@
+* {
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+}
+.container div
+{
+    display: flex;
+    color: white;
+    justify-content: center;
+    align-items: center;
+}
+.container {
+    max-height: 99vh;
+    display: grid;
+    grid-template-columns:100px 70px 130px 250px 100px;
+    grid-template-rows: repeat(4, 13vw);
+    gap: 2px;
+    grid-template-areas:
+    "one two two thr for"
+    "five two two thr six"
+    "sev eight nine thr ten"
+    "el el el thr twe" 
+    ;
+    transition: all 1s ease-out;
+    animation: ch 1s ease;
+}
+
+.one {
+    background-color: tomato;
+    grid-area: one;
+}
+
+.two {
+    background-color: green;
+    grid-area: two;
+}
+
+.three {
+    background-color: yellow;
+    grid-area: thr;
+}
+
+.four {
+    background-color: yellowgreen;
+    grid-area: for;
+}
+
+.five {
+    background-color: blueviolet;
+    grid-area: five;
+}
+
+.six {
+    background-color: burlywood;
+    grid-area: six;
+}
+
+.seven {
+    background-color: coral;
+    grid-area: sev;
+}
+
+.eight {
+    background-color: palegreen;
+    grid-area: eight;
+}
+
+.nine {
+    background-color: darkgray;
+    grid-area: nine;
+}
+
+.ten {
+    background-color: lightcoral;
+    grid-area: ten;
+}
+
+.el {
+    background-color: peru;
+    grid-area: el;
+}
+
+.tw {
+    background-color: bisque;
+    grid-area: twe;
+}
+@media screen and (max-width:500px) {
+    .container
+    {
+        display: flex;
+        flex-direction: column;
+        max-height: 100vh;
+       
+        animation: ch 2s ease-out;
+    }
+    .container div
+    {
+        min-height: 20vh;
+     
+    }
+  
+}
+@keyframes ch {
+    0%,20%
+    {
+        
+        filter: blur(10px);
+    }
+    30%,50%,80%
+    {
+        filter: grayscale(2);
+    }
+}

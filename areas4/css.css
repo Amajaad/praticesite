@@ -1,0 +1,182 @@
+/* mobile screen */
+@media screen and (max-device-width:480px) and (orientation: portrait) {
+    * {
+        padding: 0;
+        margin: 0;
+    }
+
+    .container {
+        min-height: 90vh;
+        display: grid;
+        grid-template-columns: 100vw;
+        grid-template-rows: repeat(7, 122px);
+
+    }
+
+    .container div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .header {
+        background-color: blue;
+    }
+
+    .menu {
+        background-color: blueviolet;
+    }
+
+    .hero {
+        background-color: red;
+    }
+
+    .main {
+        background-color: goldenrod;
+
+    }
+
+    .banner {
+        background-color: yellow;
+    }
+
+    .extra {
+        background-color: palegoldenrod;
+    }
+
+    .img {
+        background-color: palevioletred;
+    }
+}
+
+/* mobile screen end */
+
+
+/* tablet screen */
+@media screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+    * {
+        padding: 0;
+        margin: 0;
+    }
+
+    .container {
+
+        max-height: 100vh;
+        display: grid;
+        grid-template-columns: repeat(4, 25vw);
+        grid-template-rows: 20px 200px 200px 130px 65px 65px;
+        grid-template-areas:
+            "Head Head Head Head"
+            "h h h h"
+            "h h h h"
+            "menu main main main"
+
+            "menu ban ban ban"
+            "menu ex ex img"
+        ;
+    }
+
+    .header {
+        grid-area: Head;
+        background-color: blue;
+    }
+
+    .menu {
+        grid-area: menu;
+        background-color: blueviolet;
+    }
+
+    .hero {
+        grid-area: h;
+        background-color: red;
+    }
+
+    .main {
+        grid-area: main;
+        background-color: goldenrod;
+
+    }
+
+    .banner {
+        grid-area: ban;
+        background-color: yellow;
+    }
+
+    .extra {
+        grid-area: ex;
+        background-color: palegoldenrod;
+    }
+
+    .img {
+        grid-area: img;
+        background-color: palevioletred;
+    }
+
+
+}
+/* tablet screen end */
+.container div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* desktop screen */
+*
+{
+    margin: 0;
+    padding: 0;
+}
+.container
+{
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(4,25vw);
+    grid-template-rows: 30px 150px 60px 60px 45px;
+    grid-template-areas: 
+    "Head menu menu menu"
+    "h h h h"
+    "main main empty img"
+    "main main empty ex" 
+    "ban ban ban ban"
+    ;
+}
+
+.header {
+    grid-area: Head;
+    background-color: lightblue;
+}
+
+.menu {
+    grid-area: menu;
+    background-color: blueviolet;
+}
+
+.hero {
+    grid-area: h;
+    background-color: red;
+}
+
+.main {
+    grid-area: main;
+    background-color: goldenrod;
+
+}
+
+.banner {
+    grid-area: ban;
+    background-color: yellow;
+}
+
+.extra {
+    grid-area: ex;
+    background-color: palegoldenrod;
+}
+
+.img {
+    grid-area: img;
+    background-color: palevioletred;
+}
+.empty
+{
+    grid-area: empty;
+}

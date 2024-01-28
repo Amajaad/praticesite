@@ -1,0 +1,78 @@
+* {
+    padding: 0;
+    margin: 0;
+
+}
+
+.container {
+    display: grid;
+    min-height: 100vh;
+    grid-template-columns: repeat(6, 220.8px);
+    grid-template-rows: 120px 300px 200px auto;
+    grid-template-areas:
+        "header header header header header header"
+        "empty1 main main main sidebar empty2"
+        "empty1 twin1 twin1 twin2 twin2 empty2"
+        "footer footer footer footer footer footer"
+    ;
+}
+
+.header {
+    grid-area: header;
+    background-color: yellow;
+}
+
+.main {
+    background-color: goldenrod;
+    grid-area: main;
+}
+
+.empty1 {
+    grid-area: empty1;
+}
+
+.empty2 {
+    grid-area: empty2;
+}
+
+.sidebar {
+    background-color: blueviolet;
+    grid-area: sidebar;
+}
+
+.twin1 {
+    background-color: palegreen;
+    grid-area: twin1;
+}
+
+.twin2 {
+    background-color: palegoldenrod;
+    grid-area: twin2;
+}
+.footer
+{
+    grid-area: footer;
+    background-color: steelblue;
+}
+.container div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: x-large;
+}
+@media screen and (max-width:400px) {
+    .container
+    {
+        max-height: 10vh;
+        display: grid;
+        grid-template-columns:50vw 50vw;
+        grid-template-rows: repeat(6,90vw);
+        grid-template-areas:
+        "header header"
+        " main sidebar "
+        "twin1 twin2 "
+        "footer footer"
+    ;
+    }
+
+}

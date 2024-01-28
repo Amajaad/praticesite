@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 100px auto 100px;
+    grid-template-areas:
+        "a b d"
+        "a b d"
+        "e c c"
+        "e c c"
+        "f c c"
+    ;
+
+}
+
+.item1 {
+    background-color: red;
+    grid-area: a;
+}
+
+.item2 {
+    background-color: yellow;
+    grid-area: b;
+}
+
+.item3 {
+    background-color: yellowgreen;
+    grid-area: c;
+}
+
+.item4 {
+    background-color: gray;
+    grid-area: d;
+}
+
+.item5 {
+    background-color: goldenrod;
+    grid-area: e;
+}
+
+.item6 {
+    background-color: green;
+    grid-area: f;
+}
