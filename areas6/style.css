@@ -1,0 +1,159 @@
+* {
+    padding: 0;
+    margin: 0;
+
+}
+body
+{overflow-x: hidden;}
+.container {
+    min-height: 100vh;
+    min-width: 100vw;
+    display: grid;
+    grid-template-columns: 20% 30% 30% 20%;
+    grid-template-rows: 5% 17% 40% 23% 42% 32% 32% 5%;
+    grid-template-areas:
+        "head head head head"
+        "div2 div2 div2 div2"
+        "div3 div3 div3 div3 "
+        "div4 div4 div4 div4"
+        "div5 div5 div5 div5"
+        "div6 div6 div6 div6"
+        "div7 div7  div8 div8"
+        "foot foot foot foot"
+    ;
+    row-gap: 10px;
+    column-gap: 5px;
+}
+
+.div1 {
+    background-color: blueviolet;
+    grid-area: head;
+}
+.div2-
+{
+    width: 7vw;
+    min-height: 10vh;
+    background-color: #dddee0;
+}
+.div2 {
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+    grid-area: div2;
+}
+/* div2 end */
+.div3 {
+    background-color: #6fc040;
+    grid-area: div3;
+}
+.div4-1
+{
+    margin-left: 10px   ;
+    background-color: #dddee0;
+    width: 25vw;
+    height: 20vh;
+}
+.div4-2
+{
+    background-color: #dddee0;
+    min-width: 25vw;
+    min-height: 20vh;
+}
+.div4 {
+    grid-area: div4;
+    display: flex;
+text-align: center;
+    justify-content: space-around;
+    flex-direction: column;
+    gap: 10px;
+}
+.div4-
+{
+    display: flex;
+    justify-content: space-evenly;
+}
+/* div4 end */
+
+.div-5
+{
+    background-color: #dddee0;
+min-width: 13vw;
+min-height: 20vh;  
+margin-top: 10px;  
+
+}
+.div5--
+{
+    
+    background-color: white;
+    min-width: 15vw;
+text-align: center;
+    min-height: 30vh;
+}
+.div5-
+{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+}
+.div5 {
+    background-color: blue;
+    grid-area: div5;
+ 
+}
+/* div5 end */
+.div6-
+{
+    width: 50vw;
+    height:40vh ;
+    background-color: #dddee0;
+}
+
+.div6 {
+    grid-area: div6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* div6 end */
+.div7-1,.div8-1
+{
+    margin-top: 20px;
+    background-color: #ffffff;
+    width: 20vw;
+    height: 8vh;
+}
+.div7-2,.div8-2
+{
+    background-color: #ffffff;
+    width: 30vw; height: 40vh;
+
+}
+.div7 {
+display: flex;
+flex-direction: column;
+gap: 40px;
+align-items: center;
+    grid-area: div7;
+    background-color: #f39019;
+}
+/* div7 end */
+.div8 {
+    display: flex;
+flex-direction: column;
+gap: 40px;
+align-items: center;
+    grid-area: div8;
+    background-color: #dd6a0f;
+}
+
+.div9 {
+    grid-area: foot;
+    background-color: #0365c0;
+}
+@media screen and (max-device-width:450px) {
+    .div2-{
+min-width: 15vw;
+    }
+}
