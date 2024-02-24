@@ -1,0 +1,7 @@
+.h-10:hover
+{
+    display: flex;
+flex-direction: column;
+row-gap: 30px;    
+    padding:50px ;
+}
