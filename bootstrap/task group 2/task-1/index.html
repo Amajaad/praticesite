@@ -17,6 +17,17 @@
       padding: 0;
       margin: 0;
     }
+    .hov a
+    {
+      color: black;
+    }
+    .hov li:hover
+    {background-color: brown;}
+    .hov a:hover
+    {
+      background-color: brown;
+      color: white;
+    }
   </style>
   <body>
     <div class="container-fluid bg-info-subtle py-3">
@@ -40,7 +51,7 @@
       <!-- second row -->
       <!-- first row col -->
       <div class="row justify-content-center mt-5">
-        <div class="col-md-2">
+        <div class="col-md-2 fs-6 col-8 hover">
           <div class="card border-2 bg-info-subtle px-1">
             <div class="text-primary fw-semibold">
               Your cart
@@ -162,7 +173,7 @@
             <div
               class="row justify-content-center mt-3 border-bottom mb-3 py-2"
             >
-              <div class="col-md-4 justify-content-center">
+              <div class="col-md-4 justify-content-center hov">
                 <div class="col-md-2 form-control">
                   <label for="" class="form-label">country</label>
                   <button
@@ -182,7 +193,7 @@
                   </ul>
                 </div>
               </div>
-              <div class="col-md-3 justify-content-center">
+              <div class="col-md-3 justify-content-center hov">
                 <div class="col-md-2 form-control">
                   <label for="" class="form-label">state</label>
                   <button
@@ -202,7 +213,7 @@
                   </ul>
                 </div>
               </div>
-              <div class="col-md-3 justify-content-center">
+              <div class="col-md-3 justify-content-center hov">
                 <div class="col-md-2 form-control">
                   <label for="" class="form-label">Zip</label>
                   <input type="text" class="form-control" />
@@ -262,14 +273,16 @@
               </div>
             </div>
             <!-- input 10th row -->
-            <div class="row ms-5 py-4 justify-content-start">
-              <div class="col-md-2 ms-4 me-5 col-12 ms-0">
-                <label for="" class="form-label fw-medium">Expiration</label>
-                <input type="text" class="form-control" />
-              </div>
-              <div class="col-md-2 col-12 ms-4">
-                <label for="" class="form-label fw-medium">cvv</label>
-                <input type="text" class="form-control" />
+            <div class="row py-4 justify-content-center">
+              <div class="col-md-10 input-group col-8 gap-5">
+                <div class="col-md-2 col-2">
+                  <label for="" class="form-label fw-medium">Expiration</label>
+                  <input type="text" class="form-control" />
+                </div>
+                <div class="col-md-2 col-2">
+                  <label for="" class="form-label fw-medium">cvv</label>
+                  <input type="text" class="form-control" />
+                </div>
               </div>
             </div>
             <hr />
