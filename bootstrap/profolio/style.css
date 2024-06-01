@@ -1,0 +1,166 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+.body {
+  font-family: "Poppins", sans-serif;
+  padding: 0;
+  margin: 0;
+}
+.feature-item-1:hover {
+  transform: scale(1.08);
+
+  transition: all 0.4s ease-out;
+}
+.video {
+  background-image: url(img/thumbnail.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.contact:not(:hover) {
+  filter: opacity(0);
+  display: none;
+
+  height: 0px;
+}
+.contact:hover {
+  display: block;
+  background-color: white;
+}
+.contact a:hover {
+  filter: opacity(1);
+  color: blue;
+}
+.price-badge {
+  position: absolute;
+  margin-left: -48px;
+  margin-top: -18px;
+}
+.color1 {
+  color: #47aeff;
+}
+.color1:hover {
+  color: white;
+  background-color: blue;
+  transition: all 1.2s ease-in-out;
+}
+.color2 {
+  color: #ffa76e;
+}
+.color2:hover {
+  color: white;
+  background-color: #ffa76e;
+  transition: all 1.2s ease-in-out;
+}
+.color3 {
+  color: red;
+}
+.color3:hover {
+  color: white;
+  background-color: red;
+  transition: all 1.2s ease-in-out;
+}
+.color4 {
+  color: #ffbb2c;
+}
+.color4:hover {
+  color: white;
+  background-color: #ffbb2c;
+  transition: all 1.2s ease-in-out;
+}
+.color5 {
+  color: #ff5828;
+}
+.color5:hover {
+  color: white;
+  background-color: #ff5828;
+  transition: all 1.2s ease-in-out;
+}
+.color6 {
+  color: #11dbcf;
+}
+.color6:hover {
+  color: white;
+  background-color: #11dbcf;
+  transition: all 1.2s ease-in-out;
+}
+
+.icon i {
+  background-color: lightgray;
+  color: blue;
+}
+.icon i:hover {
+  color: white;
+}
+/* portfolio */
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: #f1f1f1;
+    padding: 20px;
+    font-family: Arial;
+  }
+  
+  /* Center website */
+  .main {
+    max-width: 1000px;
+    margin: auto;
+  }
+  
+  h1 {
+    font-size: 50px;
+    word-break: break-all;
+  }
+  
+  .row {
+    margin: 10px -16px;
+  }
+  
+  /* Add padding BETWEEN each column */
+  .row,
+  .row > .column {
+    padding: 8px;
+  }
+  
+  /* Create three equal columns that floats next to each other */
+  .column {
+    float: left;
+    
+    display: none; /* Hide all elements by default */
+  }
+  
+  /* Clear floats after rows */ 
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Content */
+  .content {
+    background-color: white;
+    padding: 10px;
+  }
+  
+  /* The "show" class is added to the filtered elements */
+  .show {
+    display: block;
+  }
+  
+  /* Style the buttons */
+  .btn {
+    border: none;
+    outline: none;
+    padding: 12px 16px;
+   
+    cursor: pointer;
+  }
+  
+  .btn:hover {
+    background-color: #ddd;
+  }
+  
+  .btn.active {
+    background-color: #666;
+    color: white;
+  }

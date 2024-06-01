@@ -1,0 +1,918 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css
+    "
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+  </head>
+  <style>
+    html {
+      overflow-x: hidden;
+      margin: 0;
+      padding: 0;
+    }
+    .ava {
+      background-image: url(avatar-1-19a9226d.png);
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+  </style>
+  <body>
+    <div class="container-fluid bg-secondary-subtle">
+      <div class="row bg-body-tertiary">
+        <div class="col-md-2 px-2">
+          <nav
+            class="navbar d-md-flex flex-column navbar-expand-md text-bg-light "
+          >
+            <div
+              class="d-inline-flex align-items-center justify-content-around position-fixed "
+            >
+              <svg
+                width="22"
+                class="text-primary"
+                height="32"
+                viewBox="0 0 55 81"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill="currentColor"
+                  d="M30.1984 0.0144043C24.8945 0.425781 25.2534 6.16968 26.6435 7.65326C22.693 10.3649 13.1875 16.8867 6.76944 21.2803C1.21531 25.0824 -0.842975 34.6064 1.11159 40.8262C3.00952 46.8658 12.4904 51.3615 17.5337 52.7256C17.5337 52.7256 11.7188 56.0269 6.60358 60.0482C1.48831 64.0695 -0.622615 69.3436 3.06836 75.262C6.75933 81.1805 12.725 80.761 17.5257 78.6229C22.3264 76.4848 32.1683 69.1692 37.9402 65.1633C42.7282 61.5411 43.9669 53.6444 41.7631 46.9643C39.9758 41.5468 30.0969 36.4284 25.1792 34.6064C27.1946 33.1595 32.4935 29.4242 37.129 26.0909C38.7184 30.5636 43.9998 30.212 45.6103 27.8209C47.6216 23.4326 51.8339 13.4663 53.9579 8.55175C54.8862 4.81044 52.5639 2.78457 50.2227 2.35938C46.8672 1.75 38.3222 0.960115 30.1984 0.0144043Z"
+                ></path>
+                <path
+                  fill-opacity="0.2"
+                  fill="#FFF"
+                  d="M26.6523 7.65625C24.9492 5.625 25.3239 0.255308 30.2922 0.0105286C33.0074 0.326611 35.7804 0.62685 38.3907 0.909477C43.5904 1.47246 48.1446 1.96556 50.311 2.3748C52.7331 2.83234 54.886 5.06072 53.9543 8.61103C53.2063 10.3418 52.2075 12.6646 51.1482 15.1282C49.1995 19.6601 47.0459 24.6685 45.8717 27.3445C44.7224 29.964 39.111 31.0585 37.1137 26.0951C32.4782 29.4283 27.2884 33.1556 25.273 34.6026C24.931 34.4553 24.3074 34.2381 23.5124 33.9613C20.8691 33.0407 16.331 31.4602 13.9477 29.5966C9.61363 25.5918 11.6259 19.4662 13.1737 16.904C17.8273 13.7183 20.7417 11.7161 23.4984 9.82236C24.5437 9.10427 25.5662 8.40178 26.6523 7.65625Z"
+                ></path>
+                <path
+                  fill-opacity="0.2"
+                  fill="#FFF"
+                  d="M17.543 52.7266C21.2241 53.9875 28.5535 57.0509 30.091 59.101C32.0129 61.6635 33.1576 64.34 29.2527 71.2039C28.5954 71.6481 27.9821 72.0633 27.4069 72.4528C22.1953 75.9817 20.1085 77.3946 16.6243 79.0531C13.5855 80.2464 6.61575 81.7103 2.66559 74.5653C-1.11764 67.7222 3.23818 62.7113 6.5963 60.065L12.1695 56.0339L14.8359 54.3477L17.543 52.7266Z"
+                ></path>
+              </svg>
+              <span class="ms-1 fw-medium fs-1 navbar-brand">Sneat</span>
+              <button
+                class="btn navbar-toggler ms-5"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#navnav"
+                type="button"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+            </div>
+            <div
+              class="offcanvas off card-body h-100 w-100 bg-white position-fixed px-3 "
+              id="navnav"
+            >
+              <div
+                class="navbar-nav d-flex flex-column py-3 text-success fw-light card-header-pills"
+              >
+                <button
+                  class="btn btn-close mb-4 btn-lg ms-2 d-md-none d-block"
+                  data-bs-dismiss="offcanvas"
+                ></button>
+                <a
+                  href="index.html"
+                  class="text-decoration-none fs-5 d-inline-flex align-items-center me-auto nav-item text-success link-primary mb-1"
+                >
+                  <span><i class="bi bi-house-door me-2"></i></span>
+                  Dashboard</a
+                >
+                <a
+                  href=""
+                  class="text-decoration-none fs-6 d-inline-flex align-items-center text-success link-primary mb-1"
+                >
+                  <span><i class="bi bi-person-gear me-2"></i></span>
+                  Account settings</a
+                >
+                <div class="d-inline-flex align-items-center me-auto">
+                  <span>
+                    <hr
+                      class="me-1"
+                      style="width: 30px; margin-top: 20px; margin-left: -19px"
+                    />
+                  </span>
+                  <div class="fs-5">pages</div>
+                </div>
+                <a
+                  href="login.html"
+                  class="text-decoration-none fs-5 d-inline-flex align-items-center me-auto text-success link-primary mb-1"
+                >
+                  <span><i class="bi bi-box-arrow-in-right me-2"></i></span>
+                  Login</a
+                >
+                <a
+                  href="register.html"
+                  class="text-decoration-none fs-5 d-inline-flex align-items-center me-auto text-success link-primary mb-1"
+                >
+                  <span><i class="bi bi-person-plus me-2"></i></span>
+                  Resgister</a
+                >
+                <a
+                  href="error.html"
+                  class="text-decoration-none fs-5 d-inline-flex align-items-center me-auto text-success link-primary mb-1"
+                >
+                  <span><i class="bi bi-bug me-2"></i></span>
+                  Error</a
+                >
+                <div class="d-inline-flex align-items-center me-auto">
+                  <span>
+                    <hr
+                      class="me-1"
+                      style="width: 30px; margin-top: 20px; margin-left: -19px"
+                    />
+                  </span>
+                  <div class="fs-5">user interface</div>
+                </div>
+                <a
+                  href="typography.html"
+                  class="text-decoration-none fs-5 d-inline-flex align-items-center me-auto text-success link-primary mb-1"
+                >
+                  <span
+                    ><i
+                      class="bi bi-fonts me-2 border border-3 rounded border-black"
+                    ></i
+                  ></span>
+                  Typography</a
+                >
+                <a
+                  href="icons.html"
+                  class="text-decoration-none fs-5 d-inline-flex align-items-center me-auto text-success link-primary mb-1"
+                >
+                  <span><i class="bi bi-eye me-2"></i></span>
+                  icons</a
+                >
+                <a
+                  href="tables.html"
+                  class="text-decoration-none fs-5 d-inline-flex align-items-center me-auto text-success link-primary mb-1"
+                >
+                  <span><i class="bi bi-grid-3x2 me-2"></i></span>
+                  Tables</a
+                >
+                <a
+                  href="forms.html"
+                  class="text-decoration-none fs-5 d-inline-flex align-items-center me-auto text-success link-primary mb-1"
+                >
+                  <span><i class="bi bi-journal-text me-2"></i></span>
+                  Form layouts</a
+                >
+                <a href="" class="d-none d-md-block ">
+                  <img
+                    src="upgrade-banner-light-68cf2382.png"
+                    class="img-thumbnail p-2 mt-2"
+                    alt=""
+                  />
+                </a>
+              </div>
+            </div>
+          </nav>
+        </div>
+        <div class="col-md-10 bg-secondary-subtle py-md-0 py-5">
+          <div class="card w-100 mt-2">
+            <div
+              class="card-body d-inline-flex align-items-center justify-content-between"
+            >
+              <div class="">
+                <i class="bi bi-search btn rounded-5"> </i>search
+                <span class="d-inline-flex align-items-center"
+                  ><button class="btn btn-light btn-sm ms-2">
+                    <i class="bi bi-command"></i
+                    ><span class="fs-6 ms-2">k</span>
+                  </button></span
+                >
+              </div>
+
+              <div class="d-inline-flex align-items-center gap-4 me-3">
+                <a href=""
+                  ><i class="bi bi-github text-dark fs-4 rounded-5"></i
+                ></a>
+                <a href=""
+                  ><i class="bi bi-bell-fill text-dark fs-4 rounded-5"></i
+                ></a>
+                <a href=""
+                  ><i class="bi bi-brightness-high text-dark fs-4 rounded-5"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div class="card mt-2 bg-info-subtle">
+            <div class="card-header">
+              <ul class="nav nav-tabs card-header-tabs" role="presentation">
+                <li
+                  class="nav-item text-secondary p-2 fw-bold"
+                  role="presentation"
+                >
+                  <button
+                    class="nav-link d-inline-flex align-items-center active "
+                    id="account-tab"
+                    data-bs-toggle="tab"
+                    data-bs-target="#account-pane"
+                    type="button"
+                    role="tab"
+                  >
+                    <i class="bi bi-person-fill "></i>
+                    account
+                  </button>
+                </li>
+                <li
+                  class="nav-item text-secondary p-2 fw-bold"
+                  role="presentation"
+                >
+                  <button
+                    class="nav-link btn-primary"
+                    id="security-tab"
+                    data-bs-toggle="tab"
+                    data-bs-target="#security-pane"
+                    type="button"
+                    role="tab"
+                  >
+                    <i class="bi bi-lock-fill"></i>
+                    security
+                  </button>
+                </li>
+                <li
+                  class="nav-item text-secondary p-2 fw-bold"
+                  role="presentation"
+                >
+                  <button
+                    class="nav-link btn-primary"
+                    id="notification-tab"
+                    data-bs-toggle="tab"
+                    data-bs-target="#notification-pane"
+                    type="button"
+                    role="tab"
+                  >
+                    <i class="bi bi-bell"></i>
+                    notification
+                  </button>
+                </li>
+              </ul>
+            </div>
+            <div class="card-body">
+              <div class="tab-content">
+                <div
+                  class="tab-pane bg-white p-4 active "
+                  id="account-pane"
+                  tabindex="1"
+                >
+                  <div class="card-title fs-5 fw-medium">Account Details</div>
+                  <div class="d-flex">
+                    <div class="">
+                      <img
+                        src="avatar-1-19a9226d.png"
+                        class="img-fluid rounded"
+                        style="height: 20vh"
+                        alt=""
+                      />
+                    </div>
+                    <div class="d-none d-sm-block ms-3">
+                      <button class="btn btn-primary">Upload new photo</button>
+                      <button class="btn btn-light text-warning-emphasis">
+                        reset
+                      </button>
+                      <div class="small text-secondary fw-light mt-3">
+                        Allowed JPG, GIF or PNG. Max size of 800K
+                      </div>
+                    </div>
+                    <div class="d-block d-sm-none ms-3">
+                      <button class="btn btn-primary">
+                        <i class="bi bi-cloud-arrow-up-fill"></i>
+                      </button>
+                      <button class="btn btn-light text-warning-emphasis">
+                        <i class="bi bi-arrow-clockwise"></i>
+                      </button>
+                      <div class="small text-secondary fw-light mt-3">
+                        Allowed JPG, GIF or PNG. Max size of 800K
+                      </div>
+                    </div>
+                  </div>
+                  <form action="" class="mt-2">
+                    <div class="row justify-content-around">
+                      <div class="col-md-5 mb-2">
+                        <input
+                          type="text"
+                          class="form-control"
+                          placeholder="first name"
+                        />
+                      </div>
+                      <div class="col-md-5 mb-2">
+                        <input
+                          type="text"
+                          class="form-control"
+                          placeholder="last name"
+                        />
+                      </div>
+                      <div class="col-md-5 mb-2">
+                        <input
+                          type="text"
+                          class="form-control"
+                          placeholder="E-mail"
+                        />
+                      </div>
+                      <div class="col-md-5 mb-2">
+                        <input
+                          type="text"
+                          class="form-control"
+                          placeholder="organization  "
+                        />
+                      </div>
+                      <div class="col-md-5 mb-2">
+                        <input
+                          type="text"
+                          class="form-control"
+                          placeholder="phone number"
+                        />
+                      </div>
+                      <div class="col-md-5 mb-2">
+                        <input
+                          type="text"
+                          class="form-control"
+                          placeholder="Address"
+                        />
+                      </div>
+                      <div class="col-md-5 mb-2">
+                        <input
+                          type="text"
+                          class="form-control"
+                          placeholder="state"
+                        />
+                      </div>
+                      <div class="col-md-5 mb-2">
+                        <input
+                          type="text"
+                          class="form-control"
+                          placeholder="zipcode"
+                        />
+                      </div>
+                      <div class="col-md-5 mb-2">
+                        <select
+                          name=""
+                          id=""
+                          class="form-select fw-semibold"
+                          placeholder="country"
+                        >
+                          <option class="text-secondary" value="">
+                            choose country ...
+                          </option>
+                          <option class="text-secondary" value="">usa</option>
+                          <option class="text-secondary" value="">
+                            canada
+                          </option>
+                          <option class="text-secondary" value="uk">uk</option>
+                          <option class="text-secondary" value="">india</option>
+                        </select>
+                      </div>
+                      <div class="col-md-5 mb-2">
+                        <select
+                          name=""
+                          id=""
+                          class="form-select fw-semibold"
+                          placeholder="country"
+                        >
+                          <option class="text-secondary" value="">
+                            choose language ...
+                          </option>
+                          <option class="text-secondary" value="">
+                            english
+                          </option>
+                          <option class="text-secondary" value="">
+                            spanish
+                          </option>
+                          <option class="text-secondary" value="uk">
+                            Arabic
+                          </option>
+                          <option class="text-secondary" value="">hindi</option>
+                        </select>
+                      </div>
+                      <div class="col-md-5 mb-2">
+                        <select
+                          name=""
+                          id=""
+                          class="form-select fw-semibold"
+                          placeholder="country"
+                        >
+                          <option class="text-secondary" value="">
+                            choose Timezone ...
+                          </option>
+                          <option class="text-secondary" value="">
+                            (GMT-11:00) Midway island
+                          </option>
+                          <option class="text-secondary" value="">
+                            (GMT-11:00) Hawaii
+                          </option>
+                          <option class="text-secondary" value="uk">
+                            (GMT-10:00) Alaska
+                          </option>
+                          <option class="text-secondary" value="">
+                            (GMT-11:00) Bagota
+                          </option>
+                        </select>
+                      </div>
+                      <div class="col-md-5 mb-2">
+                        <select
+                          name=""
+                          id=""
+                          class="form-select fw-semibold"
+                          placeholder="country"
+                        >
+                          <option class="text-secondary" value="">
+                            choose currnecy ...
+                          </option>
+                          <option class="text-secondary" value="">USD</option>
+                          <option class="text-secondary" value="">EUR</option>
+                          <option class="text-secondary" value="uk">Gbp</option>
+                          <option class="text-secondary" value="">AUD</option>
+                        </select>
+                      </div>
+                      <div class="col-md-11 justify-content-start mt-2">
+                        <button class="btn btn-primary">Save changes</button>
+                        <button class="btn btn-light text-warning-emphasis">
+                          Reset
+                        </button>
+                      </div>
+                    </div>
+                  </form>
+
+                  <div class="mt-4">
+                    <div class="ms-md-5 fs-4">Deactivate Account</div>
+                    <div class="ms-md-5 mt-3 text-secondary fw-light">
+                      <input type="checkbox" class="form-check-input me-2" />
+                      <span>I confirm my account deactivation</span>
+                    </div>
+                    <div class="ms-md-5 mt-3 fw-light">
+                      <button class="btn btn-danger text-white">
+                        DEACTIVATE ACCOUNT
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane " id="security-pane" tabindex="1">
+                  <!-- password change -->
+                  <div class="card">
+                    <div class="card-header fs-4 fw-semibold bg-white">
+                      Change Password
+                    </div>
+                    <div class="card-body">
+                      <form action="">
+                        <div class="container">
+                          <div class="row">
+                            <div class="col-md-5">
+                              <label for="" class="form-label small"
+                                >current password</label
+                              >
+                              <input
+                                type="text"
+                                class="form-control py-2 form-control-sm mb-2"
+                                placeholder="*************"
+                              />
+                            </div>
+                            <div class="row">
+                              <div class="col-md-5">
+                                <label for="" class="form-label small"
+                                  >new password</label
+                                >
+                                <input
+                                  type="text"
+                                  class="form-control py-2 form-control-sm mb-2"
+                                  placeholder="*************"
+                                />
+                              </div>
+                              <div class="col-md-5">
+                                <label for="" class="form-label small"
+                                  >confirm new password</label
+                                >
+                                <input
+                                  type="text"
+                                  class="form-control py-2 form-control-sm mb-2"
+                                  placeholder="*************"
+                                />
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div class="col-md-6">
+                                <div class="text-secondary fw-semibold small">
+                                  Password Requirements:
+                                </div>
+                                <ul class="text-secondary fs-6">
+                                  <li>
+                                    Minimum 8 characters long - the more, the
+                                    better
+                                  </li>
+                                  <li>At least one lowercase character</li>
+                                  <li>
+                                    At least one number, symbol, or whitespace
+                                    character
+                                  </li>
+                                </ul>
+                                <div class="d-flex gap-4">
+                                  <button class="btn btn-primary fw-medium p-2">
+                                    save changes
+                                  </button>
+                                  <button
+                                    class="btn btn-light text-warning-emphasis fw-medium p-2"
+                                  >
+                                    save changes
+                                  </button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                  <!-- Two-steps verification -->
+                  <div class="card mt-2">
+                    <div class="card-header bg-white border-bottom-0">
+                      <div class="fs-4 fw-normal">Two-steps verification</div>
+                      <div class="mt-2 text-secondary fs-6">
+                        Two factor authentication is not enabled yet.
+                      </div>
+                    </div>
+                    <div class="card-body">
+                      <div class="mt-2 text-secondary fs-6">
+                        Two-factor authentication adds an additional layer of
+                        security to your account <br />
+                        by requiring more than just a password to log in.
+                        <a href="">Learn more.</a>
+                      </div>
+                      <button class="btn btn-primary mt-4 fw-medium">
+                        Enable 2FA
+                      </button>
+                    </div>
+                  </div>
+                  <!-- Create an API key
+ -->
+                  <div class="card mt-2">
+                    <div class="card-body">
+                      <div class="mb-4 fw-normal fs-4">Create an API key</div>
+                      <form action="" class="col-4">
+                        <select class="form-select py-3">
+                          <optgroup class="float-end">
+                            <option value="-1" class="d-none">
+                              <div class="fw-light small">
+                                Choose the API key you want
+                              </div>
+                            </option>
+                            <option value="" class="btn btn-light text-start">
+                              Full control
+                            </option>
+                            <option value="" class="btn btn-light text-start">
+                              Modify
+                            </option>
+                            <option value="" class="btn btn-light text-start">
+                              Read and execute
+                            </option>
+                            <option value="" class="btn btn-light text-start">
+                              List folder content
+                            </option>
+                            <option value="" class="btn btn-light text-start">
+                              Read only
+                            </option>
+                            <option value="" class="btn btn-light text-start">
+                              read and write
+                            </option>
+                          </optgroup>
+                        </select>
+                        <input
+                          type="text"
+                          class="form-control mt-3 py-3"
+                          placeholder="Name the API key"
+                        />
+                        <button
+                          class="btn btn-primary fw-semibold text-center w-100 mt-3 small text-uppercase"
+                        >
+                          create key
+                        </button>
+                      </form>
+                    </div>
+                  </div>
+                  <!-- API Key List & Access
+ -->
+                  <div class="card mt-2">
+                    <div class="card-body">
+                      <div class="mb-3 fw-normal fs-4">
+                        API Key List & Access
+                      </div>
+                      <div class="text-secondary small mb-3">
+                        An API key is a simple encrypted string that identifies
+                        an application without any principal. They are useful
+                        for accessing public data anonymously, and are used to
+                        associate API requests with your project for quota and
+                        billing.
+                      </div>
+                      <div
+                        class="row justify-content-start gx-0 bg-info-subtle"
+                      >
+                        <div class="col-md-5 p-3 rounded">
+                          <div class="fs-5 fw-semibold">
+                            Server Key 1
+                            <span class="badge bg-white ms-4 text-primary"
+                              >FULL ACCESS
+                            </span>
+                          </div>
+                          <div class="text-secondary fw-semibold mt-2">
+                            23eaf7f0-f4f7-495e-8b86-fad3261282ac
+                            <span><i class="bi bi-copy ms-3"></i></span>
+                          </div>
+                          <div class="text-secondary fs-6 fw-medium mt-2">
+                            Created on 28 Apr 2021, 18:20 GTM+4:10
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        class="row justify-content-start gx-0 bg-info-subtle mt-3"
+                      >
+                        <div class="col-md-5 p-3 rounded">
+                          <div class="fs-5 fw-semibold">
+                            Server Key 1
+                            <span class="badge bg-white ms-4 text-primary"
+                              >READ ONLY
+                            </span>
+                          </div>
+                          <div class="text-secondary fw-semibold mt-2">
+                            bb98e571-a2e2-4de8-90a9-2e231b5e99
+
+                            <span><i class="bi bi-copy ms-3"></i></span>
+                          </div>
+                          <div class="text-secondary fs-6 fw-medium mt-2">
+                            Created on 12 Feb 2021, 10:30 GTM+2:30
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        class="row justify-content-start mt-3 gx-0 bg-info-subtle"
+                      >
+                        <div class="col-md-5 p-3 rounded">
+                          <div class="fs-5 fw-semibold">
+                            Server Key 1
+                            <span class="badge bg-white ms-4 text-primary"
+                              >FULL ACCESS
+                            </span>
+                          </div>
+                          <div class="text-secondary fw-semibold mt-2">
+                            2e915e59-3105-47f2-8838-6e46bf83b711
+
+                            <span><i class="bi bi-copy ms-3"></i></span>
+                          </div>
+                          <div class="text-secondary fs-6 fw-medium mt-2">
+                            Created on 28 Dec 2020, 12:21 GTM+4:10
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Recent Devices
+ -->
+                  <div class="card mt-2">
+                    <div class="card-body">
+                      <div class="mb-4 fw-normal fs-4">Recent Devices</div>
+                      <table class="table">
+                        <thead class="bg-light fw-bold">
+                          <tr class="bg-light table-light">
+                            <td class="col-4">Browser</td>
+                            <td>Device</td>
+                            <td>Location</td>
+                            <td>Recent activity</td>
+                          </tr>
+                        </thead>
+                        <tr class="py-3">
+                          <td class="fs-6 fw-medium py-3">
+                            <span
+                              ><i class="bi bi-windows text-primary me-2"></i
+                            ></span>
+                            Chrome on windows
+                          </td>
+                          <td class="fs-6 fw-medium py-3">HP Spectre 360</td>
+                          <td class="fs-6 fw-medium py-3">New York, NY</td>
+                          <td class="fs-6 fw-medium py-3">
+                            28 Apr 2022, 18:20
+                          </td>
+                        </tr>
+                        <tr class="py-3">
+                          <td class="fs-6 fw-medium py-3">
+                            <span
+                              ><i
+                                class="bi bi-phone me-2 text-warning-emphasis"
+                              ></i>
+                            </span>
+                            Chrome on iphone
+                          </td>
+                          <td class="fs-6 fw-medium py-3">iphone 12x</td>
+                          <td class="fs-6 fw-medium py-3">Los Angeles, CA</td>
+                          <td class="fs-6 fw-medium py-3">
+                            20 Apr 2022, 10:20
+                          </td>
+                        </tr>
+                        <tr class="py-4">
+                          <td class="fs-6 fw-medium py-3">
+                            <span
+                              ><i class="bi bi-android2 me-2 text-warning"></i>
+                            </span>
+                            Chrome on Android
+                          </td>
+                          <td class="fs-6 fw-medium py-3">Oneplus 9 Pro</td>
+                          <td class="fs-6 fw-medium py-3">San Francisco, CA</td>
+                          <td class="fs-6 fw-medium py-3">
+                            16 Apr 2022, 04:20
+                          </td>
+                        </tr>
+                        <tr class="py-3">
+                          <td class="fs-6 fw-medium py-3">
+                            <span
+                              ><i
+                                class="bi bi-apple text-info-emphasis me-2"
+                              ></i>
+                            </span>
+                            Chrome on MacOS
+                          </td>
+                          <td class="fs-6 fw-medium py-3">Apple iMac</td>
+                          <td class="fs-6 fw-medium py-3">New York, NY</td>
+                          <td class="fs-6 fw-medium py-3">
+                            28 Apr 2022, 18:20
+                          </td>
+                        </tr>
+                        <tr class="py-3">
+                          <td class="fs-6 fw-medium py-3">
+                            <span
+                              ><i class="bi bi-windows text-primary me-2"></i
+                            ></span>
+                            Chrome on windows
+                          </td>
+                          <td class="fs-6 fw-medium py-3">HP Spectre 360</td>
+                          <td class="fs-6 fw-medium py-3">Los Angeles, CA</td>
+                          <td class="fs-6 fw-medium py-3">
+                            20 Apr 2022, 10:20
+                          </td>
+                        </tr>
+                        <tr class="py-4">
+                          <td class="fs-6 fw-medium py-3">
+                            <span
+                              ><i class="bi bi-android2 me-2 text-warning"></i>
+                            </span>
+                            Chrome on Android
+                          </td>
+                          <td class="fs-6 fw-medium py-3">Oneplus 9 Pro</td>
+                          <td class="fs-6 fw-medium py-3">San Francisco, CA</td>
+                          <td class="fs-6 fw-medium py-3">
+                            16 Apr 2022, 04:20
+                          </td>
+                        </tr>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane" id="notification-pane" tabindex="1">
+                  <div class="card">
+                    <div class="card-body">
+                      <div class="col-md-12">
+                        <div class="fs-5 fw-semibold">Recent Devices</div>
+                        <div class="text-secondary fw-light mt-3">
+                          We need permission from your browser to show
+                          notifications. Request Permission
+                        </div>
+                      </div>
+                      <div class="mt-3">
+                        <table class="table">
+                          <thead>
+                            <tr class="py-3">
+                              <td class="w-50">Type</td>
+                              <td class="fs-6 fw-medium py-3">Email</td>
+                              <td class="fs-6 fw-medium py-3">Browser</td>
+                              <td class="fs-6 fw-medium py-3">App</td>
+                            </tr>
+                          </thead>
+                          <tr class="py-3">
+                            <td class="text-secondary">New for you</td>
+                            <td class="fs-6 fw-medium py-3">
+                              <input type="checkbox" class="form-check-input" />
+                            </td>
+                            <td class="fs-6 fw-medium py-3">
+                              <input type="checkbox" class="form-check-input" />
+                            </td>
+                            <td class="fs-6 fw-medium py-3">
+                              <input type="checkbox" class="form-check-input" />
+                            </td>
+                          </tr>
+                          <tr class="py-3">
+                            <td class="text-secondary">Account activity</td>
+                            <td class="fs-6 fw-medium py-3">
+                              <input type="checkbox" class="form-check-input" />
+                            </td>
+                            <td class="fs-6 fw-medium py-3">
+                              <input type="checkbox" class="form-check-input" />
+                            </td>
+                            <td class="fs-6 fw-medium py-3">
+                              <input type="checkbox" class="form-check-input" />
+                            </td>
+                          </tr>
+
+                          <tr class="py-3">
+                            <td class="text-secondary">
+                              A new browser used to sign in
+                            </td>
+                            <td class="fs-6 fw-medium py-3">
+                              <input type="checkbox" class="form-check-input" />
+                            </td>
+                            <td class="fs-6 fw-medium py-3">
+                              <input type="checkbox" class="form-check-input" />
+                            </td>
+                            <td class="fs-6 fw-medium py-3">
+                              <input type="checkbox" class="form-check-input" />
+                            </td>
+                          </tr>
+                          <tr class="py-3">
+                            <td class="text-secondary">
+                              A new device is linked
+                            </td>
+                            <td class="fs-6 fw-medium py-3">
+                              <input type="checkbox" class="form-check-input" />
+                            </td>
+                            <td class="fs-6 fw-medium py-3">
+                              <input type="checkbox" class="form-check-input" />
+                            </td>
+                            <td class="fs-6 fw-medium py-3">
+                              <input type="checkbox" class="form-check-input" />
+                            </td>
+                          </tr>
+                        </table>
+                        <div class="mt-3">
+                          <div class="fs-6 col-md-4">
+                            When should we send you notifications?
+                            <select
+                              name=""
+                              id=""
+                              class="form-select py-3 fw-semibold mt-3"
+                            >
+                              <option value="1">only when I'm online</option>
+                              <option value="0">Anytime</option>
+                            </select>
+                            <button class="btn btn-primary mt-3 me-md-3">
+                              Save changes
+                            </button>
+                            <button
+                              class="btn btn-light text-warning-emphasis mt-3"
+                            >
+                              reset
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-4 text-secondary d-inline-flex">
+              &copy;2023 made with
+              <span><i class="fa-regular fa-heart me-1 ms-1"></i></span> by
+              <span
+                ><a href="" class="text-decoration-none ms-1">
+                  Theme selection</a
+                ></span
+              >
+            </div>
+            <div class="col-md-4 text-secondary d-inline-flex">
+              Distributed By
+              <span
+                ><a href="" class="text-decoration-none ms-1">
+                  Theme selection</a
+                ></span
+              >
+            </div>
+            <div class="col-md-4">
+              <a href="" class="text-decoration-none ms-2">License</a>
+              <a href="" class="text-decoration-none ms-2">More Themes </a>
+              <a href="" class="text-decoration-none ms-2">Documentation</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js
+    "></script>
+  </body>
+</html>

@@ -1,0 +1,1385 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Travel agency</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css
+    "
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <style>
+    body,
+    html {
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    .hbg {
+      background-image: url(img/headerbg.jpg);
+    }
+    #ul1 a {
+      color: black;
+      text-decoration: none;
+    }
+    #ul1 a:hover {
+      color: greenyellow;
+      text-decoration: underline;
+    }
+    .serv {
+      background-color: lightgray;
+    }
+    .serv:hover {
+      background-color: white;
+    }
+    .fimg {
+      background-image: url(img/footerbg.jpg);
+    }
+    .links a i {
+      padding: 10px;
+      background-color: #333333;
+      background-color: #333333;
+      border-radius: 50%;
+      width: 35px;
+    }
+    .ban1 {
+      background-image: url(img/banner-swipe-1.jpg);
+      background-size: 100% 100%;
+      background-repeat: no-repeat;
+    }
+    .ban2 {
+      background-image: url(img/banner-swipe-2.jpg);
+      background-size: 100% 100%;
+      background-repeat: no-repeat;
+    }
+    .ban3 {
+      background-image: url(img/banner-swipe-3.jpg);
+      background-size: 100% 100%;
+      background-repeat: no-repeat;
+    }
+    .h-10 {
+      height: 105vh;
+    }
+   
+  </style>
+  <body>
+    <!-- shop now -->
+    <div class="row">
+      <div class="col-md-12 hbg d-none d-sm-block">
+        <img src="img/header.png" alt="" class="img-fluid" />
+      </div>
+    </div>
+    <!-- contact -->
+    <div class="row bg-dark d-none d-sm-flex">
+      <div class="col-md-3">
+        <span class="badge text-warning small position-absolute"
+          ><i class="fa-solid fa-phone fs-6"></i
+        ></span>
+        <div class="text-white small ms-4">
+          <a href="" class="link text-decoration-none text-white">
+            1-800-1234-567 1-800-6780-345</a
+          >
+        </div>
+      </div>
+      <div class="col-md-3">
+        <span class="badge text-warning small position-absolute"
+          ><i class="fa-solid fa-location-dot fs-6"></i
+        ></span>
+        <div class="text-white small ms-4">
+          <a href="" class="link text-decoration-none text-white"
+            >2130 Fulton Street, San Diego, CA 94117-1080 USA</a
+          >
+        </div>
+      </div>
+      <div class="col-md-3">
+        <span class="badge text-warning small position-absolute"
+          ><i class="fa-solid fa-envelope fs-6"></i
+        ></span>
+        <div class="text-white small ms-4">
+          <a href="" class="link text-decoration-none text-white"
+            >mail@demolink.org</a
+          >
+        </div>
+      </div>
+      <div class="col-md-3">
+        <a href="" class="text-white fs-5 me-3"
+          ><i class="fa-brands fa-facebook-f"></i
+        ></a>
+        <a href="" class="text-white fs-5 me-3"
+          ><i class="fa-brands fa-twitter"></i
+        ></a>
+        <a href="" class="text-white fs-5 me-3"
+          ><i class="fa-brands fa-instagram"></i
+        ></a>
+        <a href="" class="text-white fs-5 me-3"
+          ><i class="fa-brands fa-google-plus-g"></i
+        ></a>
+        <a href="" class="text-white fs-4"
+          ><i class="fa-brands fa-linkedin"></i
+        ></a>
+      </div>
+    </div>
+    <!-- navbar -->
+    <div class="row mt-3 mb-3">
+      <nav class="nav justify-content-around">
+        <div class="col-md-2 ms-4 mb-2">
+          <img src="img/logo.png" alt="" class="img-fluid" />
+        </div>
+        <div
+          class="col-md-6 d-inline-block text-center d-sm-inline-block d-none"
+        >
+          <ul class="list-inline d-inline-flex gap-4 fs-5" id="ul1">
+            <li>
+              <a href="" class="list-inline-item">Home</a>
+            </li>
+            <li>
+              <a href="" class="list-inline-item">About us</a>
+            </li>
+            <li>
+              <a href="" class="list-inline-item">Contacts</a>
+            </li>
+            <li>
+              <a href="" class="list-inline-item">Typography</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-2 d-sm-inline-block d-none">
+          <button
+            class="btn btn-warning text-white opacity-50 rounded-5 px-4 py-2"
+          >
+            Book a tour now
+          </button>
+        </div>
+        <div class="col-4 d-inline-block d-sm-none ms-auto fs-2">
+          <div class="navbar-expand">
+            <i class="fa-solid fa-bars float-end me-3"></i>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <div class="container-fluid">
+      <!-- sect1:banner -->
+      <div class="row bg-light-subtle justify-content-evenly">
+        <div class="col-md-12 mb-2 gx-0">
+          <div
+            class="carousel slide"
+            data-bs-ride="carousel"
+            id="slides-with-indicators"
+          >
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="3000">
+                <div
+                  class="row h-10 p-2 ban1 justify-content-around align-items-center"
+                >
+                  <div class="col-md-5">
+                    <div class="fs-4 text-white col-12 mt-2">
+                      HUNDREDS OF AMAZING DESTINATIONS
+                    </div>
+                    <img src="img/banner-sign.png" alt="" />
+                    <div class="col-8">
+                      <div class="small text-white">
+                        We offer a variety of destinations to travel to, ranging
+                        from exotic to some extreme ones. They include very
+                        popular countries and cities like Paris, Rio de Janeiro,
+                        Cairo and a lot of others.
+                      </div>
+                      <button
+                        class="btn btn-outline-light rounded-4 mt-2 mb-2 border-1"
+                      >
+                        Learn More
+                      </button>
+                    </div>
+                  </div>
+                  <div
+                    class="col-md-4 d-grid justify-content-around px-3 h-50 d-sm-grid d-none align-content-between"
+                  >
+                    <form
+                      action=""
+                      class="bg-white rounded bg-opacity-75 p-3 py-4"
+                    >
+                      <div class="fs-6 text-dark mb-4">FIND YOUR TOUR</div>
+                      <div class="col-12 justify-content-center">
+                        <label
+                          for=""
+                          class="form-label small fw-lighter text-dark"
+                          >From</label
+                        >
+                        <button
+                          type="button"
+                          class="btn dropdown-toggle border rounded-4 border-3 form-control dropdown-center bg-white"
+                          data-bs-toggle="dropdown"
+                        >
+                          New york
+                        </button>
+
+                        <ul class="dropdown-menu col-3">
+                          <li class="dropdown-item">
+                            <a
+                              href=""
+                              class="text-decoration-none text-warning-emphasis"
+                              >New york</a
+                            >
+                          </li>
+                          <li class="dropdown-item">
+                            <a
+                              href=""
+                              class="text-decoration-none text-warning-emphasis"
+                              >Stockholm</a
+                            >
+                          </li>
+                          <li class="dropdown-item">
+                            <a
+                              href=""
+                              class="text-decoration-none text-warning-emphasis"
+                              >Libson</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="col-12 justify-content-center">
+                        <label
+                          for=""
+                          class="form-label small fw-lighter text-dark"
+                          >to</label
+                        >
+                        <button
+                          type="button"
+                          class="btn dropdown-toggle rounded-4 border border-3 form-control bg-white dropdown-center"
+                          data-bs-toggle="dropdown"
+                        >
+                          Chicago
+                        </button>
+
+                        <ul class="dropdown-menu col-3">
+                          <li class="dropdown-item">
+                            <a
+                              href=""
+                              class="text-decoration-none text-warning-emphasis"
+                              >Chicago</a
+                            >
+                          </li>
+                          <li class="dropdown-item">
+                            <a
+                              href=""
+                              class="text-decoration-none text-warning-emphasis"
+                              >Madrid</a
+                            >
+                          </li>
+                          <li class="dropdown-item">
+                            <a
+                              href=""
+                              class="text-decoration-none text-warning-emphasis"
+                              >Paris</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="col-md-12 d-flex gap-5">
+                        <div class="col-md-6">
+                          <label
+                            for=""
+                            class="form-label small fw-lighter text-dark"
+                            >depart date</label
+                          >
+                          <input
+                            type="date"
+                            name=""
+                            id=""
+                            class="btn form-control bg-white rounded-4"
+                          />
+                        </div>
+                        <div class="col-md-6">
+                          <label
+                            for=""
+                            class="form-label small fw-lighter text-dark"
+                            >duration</label
+                          >
+                          <button
+                            type="button"
+                            class="btn dropdown-toggle rounded-4 bg-white"
+                            data-bs-toggle="dropdown"
+                          >
+                            Any Length
+                          </button>
+                          <ul class="dropdown-menu col-md-2">
+                            <li>
+                              <a
+                                href=""
+                                class="text-decoration-none text-warning-emphasis"
+                                >Any length</a
+                              >
+                            </li>
+                            <li>
+                              <a
+                                href=""
+                                class="text-decoration-none text-warning-emphasis"
+                                >2 days</a
+                              >
+                            </li>
+                            <li>
+                              <a
+                                href=""
+                                class="text-decoration-none text-warning-emphasis"
+                                >3 days</a
+                              >
+                            </li>
+                            <li>
+                              <a
+                                href=""
+                                class="text-decoration-none text-warning-emphasis"
+                                >4 days</a
+                              >
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="col-12">
+                        <button
+                          class="btn w-100 mt-4 btn-warning text-white text-center"
+                        >
+                          Search this flight
+                        </button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item" data-bs-interval="3000">
+                <div
+                  class="row h-10 p-2 ban2 justify-content-around align-items-center"
+                >
+                  <div class="col-md-5">
+                    <div class="fs-4 text-white col-12">
+                      THE TRIP OF YOUR DREAM
+                    </div>
+                    <img src="img/banner-sign.png" alt="" />
+                    <div class="col-8">
+                      <div class="small text-white">
+                        Our travel agency is ready to offer you an exciting
+                        vacation that is designed to fit your own needs and
+                        wishes. Whether it’s an exotic cruise or a trip to your
+                        favorite resort, you will surely have the best
+                        experience.
+                      </div>
+                      <button
+                        class="btn btn-outline-light rounded-4 mt-2 mb-4 border-1"
+                      >
+                        Learn More
+                      </button>
+                    </div>
+                  </div>
+                  <div
+                    class="col-md-4 d-grid justify-content-around px-3 d-sm-grid d-none"
+                  >
+                    <form
+                      action=""
+                      class="bg-white rounded bg-opacity-75 p-3 py-4"
+                    >
+                      <div class="fs-6 text-dark mb-4">FIND YOUR TOUR</div>
+                      <div class="col-12 justify-content-center">
+                        <label
+                          for=""
+                          class="form-label small fw-lighter text-dark"
+                          >From</label
+                        >
+                        <button
+                          type="button"
+                          class="btn dropdown-toggle border rounded-4 border-3 form-control dropdown-center bg-white"
+                          data-bs-toggle="dropdown"
+                        >
+                          New york
+                        </button>
+
+                        <ul class="dropdown-menu col-3">
+                          <li class="dropdown-item">
+                            <a
+                              href=""
+                              class="text-decoration-none text-warning-emphasis"
+                              >New york</a
+                            >
+                          </li>
+                          <li class="dropdown-item">
+                            <a
+                              href=""
+                              class="text-decoration-none text-warning-emphasis"
+                              >Stockholm</a
+                            >
+                          </li>
+                          <li class="dropdown-item">
+                            <a
+                              href=""
+                              class="text-decoration-none text-warning-emphasis"
+                              >Libson</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="col-12 justify-content-center">
+                        <label
+                          for=""
+                          class="form-label small fw-lighter text-dark"
+                          >to</label
+                        >
+                        <button
+                          type="button"
+                          class="btn dropdown-toggle rounded-4 border border-3 form-control bg-white dropdown-center"
+                          data-bs-toggle="dropdown"
+                        >
+                          Chicago
+                        </button>
+
+                        <ul class="dropdown-menu col-3">
+                          <li class="dropdown-item">
+                            <a
+                              href=""
+                              class="text-decoration-none text-warning-emphasis"
+                              >Chicago</a
+                            >
+                          </li>
+                          <li class="dropdown-item">
+                            <a
+                              href=""
+                              class="text-decoration-none text-warning-emphasis"
+                              >Madrid</a
+                            >
+                          </li>
+                          <li class="dropdown-item">
+                            <a
+                              href=""
+                              class="text-decoration-none text-warning-emphasis"
+                              >Paris</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="col-md-12 d-flex gap-5">
+                        <div class="col-md-6">
+                          <label
+                            for=""
+                            class="form-label small fw-lighter text-dark"
+                            >depart date</label
+                          >
+                          <input
+                            type="date"
+                            name=""
+                            id=""
+                            class="btn form-control bg-white rounded-4"
+                          />
+                        </div>
+                        <div class="col-md-6">
+                          <label
+                            for=""
+                            class="form-label small fw-lighter text-dark"
+                            >duration</label
+                          >
+                          <button
+                            type="button"
+                            class="btn dropdown-toggle rounded-4 bg-white"
+                            data-bs-toggle="dropdown"
+                          >
+                            Any Length
+                          </button>
+                          <ul class="dropdown-menu col-md-2">
+                            <li>
+                              <a
+                                href=""
+                                class="text-decoration-none text-warning-emphasis"
+                                >Any length</a
+                              >
+                            </li>
+                            <li>
+                              <a
+                                href=""
+                                class="text-decoration-none text-warning-emphasis"
+                                >2 days</a
+                              >
+                            </li>
+                            <li>
+                              <a
+                                href=""
+                                class="text-decoration-none text-warning-emphasis"
+                                >3 days</a
+                              >
+                            </li>
+                            <li>
+                              <a
+                                href=""
+                                class="text-decoration-none text-warning-emphasis"
+                                >4 days</a
+                              >
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="col-12">
+                        <button
+                          class="btn w-100 mt-4 btn-warning text-white text-center"
+                        >
+                          Search this flight
+                        </button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item" data-bs-interval="3000">
+                <div
+                  class="row h-10 p-2 ban3 justify-content-around align-items-center"
+                >
+                  <div class="col-md-5">
+                    <div class="fs-4 text-white col-12">
+                      UNIQUE TRAVEL INSIGHTS
+                    </div>
+                    <img src="img/banner-sign.png" alt="" />
+                    <div class="col-8">
+                      <div class="small text-white">
+                        Our team is ready to provide you with unique weekly
+                        travel insights that include photos, videos, and
+                        articles about untravelled tourist paths. We know
+                        everything about the places you’ve never been to!
+                      </div>
+                      <button
+                        class="btn btn-outline-light rounded-4 mt-3 mb-4 border-1"
+                      >
+                        Learn More
+                      </button>
+                    </div>
+                  </div>
+                  <div
+                    class="col-md-4 d-grid justify-content-around px-3 d-sm-grid d-none "
+                  >
+                    <form
+                      action=""
+                      class="bg-white rounded bg-opacity-75 p-3 py-4"
+                    >
+                      <div class="fs-6 text-dark mb-4">FIND YOUR TOUR</div>
+                      <div class="col-12 justify-content-center">
+                        <label
+                          for=""
+                          class="form-label small fw-lighter text-dark"
+                          >From</label
+                        >
+                        <button
+                          type="button"
+                          class="btn dropdown-toggle border rounded-4 border-3 form-control dropdown-center bg-white"
+                          data-bs-toggle="dropdown"
+                        >
+                          New york
+                        </button>
+
+                        <ul class="dropdown-menu col-3">
+                          <li class="dropdown-item">
+                            <a
+                              href=""
+                              class="text-decoration-none text-warning-emphasis"
+                              >New york</a
+                            >
+                          </li>
+                          <li class="dropdown-item">
+                            <a
+                              href=""
+                              class="text-decoration-none text-warning-emphasis"
+                              >Stockholm</a
+                            >
+                          </li>
+                          <li class="dropdown-item">
+                            <a
+                              href=""
+                              class="text-decoration-none text-warning-emphasis"
+                              >Libson</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="col-12 justify-content-center">
+                        <label
+                          for=""
+                          class="form-label small fw-lighter text-dark"
+                          >to</label
+                        >
+                        <button
+                          type="button"
+                          class="btn dropdown-toggle rounded-4 border border-3 form-control bg-white dropdown-center"
+                          data-bs-toggle="dropdown"
+                        >
+                          Chicago
+                        </button>
+
+                        <ul class="dropdown-menu col-3">
+                          <li class="dropdown-item">
+                            <a
+                              href=""
+                              class="text-decoration-none text-warning-emphasis"
+                              >Chicago</a
+                            >
+                          </li>
+                          <li class="dropdown-item">
+                            <a
+                              href=""
+                              class="text-decoration-none text-warning-emphasis"
+                              >Madrid</a
+                            >
+                          </li>
+                          <li class="dropdown-item">
+                            <a
+                              href=""
+                              class="text-decoration-none text-warning-emphasis"
+                              >Paris</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="col-md-12 d-flex gap-5">
+                        <div class="col-md-6">
+                          <label
+                            for=""
+                            class="form-label small fw-lighter text-dark"
+                            >depart date</label
+                          >
+                          <input
+                            type="date"
+                            name=""
+                            id=""
+                            class="btn form-control bg-white rounded-4"
+                          />
+                        </div>
+                        <div class="col-md-6">
+                          <label
+                            for=""
+                            class="form-label small fw-lighter text-dark"
+                            >duration</label
+                          >
+                          <button
+                            type="button"
+                            class="btn dropdown-toggle rounded-4 bg-white"
+                            data-bs-toggle="dropdown"
+                          >
+                            Any Length
+                          </button>
+                          <ul class="dropdown-menu col-md-2">
+                            <li>
+                              <a
+                                href=""
+                                class="text-decoration-none text-warning-emphasis"
+                                >Any length</a
+                              >
+                            </li>
+                            <li>
+                              <a
+                                href=""
+                                class="text-decoration-none text-warning-emphasis"
+                                >2 days</a
+                              >
+                            </li>
+                            <li>
+                              <a
+                                href=""
+                                class="text-decoration-none text-warning-emphasis"
+                                >3 days</a
+                              >
+                            </li>
+                            <li>
+                              <a
+                                href=""
+                                class="text-decoration-none text-warning-emphasis"
+                                >4 days</a
+                              >
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="col-12">
+                        <button
+                          class="btn w-100 mt-4 btn-warning text-white text-center"
+                        >
+                          Search this flight
+                        </button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-indicators h-0 w-25">
+              <button
+                class="active bg-warning-subtle"
+                type="button"
+                data-bs-target="#slides-with-indicators"
+                data-bs-slide-to="0"
+              ></button>
+              <button
+                class="active bg-warning-subtle"
+                type="button"
+                data-bs-target="#slides-with-indicators"
+                data-bs-slide-to="1"
+              ></button>
+              <button
+                class="active bg-warning-subtle"
+                type="button"
+                data-bs-target="#slides-with-indicators"
+                data-bs-slide-to="2"
+              ></button>
+            </div>
+          </div>
+        </div>
+        <div
+          class="col-md-8 d-grid justify-content-center d-grid d-sm-none  align-content-between"
+        >
+          <form action="" class="bg-info-subtle rounded p-3">
+            <div class="fs-6 text-dark mb-4">FIND YOUR TOUR</div>
+            <div class="col-12 justify-content-center">
+              <label for="" class="form-label small fw-lighter text-dark"
+                >From</label
+              >
+              <button
+                type="button"
+                class="btn dropdown-toggle border rounded-4 border-3 form-control dropdown-center bg-white"
+                data-bs-toggle="dropdown"
+              >
+                New york
+              </button>
+
+              <ul class="dropdown-menu col-3">
+                <li class="dropdown-item">
+                  <a href="" class="text-decoration-none text-warning-emphasis"
+                    >New york</a
+                  >
+                </li>
+                <li class="dropdown-item">
+                  <a href="" class="text-decoration-none text-warning-emphasis"
+                    >Stockholm</a
+                  >
+                </li>
+                <li class="dropdown-item">
+                  <a href="" class="text-decoration-none text-warning-emphasis"
+                    >Libson</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="col-12 justify-content-center">
+              <label for="" class="form-label small fw-lighter text-dark"
+                >to</label
+              >
+              <button
+                type="button"
+                class="btn dropdown-toggle rounded-4 border border-3 form-control bg-white dropdown-center"
+                data-bs-toggle="dropdown"
+              >
+                Chicago
+              </button>
+
+              <ul class="dropdown-menu col-3">
+                <li class="dropdown-item">
+                  <a href="" class="text-decoration-none text-warning-emphasis"
+                    >Chicago</a
+                  >
+                </li>
+                <li class="dropdown-item">
+                  <a href="" class="text-decoration-none text-warning-emphasis"
+                    >Madrid</a
+                  >
+                </li>
+                <li class="dropdown-item">
+                  <a href="" class="text-decoration-none text-warning-emphasis"
+                    >Paris</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-12 d-flex gap-5">
+              <div class="col-md-6">
+                <label for="" class="form-label small fw-lighter text-dark"
+                  >depart date</label
+                >
+                <input
+                  type="date"
+                  name=""
+                  id=""
+                  class="btn form-control bg-white rounded-4"
+                />
+              </div>
+              <div class="col-md-6">
+                <label for="" class="form-label small fw-lighter text-dark"
+                  >duration</label
+                >
+                <button
+                  type="button"
+                  class="btn dropdown-toggle rounded-4 bg-white"
+                  data-bs-toggle="dropdown"
+                >
+                  Any Length
+                </button>
+                <ul class="dropdown-menu col-md-2">
+                  <li>
+                    <a
+                      href=""
+                      class="text-decoration-none text-warning-emphasis"
+                      >Any length</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href=""
+                      class="text-decoration-none text-warning-emphasis"
+                      >2 days</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href=""
+                      class="text-decoration-none text-warning-emphasis"
+                      >3 days</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href=""
+                      class="text-decoration-none text-warning-emphasis"
+                      >4 days</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-12">
+              <button class="btn w-100 mt-4 btn-warning text-white text-center">
+                Search this flight
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <!-- sect2: tours -->
+      <div class="row mt-4">
+        <div class="row justify-content-around mb-4">
+          <div class="col-md-5 mb-2">
+            <div class="text-start fw-semibold fs-4">OUR BEST TOURS</div>
+            <img src="img/banner-sign.png" alt="" />
+          </div>
+          <div class="col-md-5 text-end">
+            <a href="" class="btn btn-warning text-white">VIEW ALL TOURS</a>
+          </div>
+        </div>
+        <div
+          class="row justify-content-center justify-content-sm-around gap-1 row-gap-4"
+        >
+          <!-- 1st tour -->
+          <div class="col-md-3">
+            <div class="card">
+              <div class="card-img">
+                <img src="img/tour-1.jpg" class="img-fluid" alt="" />
+              </div>
+              <div class="card-text justify-content-between">
+                <div class="">
+                  <a href="" class="text-decoration-none fs-6 text-dark"
+                    >France, Paris</a
+                  >
+                  <div class="badge text-warning float-end fs-6 fw-lighter">
+                    from $280
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- 2nd tour -->
+          <div class="col-md-3">
+            <div class="card">
+              <div class="card-img">
+                <img src="img/tour-2.jpg" class="img-fluid" alt="" />
+              </div>
+              <div class="card-text justify-content-between">
+                <div class="">
+                  <a href="" class="text-decoration-none fs-6 text-dark"
+                    >USA, Boston</a
+                  >
+                  <div class="badge text-warning float-end fs-6 fw-lighter">
+                    from $480
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- 3rd tour -->
+          <div class="col-md-3">
+            <div class="card">
+              <div class="card-img">
+                <img src="img/tour-3.jpg" class="img-fluid" alt="" />
+              </div>
+              <div class="card-text justify-content-between">
+                <div class="">
+                  <a href="" class="text-decoration-none fs-6 text-dark">
+                    Italy, Venice</a
+                  >
+                  <div class="badge text-warning float-end fs-6 fw-lighter">
+                    from $350
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- 4th tour -->
+          <div class="col-md-3">
+            <div class="card">
+              <div class="card-img">
+                <img src="img/tour-4.jpg" class="img-fluid" alt="" />
+              </div>
+              <div class="card-text justify-content-between">
+                <div class="">
+                  <a href="" class="text-decoration-none fs-6 text-dark"
+                    >Spain,Benidorm</a
+                  >
+                  <div class="badge text-warning float-end fs-6 fw-lighter">
+                    from $350
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- 5th tour -->
+          <div class="col-md-3">
+            <div class="card">
+              <div class="card-img">
+                <img src="img/tour-5.jpg" class="img-fluid" alt="" />
+              </div>
+              <div class="card-text justify-content-between">
+                <div class="d-inline-flex">
+                  <a href="" class="text-decoration-none fs-6 text-dark"
+                    ><div class="text-truncate small col-6">
+                      Egypt,Sharm El Sheikh
+                    </div>
+                  </a>
+                  <div
+                    class="badge text-warning position-relative float-end fs-6 fw-lighter"
+                  >
+                    from $520
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- 6th tour -->
+          <div class="col-md-3">
+            <div class="card">
+              <div class="card-img">
+                <img src="img/tour-6.jpg" class="img-fluid" alt="" />
+              </div>
+              <div class="card-text justify-content-between">
+                <div class="">
+                  <a href="" class="text-decoration-none text-dark"
+                    >UK, London</a
+                  >
+                  <div class="badge text-warning float-end fs-6 fw-lighter">
+                    from $600
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- sect3: our services -->
+      <div class="row mt-3 bg-light justify-content-evenly">
+        <div class="col-md-12 text-center display-6 fw-semibold mb-3">
+          OUR SERVICES <br />
+          <img src="img/banner-sign.png" alt="" />
+        </div>
+        <div class="col-md-2 col-10 text-start py-5 px-3 serv mb-2 rounded">
+          <i class="fa-solid fa-plane-up text-warning fs-1"></i>
+          <div class="fs-5 mt-3">Air Tickets</div>
+          <hr />
+          <div class="small">
+            At our travel agency, you can book air tickets to any world
+            destination. We also provide online ticket booking via our website
+            in just a couple of steps.
+          </div>
+        </div>
+        <div class="col-md-2 col-10 text-start py-5 px-3 serv mb-2 rounded">
+          <i class="fa-solid fa-map fs-1 text-warning"></i>
+          <div class="fs-5 mt-3">Voyages & Cruises</div>
+          <hr />
+          <div class="small">
+            Besides regular tours and excursions, we also offer a variety of
+            cruises & sea voyages for different customers looking for awesome
+            experiences.
+          </div>
+        </div>
+        <div class="col-md-2 col-10 text-start py-5 px-3 serv mb-2 rounded">
+          <i class="fa-solid fa-hotel text-warning fs-1"></i>
+          <div class="fs-5 mt-3">Hotel Bookings</div>
+          <hr />
+          <div class="small">
+            We offer a wide selection of hotel ranging from 5-star ones to small
+            properties located worldwide so that you could book a hotel you
+            like.
+          </div>
+        </div>
+        <div class="col-md-2 col-10 text-start py-5 px-3 serv mb-2 rounded">
+          <i class="fa-solid fa-umbrella-beach text-warning fs-1"></i>
+          <div class="fs-6 mt-3">Tailored Summer Tours</div>
+          <hr />
+          <div class="small">
+            We offer a wide selection of hotel ranging from 5-star ones to small
+            properties located worldwide so that you could book a hotel you
+            like.
+          </div>
+        </div>
+      </div>
+      <!-- sect4: news -->
+      <div class="row mt-3 justify-content-center">
+        <div class="col-md-8 text-center mb-3">
+          <div class="fs-2">LATEST NEWS</div>
+          <img src="img/banner-sign.png" alt="" />
+        </div>
+        <div class="col-md-10">
+          <div
+            class="carousel"
+            data-bs-ride="carousel"
+            id="slides-with-indicators"
+          >
+            <div class="carousel-inner mb-4">
+              <div class="carousel-item active mb-2" data-bs-interval="30000">
+                <div class="row justify-content-around">
+                  <div class="col-md-5 img-fluid">
+                    <div class="card mb-4">
+                      <div class="card-img">
+                        <img src="img/news-1.jpg" alt="" class="img-fluid" />
+                      </div>
+                      <div class="card-header">
+                        <div
+                          class="badge text-white bg-warning position-absolute"
+                        >
+                          TRAVELING
+                        </div>
+                        <div class="fs-6 text-primary-emphasis float-end">
+                          by Ronald Chen
+                        </div>
+                      </div>
+                      <div class="card-text text-center small">
+                        <a
+                          href=""
+                          class="link text-decoration-none text-dark samll"
+                          >Top 10 Hotels to Stay At: Exclusive Rating by Sealine
+                          Travel Experts</a
+                        >
+                      </div>
+                      <div class="card-footer">
+                        <div class="small">
+                          Feb 27, 2019 at 6:53 pm
+                          <div class="badge text-dark float-end">
+                            <i class="fa-solid fa-message"></i> 12
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-5 img-fluid">
+                    <div class="card">
+                      <div class="card-img">
+                        <img src="img/news-2.jpg" alt="" class="img-fluid" />
+                      </div>
+                      <div class="card-header">
+                        <div
+                          class="badge text-white bg-warning position-absolute"
+                        >
+                          HOTELS
+                        </div>
+                        <div class="fs-6 text-primary-emphasis float-end">
+                          by Ronald Chen
+                        </div>
+                      </div>
+                      <div class="card-text text-center">
+                        <a
+                          href=""
+                          class="link text-decoration-none text-dark small"
+                          >Top 10 Hotels to Stay At: Exclusive Rating by Sealine
+                          Travel Experts</a
+                        >
+                      </div>
+                      <div class="card-footer">
+                        <div class="small">
+                          Feb 27, 2019 at 6:53 pm
+                          <div class="badge text-dark float-end">
+                            <i class="fa-solid fa-message"></i> 12
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item mt-2" data-bs-interval="30000">
+                <div class="row justify-content-around">
+                  <div class="col-md-5 img-fluid">
+                    <div class="card mb-4">
+                      <div class="card-img">
+                        <img src="img/news-3.jpg" alt="" class="img-fluid" />
+                      </div>
+                      <div class="card-header">
+                        <div
+                          class="badge text-white bg-warning position-absolute"
+                        >
+                          TRAVELING
+                        </div>
+                        <div class="fs-6 text-primary-emphasis float-end">
+                          by Ronald Chen
+                        </div>
+                      </div>
+                      <div class="card-text text-center small">
+                        <a
+                          href=""
+                          class="link text-decoration-none text-dark samll"
+                          >Your Personal Guide to 5 Best Places to Visit on
+                          Earth</a
+                        >
+                      </div>
+                      <div class="card-footer">
+                        <div class="small">
+                          Feb 27, 2019 at 6:53 pm
+                          <div class="badge text-dark float-end">
+                            <i class="fa-solid fa-message"></i> 12
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-5 img-fluid">
+                    <div class="card">
+                      <div class="card-img">
+                        <img src="img/news-1.jpg" alt="" class="img-fluid" />
+                      </div>
+                      <div class="card-header">
+                        <div
+                          class="badge text-white bg-warning position-absolute"
+                        >
+                          HOTELS
+                        </div>
+                        <div class="fs-6 text-primary-emphasis float-end">
+                          by Ronald Chen
+                        </div>
+                      </div>
+                      <div class="card-text text-center">
+                        <a
+                          href=""
+                          class="link text-decoration-none text-dark small"
+                          >Top 10 Hotels to Stay At: Exclusive Rating by Sealine
+                          Travel Experts</a
+                        >
+                      </div>
+                      <div class="card-footer">
+                        <div class="small">
+                          Feb 27, 2019 at 6:53 pm
+                          <div class="badge text-dark float-end">
+                            <i class="fa-solid fa-message"></i> 12
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- indicators -->
+            <div class="carousel-indicators position-relative">
+              <button
+                class="active bg-primary-subtle"
+                type="button"
+                data-bs-target="#slides-with-indicators"
+                data-bs-slide-to="0"
+              ></button>
+              <button
+                class="active bg-primary-subtle"
+                type="button"
+                data-bs-target="#slides-with-indicators"
+                data-bs-slide-to="1"
+              ></button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- sect5:TESTIMONIALS -->
+      <div class="row justify-content-center mt-3 mb-5">
+        <div class="col-md-12 text-center">
+          <div class="display-6 fw-semibold">
+            TESTIMONIALS <br />
+            <img src="img/banner-sign.png" alt="" />
+          </div>
+        </div>
+        <div class="col-md-12">
+          <div
+            id="slides-with-controls"
+            class="carousel slide"
+            data-bs-ride="carousel slide"
+          >
+            <div class="carousel-inner d-flex">
+              <div class="carousel-item active ms-5">
+                <div class="row ms-5">
+                  <div class="col-md-4 ms-1 mt-4 col-6">
+                    <img src="img/user-1.jpg" alt="" class="rounded-circle" />
+                  </div>
+                  <div class="col-6">
+                    <div class="fs-1">
+                      <i class="fa-solid fa-quote-left text-warning"></i>
+                    </div>
+                    <div class="fs-6 w-100 p-0">
+                      I wanted to thank you very much for planning the trip to
+                      France for my boyfriend and me. It was amazing and
+                      exceeded my expectations! We had a wonderful time and were
+                      very pleased with the accommodations in Paris and Bayeux.
+                      Our private/small tour guides were fantastic! I appreciate
+                      all the effort to get us to the Eiffel Tower finally.
+                    </div>
+                    <div class="fs-5 text-primary-emphasis mt-2">
+                      Ann McMillan
+                    </div>
+                    <div class="small">Regular Customer</div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item ms-5">
+                <div class="row ms-5">
+                  <div class="col-md-4 ms-1 mt-4 col-6">
+                    <img src="img/user-2.jpg" alt="" class="rounded-circle" />
+                  </div>
+                  <div class="col-6">
+                    <div class="fs-1">
+                      <i class="fa-solid fa-quote-left text-warning"></i>
+                    </div>
+                    <div class="fs-6 w-100 p-0">
+                      I had a marvelous time in our travels to Madagascar,
+                      Zimbabwe and Botswana, I had just wonderful experiences.I
+                      loved the location of the Gorges Camp as I felt like it
+                      was only the time we got to see real and rural Africans
+                      and how they truly lived. The service was amazing and
+                      everyone was very attentive!
+                    </div>
+                    <div class="fs-5 text-primary-emphasis mt-2">
+                      Debra Ortega
+                    </div>
+                    <div class="small">Regular Customer</div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item ms-5">
+                <div class="row ms-5">
+                  <div class="col-md-4 ms-1 mt-4 col-6">
+                    <img src="img/user-3.jpg" alt="" class="rounded-circle" />
+                  </div>
+                  <div class="col-6">
+                    <div class="fs-1">
+                      <i class="fa-solid fa-quote-left text-warning"></i>
+                    </div>
+                    <div class="fs-6 w-100 p-0">
+                      Just wanted to say many, many thanks for helping me set up
+                      an amazing Costa Rican adventure! My nephew and I had a
+                      blast! All of the accommodations were perfect as were the
+                      activities that we did (canopy, coffee tour, hikes,
+                      fishing, and massages!) We have such fond memories and
+                      can't thank you enough!
+                    </div>
+                    <div class="fs-5 text-primary-emphasis mt-2">
+                      Samantha Smith
+                    </div>
+                    <div class="small">Regular Customer</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- slide controls -->
+            <button
+              type="button"
+              class="carousel-control-prev"
+              data-bs-target="#slides-with-controls"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon bg-dark rounded-circle px-3 py-3"
+              ></span>
+            </button>
+            <button
+              type="button"
+              class="carousel-control-next"
+              data-bs-target="#slides-with-controls"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon bg-dark rounded-circle px-3 py-3"
+              ></span>
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- sect6: footer -->
+      <div class="row bg-dark py-5 justify-content-around">
+        <div class="col-md-6 mb-4">
+          <div class="fs-5 fw-semibold text-warning">
+            BUY A TOUR WITHOUT LEAVING YOUR HOME
+          </div>
+          <div class="fs-6 text-white">
+            Using our website, you can book any tour just in a couple of clicks.
+          </div>
+        </div>
+        <div class="col-md-3">
+          <button class="btn btn-outline-light p-2 border-3">Book Now</button>
+        </div>
+      </div>
+      <div class="">
+        <div class="col-12 fimg d-none w-100 d-sm-block">
+          <a href="">
+            <img src="img/footer.png" alt="" class="img-fluid w-75"
+          /></a>
+        </div>
+        <div class="row bg-dark py-4 px-5 justify-content-center">
+          <div class="col-md-4 text-center mb-2">
+            <img src="img/footer-logo.png" alt="" class="img-fluid" />
+          </div>
+          <div class="col-md-4 text-center mb-3">
+            <div class="text-white fs-6">
+              © 2024 All Rights Reserved. Design by
+            </div>
+            <div class="link">
+              <a href="" class="linl text-decoration-none text-white"
+                >TemplateMonster</a
+              >
+            </div>
+          </div>
+          <div class="col-md-4 links text-center">
+            <a href="" class="text-white fs-6 me-2 rounded-circle"
+              ><i class="fa-brands fa-facebook-f"></i
+            ></a>
+            <a href="" class="text-white fs-6 me-2 rounded-circle"
+              ><i class="fa-brands fa-twitter"></i
+            ></a>
+            <a href="" class="text-white fs-6 me-2 rounded-circle"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+            <a href="" class="text-white fs-6 me-2 rounded-circle"
+              ><i class="fa-brands fa-google-plus-g"></i
+            ></a>
+            <a href="" class="text-white fs-6 rounded-circle"
+              ><i class="fa-brands fa-linkedin"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- javascript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js
+    "></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
