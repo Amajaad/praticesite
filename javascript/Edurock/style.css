@@ -1,0 +1,266 @@
+/**************Font style***************/
+@import url("https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+:root {
+  --primary-color: #5f2ded;
+  --secondary-color: #f2277e;
+  --Title-font: "Hind", sans-serif;
+  --body-font: "Inter", sans-serif;
+}
+
+body {
+  font-family: var(--body-font);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--Title-font);
+}
+
+.btn-primary {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+  color: white;
+}
+
+.btn-outline-primary {
+  border-color: var(--primary-color);
+  color: var(--primary-color);
+}
+.btn-secondary {
+  background-color: var(--secondary-color);
+  border-color: var(--secondary-color);
+  color: white;
+}
+.btn-outline-secondary {
+  border-color: var(--secondary-color);
+  color: var(--secondary-color);
+}
+
+.btn-primary:hover {
+  background-color: var(--secondary-color);
+  border-color: var(--secondary-color);
+  color: white;
+}
+
+.btn-outline-primary:hover {
+  border-color: var(--primary-color);
+  background-color: var(--primary-color);
+  color: white;
+}
+.btn-secondary:hover {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+  color: white;
+}
+.btn-outline-secondary:hover {
+  border-color: var(--secondary-color);
+  background-color: var(--secondary-color);
+  color: white;
+}
+
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu .dropdown-menu {
+  left: 100%;
+  top: 0;
+  margin-top: -6px;
+}
+
+.social a:hover svg path:hover {
+  fill: var(--primary-color);
+}
+.blue {
+  position: absolute;
+  background-image: url(img/education/education__1.png);
+
+  background-repeat: no-repeat;
+  height: 50vh;
+  width: 70vw;
+  margin-top: -380px;
+}
+
+.main {
+  background-image: url(img/education/education.png);
+  background-repeat: no-repeat;
+  height: 90vh;
+}
+@media only screen and (max-width: 600px) {
+  .blue {
+    position: absolute;
+    background-image: url(img/education/education__1.png);
+
+    background-repeat: no-repeat;
+    height: 25vh;
+    width: 70vw;
+    margin-top: -100px;
+    background-size: contain;
+  }
+
+  .main {
+    background-image: url(img/education/education.png);
+    background-repeat: no-repeat;
+    height: 45vh;
+  }
+  .bcon {
+    margin-bottom: 100px;
+  }
+}
+.bcon:hover {
+  transform: rotate3d(0, 1, 0, 45deg);
+  overflow-y: hidden;
+  perspective: 800px;
+  transition: all 0.5s ease-out;
+}
+.bannercard1:hover {
+  border-color: #5f2ded !important;
+
+  transition: all 0.2s ease-out;
+  background-color: white;
+}
+.bannercard2:hover {
+  border-color: #0dcaf0 !important;
+
+  transition: all 0.2s ease-out;
+  background-color: white;
+}
+.bannercard3:hover {
+  border-color: red !important;
+
+  transition: all 0.2s ease-out;
+  background-color: white;
+}
+.online {
+  text-decoration-color: #f2277e;
+  text-decoration: underline;
+}
+.subjects {
+  text-decoration-color: red !important;
+  text-decoration: underline;
+}
+.courses-cards div {
+  background-color: white;
+}
+.courses-cards div a {
+  color: black;
+  text-decoration: none;
+}
+.courses-cards div a:hover {
+  color: red !important;
+  text-decoration: none;
+}
+.courses-card1:hover {
+  background-color: #5f2ded;
+  i{color: white;}
+  div {
+    background-color: #5f2ded;
+    color: white;
+    a {
+      color: white;
+    }
+   
+  }
+  transition: all 5ms ease-out;
+}
+.courses-card2:hover {
+  background-color: #5f2ded;
+  i{color: white;}
+  div {
+    background-color: #5f2ded;
+    color: white;
+    a {
+      color: white;
+    }
+   
+  }
+  transition: all 5ms ease-out;
+}
+.courses-card3:hover {
+  background-color: #5f2ded;
+  i{color: white;}
+  div {
+    background-color: #5f2ded;
+    color: white;
+    a {
+      color: white;
+    }
+   
+  }
+  transition: all 5ms ease-out;
+}
+.courses-card4:hover {
+  background-color: #5f2ded;
+  i{color: white;}
+  div {
+    background-color: #5f2ded;
+    color: white;
+    a {
+      color: white;
+    }
+   
+  }
+  transition: all 5ms ease-out;
+}
+.courses-card5:hover {
+  background-color: #5f2ded;
+  i{color: white;}
+  div {
+    background-color: #5f2ded;
+    color: white;
+    a {
+      color: white;
+    }
+   
+  }
+  transition: all 5ms ease-out;
+}
+.courses-card6:hover {
+  background-color: #5f2ded;
+  i{color: white;}
+  div {
+    background-color: #5f2ded;
+    color: white;
+    a {
+      color: white;
+    }
+   
+  }
+  transition: all 5ms ease-out;
+}
+.courses-card7:hover {
+  background-color: #5f2ded;
+  i{color: white;}
+  div {
+    background-color: #5f2ded;
+    color: white;
+    a {
+      color: white;
+    }
+   
+  }
+  transition: all 5ms ease-out;
+}
+.courses-card8:hover {
+  background-color: #5f2ded;
+  i{color: white;}
+  div {
+    background-color: #5f2ded;
+    color: white;
+    a {
+      color: white;
+    }
+   
+  }
+  transition: all 5ms ease-out;
+}
