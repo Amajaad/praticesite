@@ -1,0 +1,83 @@
+/**************Font style***************/
+@import url("https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+:root {
+  --primary-color: #5f2ded;
+  --secondary-color: #f2277e;
+  --Title-font: "Hind", sans-serif;
+  --body-font: "Inter", sans-serif;
+}
+
+body {
+  font-family: var(--body-font);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--Title-font);
+}
+
+.btn-primary {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+  color: white;
+}
+
+.btn-outline-primary {
+  border-color: var(--primary-color);
+  color: var(--primary-color);
+}
+.btn-secondary {
+  background-color: var(--secondary-color);
+  border-color: var(--secondary-color);
+  color: white;
+}
+.btn-outline-secondary {
+  border-color: var(--secondary-color);
+  color: var(--secondary-color);
+}
+
+.btn-primary:hover {
+  background-color: var(--secondary-color);
+  border-color: var(--secondary-color);
+  color: white;
+}
+
+.btn-outline-primary:hover {
+  border-color: var(--primary-color);
+  background-color: var(--primary-color);
+  color: white;
+}
+.btn-secondary:hover {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+  color: white;
+}
+.btn-outline-secondary:hover {
+  border-color: var(--secondary-color);
+  background-color: var(--secondary-color);
+  color: white;
+}
+
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu .dropdown-menu {
+  left: 100%;
+  top: 0;
+  margin-top: -6px;
+}
+
+.social a:hover svg path:hover {
+  fill: var(--primary-color);
+}

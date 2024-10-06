@@ -19,8 +19,201 @@
     />
     <link rel="stylesheet" href="./style.css" />
   </head>
+  <style>
+    .blue {
+      position: absolute;
+      background-image: url(img/education/education__1.png);
+
+      background-repeat: no-repeat;
+      height: 50vh;
+      width: 70vw;
+      margin-top: -380px;
+    }
+
+    .main {
+      background-image: url(img/education/education.png);
+      background-repeat: no-repeat;
+      height: 90vh;
+    }
+    @media only screen and (max-width: 600px) {
+      .blue {
+        position: absolute;
+        background-image: url(img/education/education__1.png);
+
+        background-repeat: no-repeat;
+        height: 25vh;
+        width: 70vw;
+        margin-top: -100px;
+        background-size: contain;
+      }
+
+      .main {
+        background-image: url(img/education/education.png);
+        background-repeat: no-repeat;
+        height: 45vh;
+      }
+      .bcon {
+        margin-bottom: 100px;
+      }
+    }
+    .bcon:hover {
+      transform: rotate3d(0, 1, 0, 45deg);
+      overflow-y: hidden;
+      perspective: 800px;
+      transition: all 0.5s ease-out;
+    }
+    .bannercard1:hover {
+      border-color: #5f2ded !important;
+
+      transition: all 0.2s ease-out;
+      background-color: white;
+    }
+    .bannercard2:hover {
+      border-color: #0dcaf0 !important;
+
+      transition: all 0.2s ease-out;
+      background-color: white;
+    }
+    .bannercard3:hover {
+      border-color: red !important;
+
+      transition: all 0.2s ease-out;
+      background-color: white;
+    }
+    .online {
+      text-decoration-color: #f2277e;
+      text-decoration: underline;
+    }
+    .subjects {
+      text-decoration-color: red !important;
+      text-decoration: underline;
+    }
+    .courses-cards div {
+      background-color: white;
+    }
+    .courses-cards div a {
+      color: black;
+      text-decoration: none;
+    }
+    .courses-cards div a:hover {
+      color: red !important;
+      text-decoration: none;
+    }
+    .courses-card1:hover {
+      background-color: #5f2ded;
+      i {
+        color: white;
+      }
+      div {
+        background-color: #5f2ded;
+        color: white;
+        a {
+          color: white;
+        }
+      }
+      transition: all 5ms ease-out;
+    }
+    .courses-card2:hover {
+      background-color: #5f2ded;
+      i {
+        color: white;
+      }
+      div {
+        background-color: #5f2ded;
+        color: white;
+        a {
+          color: white;
+        }
+      }
+      transition: all 5ms ease-out;
+    }
+    .courses-card3:hover {
+      background-color: #5f2ded;
+      i {
+        color: white;
+      }
+      div {
+        background-color: #5f2ded;
+        color: white;
+        a {
+          color: white;
+        }
+      }
+      transition: all 5ms ease-out;
+    }
+    .courses-card4:hover {
+      background-color: #5f2ded;
+      i {
+        color: white;
+      }
+      div {
+        background-color: #5f2ded;
+        color: white;
+        a {
+          color: white;
+        }
+      }
+      transition: all 5ms ease-out;
+    }
+    .courses-card5:hover {
+      background-color: #5f2ded;
+      i {
+        color: white;
+      }
+      div {
+        background-color: #5f2ded;
+        color: white;
+        a {
+          color: white;
+        }
+      }
+      transition: all 5ms ease-out;
+    }
+    .courses-card6:hover {
+      background-color: #5f2ded;
+      i {
+        color: white;
+      }
+      div {
+        background-color: #5f2ded;
+        color: white;
+        a {
+          color: white;
+        }
+      }
+      transition: all 5ms ease-out;
+    }
+    .courses-card7:hover {
+      background-color: #5f2ded;
+      i {
+        color: white;
+      }
+      div {
+        background-color: #5f2ded;
+        color: white;
+        a {
+          color: white;
+        }
+      }
+      transition: all 5ms ease-out;
+    }
+    .courses-card8:hover {
+      background-color: #5f2ded;
+      i {
+        color: white;
+      }
+      div {
+        background-color: #5f2ded;
+        color: white;
+        a {
+          color: white;
+        }
+      }
+      transition: all 5ms ease-out;
+    }
+  </style>
   <body style="background-color: #f1e6f4">
-    <!------Top bar-------->
+    <!------Topbar-------->
     <div class="top-bar bg-dark text-white py-2 d-none d-md-block">
       <div class="container-fluid d-flex justify-content-between">
         <span>Call Us: +1 800 123 456 789 - Mail Us: Itcroc@mail.com</span>
@@ -36,7 +229,7 @@
             >
               <path
                 fill="#5f2ded"
-                d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6"
+                d="M8 16s6-5.686 6-10A6 6 f0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6"
               />
             </svg>
             684 West College St. Sun City, USA</span
@@ -624,7 +817,7 @@
       <!-- About us end -->
       <!-- Course list -->
       <!-- header -->
-      <div class="row justify-content-around ms-md-5  align-items-center mt-3">
+      <div class="row justify-content-around ms-md-5 align-items-center mt-3">
         <div class="col-md-4">
           <div class="badge bg-info text-primary fs-5 rounded-pill">
             Course List
@@ -646,7 +839,7 @@
         </div>
       </div>
       <!-- course cards -->
-      <div class="row courses-cards justify-content-center gap-5 mt-3">
+      <div class="row courses-cards justify-content-center gap-3 mt-3">
         <!-- card 1 -->
         <div class="col-11 col-md-2 py-3 px-4 courses-card1 rounded">
           <div class="fs-4">
@@ -656,7 +849,7 @@
             ></i>
           </div>
 
-          <div class="fw-semibold fs-4 ">
+          <div class="fw-semibold fs-4">
             <a href="">Business Studies</a>
           </div>
           <div class="fw-light fs-5">Business is succes</div>
@@ -703,7 +896,7 @@
           </div>
           <div class="fw-light fs-5">Science is power</div>
         </div>
-      <hr style="color: #f1e6f4;">
+        <hr style="color: #f1e6f4" />
         <!-- card 5 -->
         <div class="col-11 col-md-2 py-3 px-4 courses-card5 rounded">
           <div class="fs-4">
