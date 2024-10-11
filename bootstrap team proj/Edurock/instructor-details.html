@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Online Learning Center</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="instructor-details.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
@@ -17,217 +18,9 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="./index.css" />
   </head>
-  <style>
-    .blue {
-      position: absolute;
-      background-image: url(img/education/education__1.png);
 
-      background-repeat: no-repeat;
-      height: 50vh;
-      width: 70vw;
-      margin-top: -380px;
-    }
-
-    .main {
-      background-image: url(img/education/education.png);
-      background-repeat: no-repeat;
-      height: 90vh;
-    }
-    .bcon {
-      background-image: url(img/education/education__2.png);
-      background-size: contain;
-      background-position: right;
-    }
-    @media only screen and (max-width: 600px) {
-      .blue {
-        position: absolute;
-        background-image: url(img/education/education__1.png);
-
-        background-repeat: no-repeat;
-        height: 25vh;
-        width: 70vw;
-        margin-top: -100px;
-        background-size: contain;
-      }
-
-      .main {
-        background-image: url(img/education/education.png);
-        background-repeat: no-repeat;
-        height: 45vh;
-      }
-      .bcon {
-        margin-bottom: 100px;
-      }
-    }
-
-    .bcon-con:hover {
-      transform: rotate3d(0, 1, 0, 45deg);
-      overflow-y: hidden;
-      perspective: 800px;
-      transition: all 0.5s ease-out;
-    }
-    .bannercard1:hover {
-      border-color: #5f2ded !important;
-
-      transition: all 0.2s ease-out;
-      background-color: white;
-    }
-    .bannercard2:hover {
-      border-color: #0dcaf0 !important;
-
-      transition: all 0.2s ease-out;
-      background-color: white;
-    }
-    .bannercard3:hover {
-      border-color: red !important;
-
-      transition: all 0.2s ease-out;
-      background-color: white;
-    }
-    .online {
-      text-decoration-color: #f2277e;
-      text-decoration: underline;
-    }
-    .subjects {
-      text-decoration-color: red !important;
-      text-decoration: underline;
-    }
-    .courses-cards div {
-      background-color: white;
-    }
-    .courses-cards div a {
-      color: black;
-      text-decoration: none;
-    }
-    .courses-cards div a:hover {
-      color: red !important;
-      text-decoration: none;
-    }
-    .courses-card1:hover {
-      background-color: #5f2ded;
-      i {
-        color: white !important;
-        background-color: transparent !important;
-      }
-      div {
-        background-color: #5f2ded;
-        color: white;
-        a {
-          color: white;
-        }
-      }
-      transition: all 5ms ease-out;
-    }
-    .courses-card2:hover {
-      background-color: #5f2ded;
-      i {
-        color: white !important;
-        background-color: transparent !important;
-      }
-      div {
-        background-color: #5f2ded;
-        color: white;
-        a {
-          color: white;
-        }
-      }
-      transition: all 5ms ease-out;
-    }
-    .courses-card3:hover {
-      background-color: #5f2ded;
-      i {
-        color: white !important;
-        background-color: transparent !important;
-      }
-      div {
-        background-color: #5f2ded;
-        color: white;
-        a {
-          color: white;
-        }
-      }
-      transition: all 5ms ease-out;
-    }
-    .courses-card4:hover {
-      background-color: #5f2ded;
-      i {
-        color: white !important;
-        background-color: transparent !important;
-      }
-      div {
-        background-color: #5f2ded;
-        color: white;
-        a {
-          color: white;
-        }
-      }
-      transition: all 5ms ease-out;
-    }
-    .courses-card5:hover {
-      background-color: #5f2ded;
-      i {
-        color: white !important;
-        background-color: transparent !important;
-      }
-      div {
-        background-color: #5f2ded;
-        color: white;
-        a {
-          color: white;
-        }
-      }
-      transition: all 5ms ease-out;
-    }
-    .courses-card6:hover {
-      background-color: #5f2ded;
-      i {
-        color: white !important;
-        background-color: transparent !important;
-      }
-      div {
-        background-color: #5f2ded;
-        color: white;
-        a {
-          color: white;
-        }
-      }
-      transition: all 5ms ease-out;
-    }
-    .courses-card7:hover {
-      background-color: #5f2ded;
-      i {
-        color: white !important;
-        background-color: transparent !important;
-      }
-      div {
-        background-color: #5f2ded;
-        color: white;
-        a {
-          color: white;
-        }
-      }
-      transition: all 5ms ease-out;
-    }
-    .courses-card8:hover {
-      background-color: #5f2ded;
-      i {
-        color: white !important;
-        background-color: transparent !important;
-      }
-      div {
-        background-color: #5f2ded;
-        color: white;
-        a {
-          color: white;
-        }
-      }
-      transition: all 5ms ease-out;
-    }
-  </style>
-
-  <body style="background-color: #f1e6f4">
+  <body>
     <!-- top bar  -->
     <div class="top-bar bg-dark text-white py-2 d-none d-md-block">
       <div class="container-fluid d-flex justify-content-between">
@@ -322,17 +115,59 @@
                 >Home</a
               >
               <ul class="dropdown-menu">
-                <li class="dropdown">
-                  <a href="" class="dropdown-item">Home style 1</a>
-                  <a href="" class="dropdown-item">Home 1(dark)</a>
-                  <a href="" class="dropdown-item">Home style 2</a>
-                  <a href="" class="dropdown-item">Home 2(dark)</a>
-                  <a href="" class="dropdown-item">Home style 3</a>
-                  <a href="" class="dropdown-item">Home 3(dark)</a>
+                <li class="dropdown dropend">
+                  <a
+                    href="index.html"
+                    class="dropdown-item"
+                    role="button"
+                    data-bs-auto-close="outside"
+                    data-bs-toggle="dropdown"
+                    >Home style 1</a
+                  >
+                  <a
+                    href="index.html"
+                    class="dropdown-item"
+                    role="button"
+                    data-bs-auto-close="outside"
+                    data-bs-toggle="dropdown"
+                    >Home 1(dark)</a
+                  >
+                  <a
+                    href="index.html"
+                    class="dropdown-item"
+                    role="button"
+                    data-bs-auto-close="outside"
+                    data-bs-toggle="dropdown"
+                    >Home style 2</a
+                  >
+                  <a
+                    href="index.html"
+                    class="dropdown-item"
+                    role="button"
+                    data-bs-auto-close="outside"
+                    data-bs-toggle="dropdown"
+                    >Home 2(dark)</a
+                  >
+                  <a
+                    href="index.html"
+                    class="dropdown-item"
+                    role="button"
+                    data-bs-auto-close="outside"
+                    data-bs-toggle="dropdown"
+                    >Home style 3</a
+                  >
+                  <a
+                    href="index.html"
+                    class="dropdown-item"
+                    role="button"
+                    data-bs-auto-close="outside"
+                    data-bs-toggle="dropdown"
+                    >Home 3(dark)</a
+                  >
                 </li>
               </ul>
             </li>
-            <li class="nav-item dropdown">
+            <li class="nav-item">
               <a href="about.html" class="nav-link"> About </a>
             </li>
             <li class="nav-item dropdown">
@@ -348,7 +183,7 @@
                 <li class="dropdown dropend">
                   <a
                     href="#"
-                    class=""
+                    class="dropdown-item"
                     role="button"
                     data-bs-auto-close="outside"
                     data-bs-toggle="dropdown"
@@ -502,7 +337,14 @@
               >
               <ul class="dropdown-menu">
                 <li class="dropdown dropend">
-                  <a href="about.html" class="nav-link">About</a>
+                  <a
+                    href="#"
+                    class="dropdown-item"
+                    role="button"
+                    data-bs-auto-close="outside"
+                    data-bs-toggle="dropdown"
+                    >About</a
+                  >
                   <a
                     href="#"
                     class="dropdown-item"
@@ -644,314 +486,107 @@
       </div>
     </div>
     <!-------End navbar----------->
+
     <div class="container-fluid">
-      <!-- banner start -->
-      <div class="row d-flex justify-content-center mt-0 ms-md-5">
-        <div class="col-md-6 mt-5">
-          <div class="text-primary fs-4 bg-info badge rounded-pill">
-            Education
-          </div>
-          <div class="display-2 fw-bold">Cloud-based LMS Trusted by 1000+</div>
-          <div class="fs-4 text-success">
-            Lorem Ipsum is simply dummy text of the printing typesetting
-            industry. Lorem Ipsum has been
-          </div>
-          <div class="">
-            <form action="" class="row">
-              <div class="col-7">
-                <input
-                  type="text"
-                  class="form-control py-3 mt-3 form-control-lg"
-                  placeholder="Your Email address"
-                />
-              </div>
-              <div class="col-5">
-                <button class="btn btn-primary py-3 mt-3 btn-lg">
-                  Sign up
-                </button>
-              </div>
-            </form>
-          </div>
-        </div>
-        <div class="col-md-5 py-4 bcon">
-          <div class="bcon-con">
-            <div class="main img-fluid" id="main"></div>
-            <div class="blue img-fluid" anchor="#main"></div>
+      <div
+        class="row justify-content-center py-4"
+        style="background-color: #f5f5fe"
+      >
+        <div class="col-8 text-center">
+          <div class="fw-bolder fs-1">Contact Page</div>
+          <div
+            class="breadcrumb justify-content-center fs-5"
+            style="--bs-breadcrumb-divider: '>'"
+          >
+            <div class="breadcrumb-item">
+              <a href="index.html" class="link-dark text-decoration-none"
+                >Home</a
+              >
+            </div>
+            <div class="breadcrumb-item">Blog page</div>
           </div>
         </div>
       </div>
-      <div class="row mt-3 py-2 gap-3 justify-content-center mb-3">
-        <div
-          class="col-md-3 col-11 border border-2 border-primary-subtle py-3 d-flex bannercard1 rounded"
-        >
-          <div
-            class="col-4 fs-1 text-primary rounded-circle py-3 mt-3 border border-primary text-center"
-            style="height: 100px; overflow-y: hidden"
-          >
-            <i
-              class="fa-solid fa-photo-film mt-4 mt-md-3"
-              style="overflow-y: hidden"
-            ></i>
-          </div>
-          <div class="col-7 mt-3">
-            <a href="" class="fs-4 ms-2 text-decoration-none">Video Training</a>
-            <div class="ms-2 fs-5">With unlimited courses</div>
-          </div>
-        </div>
-        <div
-          class="col-md-3 col-11 border border-2 border-info py-3 d-flex bannercard2 rounded"
-        >
-          <div
-            class="col-4 fs-1 text-info rounded-circle py-3 border border-info text-center mt-2"
-            style="height: 100px; overflow-y: hidden"
-          >
-            <i
-              class="fa-solid fa-user-tie mt-md-3 mt-4"
-              style="overflow-y: hidden"
-            ></i>
-          </div>
-          <div class="col-7 mt-3 text-start">
-            <a href="" class="fs-5 ms-2 text-decoration-none text-info"
-              >Expert Teaceher</a
-            >
-            <div class="ms-2 fs-5">With unlimited courses</div>
-          </div>
-        </div>
-        <div
-          class="col-md-3 col-11 border border-2 border-danger py-3 d-flex bannercard3 rounded"
-        >
-          <div
-            class="col-4 fs-1 text-primary rounded-circle py-3 border border-danger text-center mb-4"
-          >
-            <i
-              class="fa-solid fa-book text-danger mt-md-3 mt-3"
-              style="overflow-y: hidden"
-            ></i>
-          </div>
-          <div class="col-7 mt-3">
-            <a href="" class="fs-4 ms-2 text-decoration-none text-danger"
-              >Video Training</a
-            >
-            <div class="ms-2 fs-5">With unlimited courses</div>
-          </div>
-        </div>
-      </div>
-      <!-- banner end -->
-
-      <!--  About us start-->
-      <div class="row justify-content-around py-3">
-        <div class="col-md-5">
-          <img
-            src="img/about/about_1.png"
-            class="img-fluid"
-            alt=""
-            style="
-              background-image: url(img/about/about_8.png);
-              background-size: contain;
-            "
-          />
-        </div>
-        <div class="col-md-5">
-          <div class="badge bg-info text-primary fs-5 rounded-pill">
-            About us
-          </div>
-          <div class="display-3 fw-bold">
-            Welcome to the
-            <span class="link-underline-danger online">Online</span> Learning
-            Center
-          </div>
-          <div class="text-info-emphasis fs-5 mb-3">
-            Forging relationships between multi to national Governments and
-            global NGOs begins.
-          </div>
-          <div class="d-flex mb-2">
-            <span
-              ><i
-                class="fa-regular fa-circle-check m-1 fs-5"
-                style="color: #cfc1f7"
-              ></i
-            ></span>
-            <div class="">Explore a variety of fresh educational teach</div>
-          </div>
-          <div class="d-flex mb-2">
-            <span
-              ><i
-                class="fa-regular fa-circle-check m-1 fs-5"
-                style="color: #cfc1f7"
-              ></i
-            ></span>
-            <div class="">Explore a variety of fresh educational teach</div>
-          </div>
-          <div class="d-flex mb-2">
-            <span
-              ><i
-                class="fa-regular fa-circle-check m-1 fs-5"
-                style="color: #cfc1f7"
-              ></i
-            ></span>
-            <div class="">Explore a variety of fresh educational teach</div>
-          </div>
-          <div class="d-flex mb-2">
-            <span
-              ><i
-                class="fa-regular fa-circle-check m-1 fs-5"
-                style="color: #cfc1f7"
-              ></i
-            ></span>
-            <div class="">Explore a variety of fresh educational teach</div>
-          </div>
-          <div class="">
-            <button class="btn btn-primary btn-lg py-3 px-5">
-              More About
-              <span><i class="fa-solid fa-arrow-right-long mt-1"></i></span>
-            </button>
-          </div>
-        </div>
-      </div>
-      <!-- About us end -->
-      <!-- Course list -->
-      <!-- header -->
-      <div class="row justify-content-around ms-md-5 align-items-center mt-3">
+      <div class="row justify-content-center mt-4 py-5">
         <div class="col-md-4">
-          <div class="badge bg-info text-primary fs-5 rounded-pill">
-            Course List
-          </div>
-          <div class="fw-bolder display-5">
-            Populer <span class="subjects">Subjects</span>
-          </div>
+          <img src="img/team/team__4.png" class="img-fluid rounded" alt="" />
         </div>
-        <div class="col-md-4">
-          <p class="fs-6 text-secondary">
-            Forging relationships between multi to national governments and
-            global NGOs begins.
-          </p>
-        </div>
-        <div class="col-md-3 text-md-center">
-          <a href="course.html" class="btn btn-danger btn-lg py-3 px-5">
-            All Categories
-          </a>
-        </div>
-      </div>
-      <!-- course cards -->
-      <div class="row courses-cards justify-content-center gap-3 mt-3">
-        <!-- card 1 -->
-        <div class="col-11 col-md-2 py-3 px-4 courses-card1 rounded">
-          <div class="fs-4">
-            <i
-              class="fa-solid fa-arrow-trend-up fs-2 bg-info-subtle p-2 rounded-circle"
-              style="color: #5f2ded"
-            ></i>
+        <div class="col-md-7">
+          <div class="d-flex row socials">
+            <div class="col-md-3 col-6">
+              <div class="fs-3 fw-bold">Hiliary Ouse</div>
+              <div class="fs-6 fw-light text-secondary">
+                Teches Interior marketer
+              </div>
+            </div>
+            <div class="col-md-3 col-6">
+              <div class="fs-5 fw-semibold text-secondary">Review:</div>
+              <div class="d-flex">
+                <span
+                  ><i class="fa-solid fa-star" style="color: #ff912c"></i>
+                  <i class="fa-solid fa-star" style="color: #ff912c"></i>
+                  <i class="fa-solid fa-star" style="color: #ff912c"></i>
+                  <i class="fa-solid fa-star" style="color: #ff912c"></i>
+                  <i class="fa-solid fa-star" style="color: #ff912c"></i>
+                  <span>(44)</span>
+                </span>
+              </div>
+            </div>
+            <div class="col-md-3 col-6">
+              <div class="text-secondary fs-5 fw-semibold">Follow Us:</div>
+              <div class="d-flex row">
+                <div class="col-2">
+                  <a href="" style="color: #5f6c76"
+                    ><i class="fa-brands fa-facebook-f"></i
+                  ></a>
+                </div>
+                <div class="col-2">
+                  <a href="" style="color: #5f6c76"
+                    ><i class="fa-brands fa-twitter"></i
+                  ></a>
+                </div>
+                <div class="col-2">
+                  <a href="" style="color: #5f6c76"
+                    ><i class="fa-brands fa-instagram"></i
+                  ></a>
+                </div>
+                <div class="col-2">
+                  <a href="" style="color: #5f6c76"
+                    ><i class="fa-brands fa-youtube"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-2 col-6 mt-md-0 mt-2">
+              <button class="btn btn-primary px-4 py-2 fs-5">Follow</button>
+            </div>
           </div>
-
-          <div class="fw-semibold fs-4">
-            <a href="">Business Studies</a>
+          <div class="row mt-md-3">
+            <div class="d-block fs-4 fw-semibold">Short Bio:</div>
+            <p class="text-success fs-6">
+              Only a quid me old mucker squiffy tomfoolery grub cheers ruddy cor
+              blimey guvnor in my flat, up the duff Eaton car boot up the kyver
+              pardon you A bit of how's your father David skive off sloshed,
+              don't get shirty with me chip shop vagabond crikey bugger Queen's
+              English chap. Matie boy nancy boy bite your arm off up the kyver
+              old no biggie fantastic boot, David have it show off show off pick
+              your nose and blow off lost the plot porkies bits and bobs only a
+              quid bugger all mate, absolutely bladdered bamboozled it's your
+              round don't get shirty with me down the pub well.
+            </p>
           </div>
-          <div class="fw-light fs-5">Business is succes</div>
-        </div>
-        <!-- card 2 -->
-        <div class="col-11 col-md-2 py-3 px-4 courses-card2 rounded">
-          <div class="fs-4">
-            <i
-              class="fa-solid fa-laptop-code fs-2 bg-info-subtle p-2 rounded-circle"
-              style="color: #5f2ded"
-            ></i>
-          </div>
-
-          <div class="fw-semibold fs-4">
-            <a href="">Programming Tech</a>
-          </div>
-          <div class="fw-light fs-5">update your skill</div>
-        </div>
-        <!-- card 3 -->
-        <div class="col-11 col-md-2 py-3 px-4 courses-card3 rounded">
-          <div class="fs-4">
-            <i
-              class="fa-regular fa-lightbulb fs-2 bg-info-subtle px-3 py-2 rounded-circle"
-              style="color: #5f2ded"
-            ></i>
-          </div>
-
-          <div class="fw-semibold fs-4">
-            <a href="">Artist & Design</a>
-          </div>
-          <div class="fw-light fs-5">show creativity</div>
-        </div>
-        <!-- card 4 -->
-        <div class="col-11 col-md-2 py-3 px-4 courses-card4 rounded">
-          <div class="fs-5">
-            <i
-              class="fa-solid fa-book-open fs-2 bg-info-subtle p-2 rounded-circle"
-              style="color: #5f2ded"
-            ></i>
-          </div>
-
-          <div class="fw-semibold fs-4">
-            <a href="">Machine Learning</a>
-          </div>
-          <div class="fw-light fs-5">Science is power</div>
-        </div>
-        <hr style="color: #f1e6f4" />
-        <!-- card 5 -->
-        <div class="col-11 col-md-2 py-3 px-4 courses-card5 rounded">
-          <div class="fs-4">
-            <i
-              class="fa-solid fa-heart-pulse fs-2 bg-info-subtle p-2 rounded-circle"
-              style="color: #5f2ded"
-            ></i>
-          </div>
-
-          <div class="fw-semibold fs-4">
-            <a href="">Health & Fitness</a>
-          </div>
-          <div class="fw-light fs-5">health is wealth</div>
-        </div>
-        <!-- card 6 -->
-        <div class="col-11 col-md-2 py-3 px-4 courses-card6 rounded">
-          <div class="fs-4">
-            <i
-              class="fa-solid fa-heart-pulse fs-2 bg-info-subtle p-2 rounded-circle"
-              style="color: #5f2ded"
-            ></i>
-          </div>
-
-          <div class="fw-semibold fs-4">
-            <a href="">Health & Fitness</a>
-          </div>
-          <div class="fw-light fs-5">health is wealth</div>
-        </div>
-        <!-- card 7 -->
-        <div class="col-11 col-md-2 py-3 px-4 courses-card7 rounded">
-          <div class="fs-4">
-            <i
-              class="fa-solid fa-magnifying-glass-chart fs-2 bg-info-subtle p-2 rounded-circle"
-              style="color: #5f2ded"
-            ></i>
-          </div>
-
-          <div class="fw-semibold fs-4">
-            <a href="">Marketing Analysis</a>
-          </div>
-          <div class="fw-light fs-5">Science is power</div>
-        </div>
-        <!-- card 8 -->
-        <div class="col-11 col-md-2 py-3 px-4 courses-card8 rounded">
-          <div class="fs-4">
-            <i
-              class="fa-solid fa-arrow-trend-up fs-2 bg-info-subtle p-2 rounded-circle"
-              style="color: #5f2ded"
-            ></i>
-          </div>
-
-          <div class="fw-semibold fs-4">
-            <a href="">Business Studies</a>
-          </div>
-          <div class="fw-light fs-5">Business is succes</div>
         </div>
       </div>
-      <!-- Course list end-->
     </div>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
