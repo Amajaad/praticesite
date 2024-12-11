@@ -81,3 +81,216 @@ h6 {
 .social a:hover svg path:hover {
   fill: var(--primary-color);
 }
+.blue {
+  position: absolute;
+  background-image: url(img/education/education__1.png);
+
+  background-repeat: no-repeat;
+  height: 50vh;
+  width: 70vw;
+  margin-top: -380px;
+}
+
+.main {
+  background-image: url(img/education/education.png);
+  background-repeat: no-repeat;
+  height: 90vh;
+  
+}
+.bcon {
+  background-image: url(img/education/education__2.png);
+  background-size: contain;
+  background-position: right;
+  background-repeat: no-repeat;
+}
+@media only screen and (max-width: 600px) {
+  .blue {
+    position: absolute;
+    background-image: url(img/education/education__1.png);
+
+    background-repeat: no-repeat;
+    height: 35vh;
+    width: 70vw;
+    margin-top: -100px;
+    background-size: contain;
+  }
+
+  .main {
+    background-image: url(img/education/education.png);
+    background-repeat: no-repeat;
+    height: 55vh;
+    background-size: contain;
+  }
+  .bcon {
+    margin-bottom: 100px;
+  }
+}
+.bannercard1:hover {
+  border-color: #5f2ded !important;
+  box-shadow: 1px 5px 5px 3px black !important;
+  transition: all 0.2s ease-out;
+  background-color: white;
+}
+.bannercard2:hover {
+  border-color: #0dcaf0 !important;
+  box-shadow: 1px 5px 5px 3px black !important;
+  transition: all 0.2s ease-out;
+  background-color: white;
+}
+.bannercard3:hover {
+  border-color: red !important;
+  box-shadow: 1px 5px 5px 3px black !important;
+  transition: all 0.2s ease-out;
+  background-color: white;
+}
+.online {
+  text-decoration-color: #f2277e;
+  text-decoration: underline;
+}
+.subjects {
+  text-decoration-color: red !important;
+  text-decoration: underline;
+}
+.courses-cards div {
+  background-color: white;
+}
+.courses-cards div a {
+  color: black;
+  text-decoration: none;
+}
+.courses-cards div a:hover {
+  color: red !important;
+  text-decoration: none;
+}
+.courses-card1:hover {
+  background-color: #5f2ded;
+  i {
+    color: white !important;
+    background-color: transparent !important;
+  }
+  div {
+    background-color: #5f2ded;
+    color: white;
+    a {
+      color: white;
+    }
+  } transform: translateY(-10px);
+  transition: all 5ms ease-out;
+}
+.courses-card2:hover {
+  background-color: #5f2ded;
+  i {
+    color: white !important;
+    background-color: transparent !important;
+  }
+  div {
+    background-color: #5f2ded;
+    color: white;
+    a {
+      color: white;
+    }
+  } transform: translateY(-10px);
+  transition: all 5ms ease-out;
+}
+.courses-card3:hover {
+  background-color: #5f2ded;
+  i {
+    color: white !important;
+    background-color: transparent !important;
+  }
+  div {
+    background-color: #5f2ded;
+    color: white;
+    a {
+      color: white;
+    }
+  } transform: translateY(-10px);
+  transition: all 5ms ease-out;
+}
+.courses-card4:hover {
+  background-color: #5f2ded;
+  i {
+    color: white !important;
+    background-color: transparent !important;
+  }
+  div {
+    background-color: #5f2ded;
+    color: white;
+    a {
+      color: white;
+    }
+  } transform: translateY(-10px);
+  transition: all 5ms ease-out;
+}
+.courses-card5:hover {
+  background-color: #5f2ded;
+  i {
+    color: white !important;
+    background-color: transparent !important;
+  }
+  div {
+    background-color: #5f2ded;
+    color: white;
+    a {
+      color: white;
+    }
+  }
+   transform: translateY(-10px);
+  transition: all 5ms ease-out;
+}
+.courses-card6:hover {
+  background-color: #5f2ded;
+  i {
+    color: white !important;
+    background-color: transparent !important;
+  }
+  div {
+    background-color: #5f2ded;
+    color: white;
+    a {
+      color: white;
+    }
+  }
+  transform: translateY(-10px);
+  transition: all 5ms ease-out;
+}
+.courses-card7:hover {
+  background-color: #5f2ded;
+  i {
+    color: white !important;
+    background-color: transparent !important;
+  }
+  div {
+    background-color: #5f2ded;
+    color: white;
+    a {
+      color: white;
+    }
+  }
+  transform: translateY(-10px);
+  transition: all 5ms ease-out;
+}
+.courses-card8:hover {
+  background-color: #5f2ded;
+  i {
+    color: white !important;
+    background-color: transparent !important;
+  }
+  div {
+    background-color: #5f2ded;
+    color: white;
+    a {
+      color: white;
+    }
+  }
+  transform: translateY(-10px);
+  transition: all 5ms ease-in;
+}
+.flip:hover {
+  background-color: #ffffff;
+  color: blue;
+}
+.flip-danger:hover {
+  background-color: #ffffff !important;
+  color: #f2277e;
+}

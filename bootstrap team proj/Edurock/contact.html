@@ -24,6 +24,29 @@
       transform: translateY(-4px);
       transition: all 0.2s ease-out;
     }
+    .updown {
+      animation: bounce 1s infinite alternate-reverse;
+   
+    }
+    @keyframes bounce {
+      from {
+        transform: translateY(-20px);
+      }
+      to {
+        transform: translateY(30px);
+      }
+    }
+    .rotate {
+      animation: rotate 2.5s infinite alternate-reverse;
+    }
+    @keyframes rotate {
+      from {
+        transform: rotate(-180deg);
+      }
+      to {
+        transform: rotate(180deg);
+      }
+    }
   </style>
   <body>
     <!-- top bar  -->
@@ -106,8 +129,8 @@
       </div>
     </div>
     <!--------End top bar--------->
-    <!------Navbar---------->
-    <div class="navbar bg-light navbar-expand-lg fw-bold">
+     <!------Navbar---------->
+     <div class="navbar bg-light navbar-expand-lg fw-bold">
       <div class="container-fluid">
         <a href="index.html"
           ><img loading="lazy" src="./img/logo/logo_1.png" alt="logo"
@@ -124,75 +147,16 @@
           class="collapse navbar-collapse justify-content-center"
           id="navbarNav"
         >
-          <ul class="navbar-nav gap-md-3">
+          <ul class="navbar-nav gap-md-3 py-3">
             <li class="nav-item dropdown">
-              <a
-                href="index.html"
-                class="nav-link dropdown-toggle"
-                role="button"
-                data-bs-toggle="dropdown"
-                data-bs-auto-close="outside"
-                >Home</a
-              >
-              <ul class="dropdown-menu">
-                <li class="dropdown dropend">
-                  <a
-                    href="index.html"
-                    class="dropdown-item"
-                    role="button"
-                    data-bs-auto-close="outside"
-                    data-bs-toggle="dropdown"
-                    >Home style 1</a
-                  >
-                  <a
-                    href="index.html"
-                    class="dropdown-item"
-                    role="button"
-                    data-bs-auto-close="outside"
-                    data-bs-toggle="dropdown"
-                    >Home 1(dark)</a
-                  >
-                  <a
-                    href="index.html"
-                    class="dropdown-item"
-                    role="button"
-                    data-bs-auto-close="outside"
-                    data-bs-toggle="dropdown"
-                    >Home style 2</a
-                  >
-                  <a
-                    href="index.html"
-                    class="dropdown-item"
-                    role="button"
-                    data-bs-auto-close="outside"
-                    data-bs-toggle="dropdown"
-                    >Home 2(dark)</a
-                  >
-                  <a
-                    href="index.html"
-                    class="dropdown-item"
-                    role="button"
-                    data-bs-auto-close="outside"
-                    data-bs-toggle="dropdown"
-                    >Home style 3</a
-                  >
-                  <a
-                    href="index.html"
-                    class="dropdown-item"
-                    role="button"
-                    data-bs-auto-close="outside"
-                    data-bs-toggle="dropdown"
-                    >Home 3(dark)</a
-                  >
-                </li>
-              </ul>
+              <a href="index.html" class="nav-link" role="button">Home</a>
             </li>
             <li class="nav-item">
               <a href="about.html" class="nav-link"> About </a>
             </li>
             <li class="nav-item dropdown">
               <a
-                href=""
+                href="blog.html"
                 class="nav-link dropdown-toggle"
                 role="button"
                 data-bs-toggle="dropdown"
@@ -201,36 +165,22 @@
               >
               <ul class="dropdown-menu">
                 <li class="dropdown dropend">
-                  <a
-                    href="#"
-                    class="dropdown-item"
-                    role="button"
-                    data-bs-auto-close="outside"
-                    data-bs-toggle="dropdown"
+                  <a href="blog.html" class="dropdown-item" role="button"
                     >Blog
                   </a>
-                  <a
-                    href="#"
-                    class="dropdown-item"
-                    role="button"
-                    data-bs-auto-close="outside"
-                    data-bs-toggle="dropdown"
+                  <a href="blog.html" class="dropdown-item" role="button"
                     >Blog(dark)
                   </a>
                   <a
-                    href="#"
+                    href="blog-details.html"
                     class="dropdown-item"
                     role="button"
-                    data-bs-auto-close="outside"
-                    data-bs-toggle="dropdown"
                     >Blog-Details
                   </a>
                   <a
-                    href="#"
+                    href="blog-details.html"
                     class="dropdown-item"
                     role="button"
-                    data-bs-auto-close="outside"
-                    data-bs-toggle="dropdown"
                     >Blog-Details(dark)
                   </a>
                 </li>
@@ -238,7 +188,7 @@
             </li>
             <li class="nav-item dropdown">
               <a
-                href=""
+                href="course.html"
                 class="nav-link dropdown-toggle"
                 role="button"
                 data-bs-toggle="dropdown"
@@ -248,99 +198,62 @@
               <ul class="dropdown-menu">
                 <li class="dropdown dropend">
                   <a
-                    href="#"
+                    href="course.html"
                     class="dropdown-item"
                     role="button"
                     data-bs-auto-close="outside"
                     data-bs-toggle="dropdown"
                     >Course</a
                   >
-                  <a
-                    href="#"
-                    class="dropdown-item"
-                    role="button"
-                    data-bs-auto-close="outside"
-                    data-bs-toggle="dropdown"
+                  <a href="course.html" class="dropdown-item" role="button"
                     >Course (dark)</a
                   >
-                  <a
-                    href="#"
-                    class="dropdown-item"
-                    role="button"
-                    data-bs-auto-close="outside"
-                    data-bs-toggle="dropdown"
+                  <a href="course-list.html" class="dropdown-item" role="button"
                     >Course List</a
                   >
-                  <a
-                    href="#"
-                    class="dropdown-item"
-                    role="button"
-                    data-bs-auto-close="outside"
-                    data-bs-toggle="dropdown"
+                  <a href="course-list.html" class="dropdown-item" role="button"
                     >Course List (dark)</a
                   >
-                  <a
-                    href="#"
-                    class="dropdown-item"
-                    role="button"
-                    data-bs-auto-close="outside"
-                    data-bs-toggle="dropdown"
+                  <a href="course-grid.html" class="dropdown-item" role="button"
                     >Course Grid</a
                   >
-                  <a
-                    href="#"
-                    class="dropdown-item"
-                    role="button"
-                    data-bs-auto-close="outside"
-                    data-bs-toggle="dropdown"
+                  <a href="course-grid.html" class="dropdown-item" role="button"
                     >Course Grid (dark)</a
                   >
                   <a
-                    href="#"
+                    href="course-details.html"
                     class="dropdown-item"
                     role="button"
-                    data-bs-auto-close="outside"
-                    data-bs-toggle="dropdown"
-                    >Details</a
+                    >Course-Details</a
                   >
                   <a
-                    href="#"
+                    href="course-details.html"
                     class="dropdown-item"
                     role="button"
-                    data-bs-auto-close="outside"
-                    data-bs-toggle="dropdown"
                     >Details (dark)</a
                   >
                   <a
-                    href="#"
+                    href="course-details-2.html"
                     class="dropdown-item"
                     role="button"
-                    data-bs-auto-close="outside"
-                    data-bs-toggle="dropdown"
                     >Details 2</a
                   >
                   <a
-                    href="#"
+                    href="course-details-2.html"
                     class="dropdown-item"
                     role="button"
-                    data-bs-auto-close="outside"
-                    data-bs-toggle="dropdown"
                     >Details 2 (dark)</a
                   >
                   <a
-                    href="#"
+                    href="course-details-3.html"
                     class="dropdown-item"
                     role="button"
-                    data-bs-auto-close="outside"
-                    data-bs-toggle="dropdown"
                     >Details 3</a
                   >
                   <a
-                    href="#"
+                    href="course-details-3.html"
                     class="dropdown-item"
                     role="button"
-                    data-bs-auto-close="outside"
-                    data-bs-toggle="dropdown"
                     >Details 3 (dark)</a
                   >
                 </li>
@@ -348,7 +261,7 @@
             </li>
             <li class="nav-item dropdown">
               <a
-                href=""
+                href="about.html"
                 class="nav-link dropdown-toggle"
                 role="button"
                 data-bs-toggle="dropdown"
@@ -358,119 +271,112 @@
               <ul class="dropdown-menu">
                 <li class="dropdown dropend">
                   <a
-                    href="#"
+                    href="about.html"
                     class="dropdown-item"
                     role="button"
-                    data-bs-auto-close="outside"
-                    data-bs-toggle="dropdown"
+                
                     >About</a
                   >
                   <a
-                    href="#"
+                    href="about.html"
                     class="dropdown-item"
                     role="button"
-                    data-bs-auto-close="outside"
-                    data-bs-toggle="dropdown"
+               
                     >About (dark)</a
                   >
                   <a
-                    href="#"
+                    href="contact.html"
                     class="dropdown-item"
                     role="button"
-                    data-bs-auto-close="outside"
-                    data-bs-toggle="dropdown"
+            
                     >Contact</a
                   >
                   <a
-                    href="#"
+                    href="contact.html"
                     class="dropdown-item"
                     role="button"
-                    data-bs-auto-close="outside"
-                    data-bs-toggle="dropdown"
+              
                     >Contact (dark)</a
                   >
                   <a
-                    href="#"
+                    href="instructor.html"
                     class="dropdown-item"
                     role="button"
-                    data-bs-auto-close="outside"
-                    data-bs-toggle="dropdown"
+             
                     >Instructor</a
                   >
                   <a
-                    href="#"
+                    href="instructor.html"
                     class="dropdown-item"
                     role="button"
-                    data-bs-auto-close="outside"
-                    data-bs-toggle="dropdown"
+                  
                     >Instructor (dark)</a
                   >
                   <a
-                    href="#"
+                    href="instructor-details.html"
                     class="dropdown-item"
                     role="button"
-                    data-bs-auto-close="outside"
-                    data-bs-toggle="dropdown"
+              
                     >Instructor-Details</a
                   >
                   <a
-                    href="#"
+                    href="instructor-details.html"
                     class="dropdown-item"
                     role="button"
-                    data-bs-auto-close="outside"
-                    data-bs-toggle="dropdown"
+                
                     >Details (dark)</a
                   >
                   <a
-                    href="#"
+                    href="event-details.html"
                     class="dropdown-item"
                     role="button"
-                    data-bs-auto-close="outside"
-                    data-bs-toggle="dropdown"
+                  
                     >Event-Details</a
                   >
                   <a
-                    href="#"
+                    href="event-details.html"
                     class="dropdown-item"
                     role="button"
-                    data-bs-auto-close="outside"
-                    data-bs-toggle="dropdown"
+                   
                     >Details (dark)</a
                   >
                   <a
-                    href="#"
+                    href="login.html"
                     class="dropdown-item"
                     role="button"
-                    data-bs-auto-close="outside"
-                    data-bs-toggle="dropdown"
+              
                     >Login</a
                   >
                   <a
-                    href="#"
+                    href="login.html"
                     class="dropdown-item"
                     role="button"
-                    data-bs-auto-close="outside"
-                    data-bs-toggle="dropdown"
+               
                     >Login (dark)</a
                   >
                   <a
-                    href="#"
+                    href="error.html"
                     class="dropdown-item"
                     role="button"
-                    data-bs-auto-close="outside"
-                    data-bs-toggle="dropdown"
+               
                     >Error</a
                   >
+                  <a
+                  href="error.html"
+                  class="dropdown-item"
+                  role="button"
+             
+                  >Error (dark)</a
+                >
                 </li>
               </ul>
             </li>
             <li class="nav-item dropdown">
               <a
-                href=""
+                href="contact.html"
                 class="nav-link"
                 role="button"
-                data-bs-toggle="dropdown"
-                data-bs-auto-close="outside"
+             
                 >Contact</a
               >
             </li>
@@ -523,6 +429,22 @@
               >
             </div>
             <div class="breadcrumb-item">Contact Page</div>
+          </div>
+        </div>
+        <div class="banner-hero ms-4">
+          <div class="">
+            <img
+              src="img/herobanner/herobanner__2.png"
+              class="img-fluid rotate"
+              alt=""
+            />
+          </div>
+          <div class="">
+            <img
+              src="img/herobanner/herobanner__1.png"
+              class="updown mt-3"
+              alt=""
+            />
           </div>
         </div>
       </div>

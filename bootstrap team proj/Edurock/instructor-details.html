@@ -11,6 +11,7 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="instructor-details.css" />
+    <link rel="stylesheet" href="style.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
@@ -19,7 +20,48 @@
       referrerpolicy="no-referrer"
     />
   </head>
-
+  <style>
+    .abt-btn
+    {
+       background-color: #5f2ded;
+       padding-left: 35px;
+       padding-right: 35px;
+    }
+    .abt-btn:hover {
+      color: #5f2ded !important;
+      background-color: white;
+    }
+    .hover-img:hover {
+      transform: scale(1.02);
+      transition: 0.5s;
+    }
+    .updown {
+      animation: bounce 1s infinite alternate-reverse;
+    }
+    @keyframes bounce {
+      from {
+        transform: translateY(-20px);
+      }
+      to {
+        transform: translateY(30px);
+      }
+    }
+    .rotate {
+      animation: rotate 2.5s infinite alternate-reverse;
+    }
+    @keyframes rotate {
+      from {
+        transform: rotate(-180deg);
+      }
+      to {
+        transform: rotate(180deg);
+      }
+    }
+    .heart:hover {
+      background-color: #5f2ded !important;
+      transition: all 0.5s cubic-bezier(0.39, 0.575, 0.565, 1);
+    }
+  </style>
   <body>
     <!-- top bar  -->
     <div class="top-bar bg-dark text-white py-2 d-none d-md-block">
@@ -104,75 +146,16 @@
           class="collapse navbar-collapse justify-content-center"
           id="navbarNav"
         >
-          <ul class="navbar-nav gap-md-3">
+          <ul class="navbar-nav gap-md-3 py-3">
             <li class="nav-item dropdown">
-              <a
-                href="index.html"
-                class="nav-link dropdown-toggle"
-                role="button"
-                data-bs-toggle="dropdown"
-                data-bs-auto-close="outside"
-                >Home</a
-              >
-              <ul class="dropdown-menu">
-                <li class="dropdown dropend">
-                  <a
-                    href="index.html"
-                    class="dropdown-item"
-                    role="button"
-                    data-bs-auto-close="outside"
-                    data-bs-toggle="dropdown"
-                    >Home style 1</a
-                  >
-                  <a
-                    href="index.html"
-                    class="dropdown-item"
-                    role="button"
-                    data-bs-auto-close="outside"
-                    data-bs-toggle="dropdown"
-                    >Home 1(dark)</a
-                  >
-                  <a
-                    href="index.html"
-                    class="dropdown-item"
-                    role="button"
-                    data-bs-auto-close="outside"
-                    data-bs-toggle="dropdown"
-                    >Home style 2</a
-                  >
-                  <a
-                    href="index.html"
-                    class="dropdown-item"
-                    role="button"
-                    data-bs-auto-close="outside"
-                    data-bs-toggle="dropdown"
-                    >Home 2(dark)</a
-                  >
-                  <a
-                    href="index.html"
-                    class="dropdown-item"
-                    role="button"
-                    data-bs-auto-close="outside"
-                    data-bs-toggle="dropdown"
-                    >Home style 3</a
-                  >
-                  <a
-                    href="index.html"
-                    class="dropdown-item"
-                    role="button"
-                    data-bs-auto-close="outside"
-                    data-bs-toggle="dropdown"
-                    >Home 3(dark)</a
-                  >
-                </li>
-              </ul>
+              <a href="index.html" class="nav-link" role="button">Home</a>
             </li>
             <li class="nav-item">
               <a href="about.html" class="nav-link"> About </a>
             </li>
             <li class="nav-item dropdown">
               <a
-                href=""
+                href="blog.html"
                 class="nav-link dropdown-toggle"
                 role="button"
                 data-bs-toggle="dropdown"
@@ -181,36 +164,22 @@
               >
               <ul class="dropdown-menu">
                 <li class="dropdown dropend">
-                  <a
-                    href="#"
-                    class="dropdown-item"
-                    role="button"
-                    data-bs-auto-close="outside"
-                    data-bs-toggle="dropdown"
+                  <a href="blog.html" class="dropdown-item" role="button"
                     >Blog
                   </a>
-                  <a
-                    href="#"
-                    class="dropdown-item"
-                    role="button"
-                    data-bs-auto-close="outside"
-                    data-bs-toggle="dropdown"
+                  <a href="blog.html" class="dropdown-item" role="button"
                     >Blog(dark)
                   </a>
                   <a
-                    href="#"
+                    href="blog-details.html"
                     class="dropdown-item"
                     role="button"
-                    data-bs-auto-close="outside"
-                    data-bs-toggle="dropdown"
                     >Blog-Details
                   </a>
                   <a
-                    href="#"
+                    href="blog-details.html"
                     class="dropdown-item"
                     role="button"
-                    data-bs-auto-close="outside"
-                    data-bs-toggle="dropdown"
                     >Blog-Details(dark)
                   </a>
                 </li>
@@ -218,7 +187,7 @@
             </li>
             <li class="nav-item dropdown">
               <a
-                href=""
+                href="course.html"
                 class="nav-link dropdown-toggle"
                 role="button"
                 data-bs-toggle="dropdown"
@@ -228,99 +197,62 @@
               <ul class="dropdown-menu">
                 <li class="dropdown dropend">
                   <a
-                    href="#"
+                    href="course.html"
                     class="dropdown-item"
                     role="button"
                     data-bs-auto-close="outside"
                     data-bs-toggle="dropdown"
                     >Course</a
                   >
-                  <a
-                    href="#"
-                    class="dropdown-item"
-                    role="button"
-                    data-bs-auto-close="outside"
-                    data-bs-toggle="dropdown"
+                  <a href="course.html" class="dropdown-item" role="button"
                     >Course (dark)</a
                   >
-                  <a
-                    href="#"
-                    class="dropdown-item"
-                    role="button"
-                    data-bs-auto-close="outside"
-                    data-bs-toggle="dropdown"
+                  <a href="course-list.html" class="dropdown-item" role="button"
                     >Course List</a
                   >
-                  <a
-                    href="#"
-                    class="dropdown-item"
-                    role="button"
-                    data-bs-auto-close="outside"
-                    data-bs-toggle="dropdown"
+                  <a href="course-list.html" class="dropdown-item" role="button"
                     >Course List (dark)</a
                   >
-                  <a
-                    href="#"
-                    class="dropdown-item"
-                    role="button"
-                    data-bs-auto-close="outside"
-                    data-bs-toggle="dropdown"
+                  <a href="course-grid.html" class="dropdown-item" role="button"
                     >Course Grid</a
                   >
-                  <a
-                    href="#"
-                    class="dropdown-item"
-                    role="button"
-                    data-bs-auto-close="outside"
-                    data-bs-toggle="dropdown"
+                  <a href="course-grid.html" class="dropdown-item" role="button"
                     >Course Grid (dark)</a
                   >
                   <a
-                    href="#"
+                    href="course-details.html"
                     class="dropdown-item"
                     role="button"
-                    data-bs-auto-close="outside"
-                    data-bs-toggle="dropdown"
-                    >Details</a
+                    >Course-Details</a
                   >
                   <a
-                    href="#"
+                    href="course-details.html"
                     class="dropdown-item"
                     role="button"
-                    data-bs-auto-close="outside"
-                    data-bs-toggle="dropdown"
                     >Details (dark)</a
                   >
                   <a
-                    href="#"
+                    href="course-details-2.html"
                     class="dropdown-item"
                     role="button"
-                    data-bs-auto-close="outside"
-                    data-bs-toggle="dropdown"
                     >Details 2</a
                   >
                   <a
-                    href="#"
+                    href="course-details-2.html"
                     class="dropdown-item"
                     role="button"
-                    data-bs-auto-close="outside"
-                    data-bs-toggle="dropdown"
                     >Details 2 (dark)</a
                   >
                   <a
-                    href="#"
+                    href="course-details-3.html"
                     class="dropdown-item"
                     role="button"
-                    data-bs-auto-close="outside"
-                    data-bs-toggle="dropdown"
                     >Details 3</a
                   >
                   <a
-                    href="#"
+                    href="course-details-3.html"
                     class="dropdown-item"
                     role="button"
-                    data-bs-auto-close="outside"
-                    data-bs-toggle="dropdown"
                     >Details 3 (dark)</a
                   >
                 </li>
@@ -328,7 +260,7 @@
             </li>
             <li class="nav-item dropdown">
               <a
-                href=""
+                href="about.html"
                 class="nav-link dropdown-toggle"
                 role="button"
                 data-bs-toggle="dropdown"
@@ -337,122 +269,65 @@
               >
               <ul class="dropdown-menu">
                 <li class="dropdown dropend">
-                  <a
-                    href="#"
-                    class="dropdown-item"
-                    role="button"
-                    data-bs-auto-close="outside"
-                    data-bs-toggle="dropdown"
+                  <a href="about.html" class="dropdown-item" role="button"
                     >About</a
                   >
-                  <a
-                    href="#"
-                    class="dropdown-item"
-                    role="button"
-                    data-bs-auto-close="outside"
-                    data-bs-toggle="dropdown"
+                  <a href="about.html" class="dropdown-item" role="button"
                     >About (dark)</a
                   >
-                  <a
-                    href="#"
-                    class="dropdown-item"
-                    role="button"
-                    data-bs-auto-close="outside"
-                    data-bs-toggle="dropdown"
+                  <a href="contact.html" class="dropdown-item" role="button"
                     >Contact</a
                   >
-                  <a
-                    href="#"
-                    class="dropdown-item"
-                    role="button"
-                    data-bs-auto-close="outside"
-                    data-bs-toggle="dropdown"
+                  <a href="contact.html" class="dropdown-item" role="button"
                     >Contact (dark)</a
                   >
-                  <a
-                    href="#"
-                    class="dropdown-item"
-                    role="button"
-                    data-bs-auto-close="outside"
-                    data-bs-toggle="dropdown"
+                  <a href="instructor.html" class="dropdown-item" role="button"
                     >Instructor</a
                   >
-                  <a
-                    href="#"
-                    class="dropdown-item"
-                    role="button"
-                    data-bs-auto-close="outside"
-                    data-bs-toggle="dropdown"
+                  <a href="instructor.html" class="dropdown-item" role="button"
                     >Instructor (dark)</a
                   >
                   <a
-                    href="#"
+                    href="instructor-details.html"
                     class="dropdown-item"
                     role="button"
-                    data-bs-auto-close="outside"
-                    data-bs-toggle="dropdown"
                     >Instructor-Details</a
                   >
                   <a
-                    href="#"
+                    href="instructor-details.html"
                     class="dropdown-item"
                     role="button"
-                    data-bs-auto-close="outside"
-                    data-bs-toggle="dropdown"
                     >Details (dark)</a
                   >
                   <a
-                    href="#"
+                    href="event-details.html"
                     class="dropdown-item"
                     role="button"
-                    data-bs-auto-close="outside"
-                    data-bs-toggle="dropdown"
                     >Event-Details</a
                   >
                   <a
-                    href="#"
+                    href="event-details.html"
                     class="dropdown-item"
                     role="button"
-                    data-bs-auto-close="outside"
-                    data-bs-toggle="dropdown"
                     >Details (dark)</a
                   >
-                  <a
-                    href="#"
-                    class="dropdown-item"
-                    role="button"
-                    data-bs-auto-close="outside"
-                    data-bs-toggle="dropdown"
+                  <a href="login.html" class="dropdown-item" role="button"
                     >Login</a
                   >
-                  <a
-                    href="#"
-                    class="dropdown-item"
-                    role="button"
-                    data-bs-auto-close="outside"
-                    data-bs-toggle="dropdown"
+                  <a href="login.html" class="dropdown-item" role="button"
                     >Login (dark)</a
                   >
-                  <a
-                    href="#"
-                    class="dropdown-item"
-                    role="button"
-                    data-bs-auto-close="outside"
-                    data-bs-toggle="dropdown"
+                  <a href="error.html" class="dropdown-item" role="button"
                     >Error</a
+                  >
+                  <a href="error.html" class="dropdown-item" role="button"
+                    >Error (dark)</a
                   >
                 </li>
               </ul>
             </li>
             <li class="nav-item dropdown">
-              <a
-                href=""
-                class="nav-link"
-                role="button"
-                data-bs-toggle="dropdown"
-                data-bs-auto-close="outside"
-                >Contact</a
-              >
+              <a href="contact.html" class="nav-link" role="button">Contact</a>
             </li>
           </ul>
         </div>
@@ -506,6 +381,22 @@
             <div class="breadcrumb-item">Blog page</div>
           </div>
         </div>
+        <div class="banner-hero ms-4">
+          <div class="">
+            <img
+              src="img/herobanner/herobanner__2.png"
+              class="img-fluid rotate"
+              alt=""
+            />
+          </div>
+          <div class="">
+            <img
+              src="img/herobanner/herobanner__1.png"
+              class="updown mt-3"
+              alt=""
+            />
+          </div>
+        </div>
       </div>
       <div class="row justify-content-center mt-4 py-5">
         <div class="col-md-4">
@@ -557,8 +448,13 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-2 col-6 mt-md-0 mt-2">
-              <button class="btn btn-primary px-4 py-2 fs-5">Follow</button>
+            <div class="col-md-3 col-6 mt-md-0 mt-2">
+              <button
+                class="btn btn-primary py-2 small abt-btn"
+               
+              >
+                Follow
+              </button>
             </div>
           </div>
           <div class="row mt-md-3">
@@ -574,6 +470,187 @@
               quid bugger all mate, absolutely bladdered bamboozled it's your
               round don't get shirty with me down the pub well.
             </p>
+          </div>
+          <div class="row justify-content-end">
+            <div class="fw-bold fs-4">Online Course</div>
+            <!-- card1 -->
+            <div class="col-md-6 d-flex justify-content-center text-center">
+              <div class="card p-3">
+                <div class="card-img hover-img">
+                  <div class="card-img-overlay d-flex justify-content-between">
+                    <div class="badge mt-2 h-25">
+                      <div
+                        class="p-2 rounded"
+                        style="background-color: #f2277e"
+                      >
+                        Data & Tech
+                      </div>
+                    </div>
+                    <div class="float-end me-md-1 mt-2 rounded">
+                      <i
+                        class="fa-solid fa-heart heart bg-dark-subtle p-2 rounded"
+                        style="color: #ffffff"
+                      ></i>
+                    </div>
+                  </div>
+                  <img
+                    src="img/grid/grid_1.png"
+                    class="img-fluid w-100"
+                    alt=""
+                  />
+                </div>
+                <div class="card-body">
+                  <div class="d-flex justify-content-start gap-5">
+                    <div class="mt-2 d-flex align-items-center">
+                      <i
+                        class="fa-solid fa-book fs-6"
+                        style="color: #5f2ded"
+                      ></i>
+                      <span class="ms-2 small">23 Lessons</span>
+                    </div>
+                    <div class="mt-2 d-flex align-items-center">
+                      <i
+                        class="fa-regular fa-clock fs-6"
+                        style="color: #5f2ded"
+                      ></i>
+                      <span class="ms-2 small">1 hr 30 min</span>
+                    </div>
+                  </div>
+                  <div class="fs-6 fw-bold text-start">
+                    <a
+                      href="course-details.html"
+                      class="text-decoration-none course-btn page-link text-black"
+                      style="font-size: 1.03rem"
+                      >Foundation course to under stand about softwere</a
+                    >
+                  </div>
+                  <div class="fs-6 text-primary fw-bold d-flex gap-5">
+                    <div class="">
+                      $32.00
+                      <span
+                        class="small text-secondary text-decoration-line-through"
+                        >/$67.00</span
+                      >
+                    </div>
+
+                    <div class="text-warning-emphasis">Free</div>
+                  </div>
+                </div>
+                <div
+                  class="card-footer bg-white d-flex align-items-center justify-content-between"
+                >
+                  <div class="d-flex align-items-center">
+                    <img
+                      src="img/grid/grid_small_1.jpg"
+                      class="rounded-circle"
+                      style="width: 40px"
+                      alt=""
+                    />
+                    <div class="ms-2 fs-6 fw-semibold">Micle john</div>
+                  </div>
+
+                  <div class="">
+                    <span>
+                      <i class="fa-solid fa-star" style="color: #ff912c"></i>
+                      <i class="fa-solid fa-star" style="color: #ff912c"></i>
+                      <i class="fa-solid fa-star" style="color: #ff912c"></i>
+                      <i class="fa-solid fa-star" style="color: #ff912c"></i>
+                      <i class="fa-solid fa-star" style="color: #ff912c"></i>
+                    </span>
+                    (44)
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- card2 -->
+            <div class="col-md-6 d-flex justify-content-center text-center">
+              <div class="card p-3">
+                <div class="card-img hover-img">
+                  <div class="card-img-overlay d-flex justify-content-between">
+                    <div class="badge mt-2 h-25">
+                      <div
+                        class="p-2 rounded"
+                        style="background-color: #2864ff"
+                      >
+                        Mechanical
+                      </div>
+                    </div>
+                    <div class="float-end me-md-1 mt-2 rounded">
+                      <i
+                        class="fa-solid fa-heart heart bg-dark-subtle p-2 rounded"
+                        style="color: #ffffff"
+                      ></i>
+                    </div>
+                  </div>
+                  <img
+                    src="img/grid/grid_2.png"
+                    class="img-fluid w-100"
+                    alt=""
+                  />
+                </div>
+                <div class="card-body">
+                  <div class="d-flex justify-content-start gap-5">
+                    <div class="mt-2 d-flex align-items-center">
+                      <i
+                        class="fa-solid fa-book fs-6"
+                        style="color: #5f2ded"
+                      ></i>
+                      <span class="ms-2">23 Lessons</span>
+                    </div>
+                    <div class="mt-2 d-flex align-items-center">
+                      <i
+                        class="fa-regular fa-clock fs-6"
+                        style="color: #5f2ded"
+                      ></i>
+                      <span class="ms-2">1 hr 30 min</span>
+                    </div>
+                  </div>
+                  <div class="fs-6 fw-bold text-start">
+                    <a
+                      href="course-details.html"
+                      class="text-decoration-none course-btn page-link text-black"
+                      style="font-size: 1.03rem"
+                      >Foundation course to under stand about softwere</a
+                    >
+                  </div>
+                  <div class="fs-6 text-primary fw-bold d-flex gap-5">
+                    <div class="">
+                      $32.00
+                      <span
+                        class="small text-secondary text-decoration-line-through"
+                        >/$67.00</span
+                      >
+                    </div>
+
+                    <div class="text-warning-emphasis">Free</div>
+                  </div>
+                </div>
+                <div
+                  class="card-footer bg-white d-flex align-items-center justify-content-between"
+                >
+                  <div class="d-flex align-items-center">
+                    <img
+                      src="img/grid/grid_small_1.jpg"
+                      class="rounded-circle"
+                      style="width: 40px"
+                      alt=""
+                    />
+                    <div class="ms-2 fs-6 fw-semibold">Micle john</div>
+                  </div>
+
+                  <div class="">
+                    <span>
+                      <i class="fa-solid fa-star" style="color: #ff912c"></i>
+                      <i class="fa-solid fa-star" style="color: #ff912c"></i>
+                      <i class="fa-solid fa-star" style="color: #ff912c"></i>
+                      <i class="fa-solid fa-star" style="color: #ff912c"></i>
+                      <i class="fa-solid fa-star" style="color: #ff912c"></i>
+                    </span>
+                    (44)
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
