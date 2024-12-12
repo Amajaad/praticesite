@@ -54,32 +54,31 @@
 
       let names = [];
       let arr = [];
-      let player;
-      let nameElement;
+     
+    
       pick.addEventListener("click", handleclick);
       add.addEventListener("click", addplayer);
 
       function addplayer() {
         if (name && !arr.includes(name.value)) {
           //add to table
-          player = document.createElement("tr");
+          const player = document.createElement("tr");
           player.innerHTML = `${name.value}`;
           player.classList.add("text-bg-light", "fs-4");
           document.querySelector("table").append(player);
           arr.push(name.value);
           names.push(name.value);
-
-          //add to wheel
-          updatewheel();
           name.value = "";
         }
+        updatewheel();
       }
       function updatewheel() {
         wheel.innerHTML = ""; // Clear the wheel
         const angleStep = 360 / names.length;
         names.forEach((name, index) => {
-          nameElement = document.createElement("div");
+         const nameElement = document.createElement("div");
           nameElement.className = "id bg-dark p-3";
+          nameElement.id = "card";
           nameElement.style.transform = `rotate(${
             index * angleStep
           }deg) translate(0, -140px) rotate(-${index * angleStep}deg)`;
@@ -103,21 +102,23 @@
         setTimeout(() => {
           let randomIndex = Math.floor(Math.random() * arr.length);
           randomplayer = arr[randomIndex];
+
           alert(randomplayer);
-          arr.pop(randomplayer);
-          names.pop(randomplayer);
           spin();
           arr.splice(randomIndex, 1);
+          names.splice(randomIndex, 1);
+          updatewheel();
 
           let rows = document.getElementsByTagName("tr");
           for (let row of rows) {
             if (row.innerText == randomplayer) {
               row.remove();
               nameElement.remove();
-
+           
               break;
             }
           }
+       
         }, 1000);
       }
     </script>

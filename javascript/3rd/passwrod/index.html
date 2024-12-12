@@ -47,7 +47,7 @@
       let symbtn = document.getElementById("sym-btn");
       let ucbtn = document.getElementById("uc-btn");
       let numbtn = document.getElementById("num-btn");
-
+let len = document.getElementById("pw-length");
       symbtn.addEventListener("click", joinsym);
       ucbtn.addEventListener("click", joinuc);
       numbtn.addEventListener("click", joinnum);
@@ -57,6 +57,7 @@
           characters += sympols;
         } else {
           alert("it is already there");
+          characters -= sympols;
         }
       }
       function joinuc() {
@@ -64,6 +65,7 @@
           characters += upper;
         } else {
           alert("it is already there");
+          characters -= upper;
         }
       }
       function joinnum() {
@@ -71,11 +73,12 @@
           characters += numbers;
         } else {
           alert("Numbers are already included.");
+          characters -= numbers;
         }
       }
 
       function generateRandomPassword() {
-        const passwordLength = 12;
+        const passwordLength = len.value;
         let password = "";
         for (let i = 0; i < passwordLength; i++) {
           const randomIndex = Math.floor(Math.random() * characters.length);

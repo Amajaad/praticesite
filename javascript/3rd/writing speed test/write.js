@@ -1,5 +1,5 @@
 
-const sentence = "The early modern period began approximately in the early 16th century; notable historical milestones included the European Renaissance, the Age of Discovery, and the Protestant Reformation."
+const sentence = "the quick fox jumps over the box"
 
 let word = document.getElementById("word");
 let answerinput = document.getElementById("answerinput");
