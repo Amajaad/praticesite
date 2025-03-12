@@ -1,0 +1,172 @@
+html,
+body {
+  overflow-x: hidden !important;
+}
+
+.wish {
+  color: black;
+}
+.wish:hover {
+  color: blueviolet !important;
+}
+.trend-link:hover {
+  color: blueviolet !important;
+}
+.banner {
+  height: 100vh;
+  background-image: url(./img/banner_background.jpg.webp);
+  background-size: cover;
+}
+/* styles.css */
+.carousel-container {
+  overflow: hidden;
+  width: 100%;
+}
+
+.carousel-content {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.card-1 {
+  min-width: 100%;
+  margin: 10px;
+}
+
+.card-body-1 img {
+  border-radius: 8px;
+}
+
+.card-body-1 p {
+  font-size: 14px;
+  line-height: 1.5;
+}
+/* styles.css */
+.carousel-container {
+  overflow: hidden;
+  width: 100%;
+}
+
+.carousel-content {
+  display: flex;
+  transition: transform 0.1s ease-in;
+}
+
+.card-car {
+  min-width: 20%;
+  min-height: 20vh;
+}
+
+.car-btn {
+  background-color: #ffffff;
+  border: none;
+}
+
+@media screen and (max-width: 768px) {
+  .carousel-content {
+    display: flex;
+    transition: transform 0.1s ease-in-out;
+    flex-wrap: wrap;
+  }
+  .card-car {
+    min-width: 100%;
+  }
+}
+
+.links div {
+  width: 40px;
+  height: 40px;
+  text-align: center;
+}
+.links div a {
+  color: black;
+}
+.links div a:hover {
+  color: blueviolet;
+}
+
+.mac-carousel .carousel-item {
+  min-width: 100%;
+  background-image: url(./img/banner_2_background.jpg.webp);
+  background-size: contain;
+}
+.carousel-indicators-mac {
+  display: flex;
+  justify-content: start;
+  margin-top: 10px;
+}
+.carousel-indicators-mac button {
+  width: 20px !important;
+  height: 2px !important;
+  background-clip: unset;
+  background-color: #ffffff !important;
+  border-radius: 50%;
+}
+.carousel-indicators-mac button:enabled {
+  background-clip: unset;
+  background-color: blue !important;
+  border-radius: 50%;
+}
+.buy-btn {
+  width: 100%;
+}
+.featured-product .buy-btn {
+  display: none !important;
+}
+.featured-product:hover .buy-btn {
+  display: flex !important;
+  width: 100%;
+  height: 5vh !important;
+  transition: all 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.featured-product:hover {
+  border: 0px solid black;
+  box-shadow: black -4px 5px 15px;
+  padding: 10px;
+  margin-bottom: 20px;
+  margin-bottom: 20px;
+}
+.product-box {
+  height: 20vh !important;
+}
+.populor-carousel-cards div {
+  height: 26vh !important;
+}
+.review-carousel button {
+  width: 14px !important;
+  height: 14px !important;
+
+  background-color: #e8e8e8 !important;
+  border-radius: 50%;
+}
+.review-carousel button:focus-within {
+  background-color: #0e8ce4 !important;
+  border-radius: 50%;
+}
+.image-cont {
+  padding: 0 10px; /* Adds equal padding on the left and right */
+}
+
+.slick-slide {
+  display: flex; /* Ensures consistent alignment */
+  justify-content: center;
+}
+
+.trendcarouselbg {
+  background-image: url(img/trends_background.jpg.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  height: 70vh;
+  align-items: center;
+}
+.new-card:hover{
+  div{
+    display: block !important;
+  }
+ box-shadow: black -4px 5px 15px;
+  padding: 10px;
+  margin-left: 6px;
+  margin-right: 6px;
+  margin-bottom: 0px !important;
+}
