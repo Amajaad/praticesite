@@ -1,0 +1,39 @@
+.category li:hover {
+    background: left black;
+    a {
+      color: white !important;
+    }
+    transition: all 0.3s ease-in-out;
+  }
+  .category-menu img {
+    width: 30px;
+    height: 30px;
+  }
+.car-item-1
+{
+    background-image: url(./banner/banner3.webp);
+    background-size: cover;
+}
+.car-item-2
+{
+    background-image: url(./banner/banner.webp);
+    background-size: cover;
+}
+.car-item-3
+{
+    background-image: url(./banner/banner2.webp);
+    background-size: cover;
+}
+
+.indic{
+background-color: black !important; 
+height: 8px !important;
+border-radius: 45%;
+}
+@media screen and (max-device-width:800px) {
+.carousel-indicators{
+ margin-bottom: 450px;   
+ display: flex;
+ margin-left: -30px;
+}    
+}

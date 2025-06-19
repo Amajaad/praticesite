@@ -1,0 +1,1152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+  </head>
+  <style>
+    .bread-link a {
+      color: #2d2a6e;
+      text-decoration: none;
+    }
+    .bread-link a:hover {
+      color: #fbda41;
+    }
+    .ver-div {
+      border: black 1px solid;
+    }
+    .tabs-links li a:hover {
+      color: #fbda41 !important;
+      border-bottom: #fbda41 solid 4px;
+      font-weight: bolder;
+      transition: all 0.3s ease-in-out;
+    }
+    .tabs-links li a:focus-within {
+      color: #fbda41 !important;
+      border-bottom: #fbda41 solid 2px;
+    }
+    .yt-vid {
+      background-image: url(./product-single.png);
+      background-size: cover;
+      height: 60vh;
+    }
+    .rating i:hover {
+      color: #fbda41;
+    }
+    .submit:hover {
+      background-color: #2d2a6e !important;
+    }
+    .card-prod .hov-img {
+      display: none;
+    }
+
+    .card-prod:hover .def {
+      display: none;
+      animation: trans 1s forwards;
+    }
+
+    .card-prod:hover .hov-img {
+      display: block;
+      animation: trans 1s forwards;
+    }
+    @keyframes trans {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+    .prod a {
+      color: #2d2a6e !important;
+    }
+    .prod .card-title {
+      color: #2d2a6e !important;
+      font-size: medium !important;
+    }
+    .prod a:hover {
+      color: #fbda41 !important;
+    }
+    .prod-item .prod-ul {
+      display: none;
+    }
+    .prod-item:hover .prod-ul {
+      display: block;
+    }
+    .recent a {
+      color: #2d2a6e !important;
+    }
+    .recent a:hover {
+      color: #fbda41 !important;
+    }
+  </style>
+  <body style="background-color: #f2f2f6">
+    <div class="container px-md-5 py-3">
+      <div class="row justify-content-center py-3">
+        <!-- part1 -->
+        <div class="col-md-9 col-11 px-3">
+          <div class="breadcrumb bread-link">
+            <div class="breadcrumb-item"><a href="">Home</a></div>
+            <div class="breadcrumb-item"><a href="">Breakfast & Dairy</a></div>
+            <div class="breadcrumb-item">
+              Fresh Mangosteen 100% Organic From VietNamese
+            </div>
+          </div>
+          <!--  -->
+          <div class="col-md-12 bg-white p-3 rounded-3 py-4">
+            <h3 class="ms-2 fw-normal" style="color: #2d2a6e">
+              Pure Irish Organic 4 Beef Quarter Pounder Burgers - 1Kg
+            </h3>
+
+            <div
+              class="d-flex flex-column flex-md-row gap-3 small ms-0 ms-md-2"
+            >
+              <span style="color: #2d2a6e"
+                >Brands:
+                <span class="text-uppercase" style="color: #fbda41"
+                  >orfarm</span
+                ></span
+              >
+              <div class="ver-div border-warning-subtle"></div>
+              <span class="text-warning">
+                <i class="bi bi-star"></i>
+                <i class="bi bi-star"></i>
+                <i class="bi bi-star"></i>
+                <i class="bi bi-star"></i>
+                <i class="bi bi-star"></i>
+                <span style="color: #2d2a6e">2 Reviews</span>
+              </span>
+              <div class="ver-div border-warning-subtle"></div>
+              <span style="color: #2d2a6e"
+                >SKU:
+                <span class="text-uppercase" style="color: #fbda41"
+                  >ORFARMVE005</span
+                ></span
+              >
+            </div>
+
+            <hr />
+            <div class="row justify-content-around">
+              <!-- imgs -->
+              <div class="col-md-6">
+                <div class="row justify-content-center">
+                  <div class="col-md-6 col-9">
+                    <img src="./products1-min.jpg" class="img-fluid" alt="" />
+                  </div>
+                  <div class="col-md-6 col-9">
+                    <img src="./products2-min.jpg" class="img-fluid" alt="" />
+                  </div>
+                  <div class="col-md-6 col-9">
+                    <img src="./products3-min.jpg" class="img-fluid" alt="" />
+                  </div>
+                  <div class="col-md-6 col-9">
+                    <img src="./products4-min.jpg" class="img-fluid" alt="" />
+                  </div>
+                </div>
+              </div>
+              <!-- imgs -->
+              <div class="col-md-6">
+                <p class="text-danger fs-3 fw-semibold">$56.00</p>
+                <ul class="small">
+                  <li>Delicious non - dairy cheese sauce</li>
+                  <li>Vegan & Allergy friendly</li>
+                  <li>Smooth, velvety dairy free cheese sauce</li>
+                </ul>
+                <div class="row align-items-center">
+                  QTY:
+                  <div
+                    class="btn-group align-items-center bg-secondary-subtle rounded-pill py-2 ms-2 col-3 justify-content-center"
+                  >
+                    <button
+                      class="btn rounded-start-pill"
+                      onclick="subtractOne()"
+                    >
+                      -
+                    </button>
+                    <span id="qty">0</span>
+                    <button class="btn rounded-end-pill" onclick="addOne()">
+                      +
+                    </button>
+                  </div>
+                  <div class="col-7">
+                    <button
+                      class="btn btn-warning w-100 text-white rounded-pill px-4 fw-semibold py-3"
+                    >
+                      Add To Cart
+                    </button>
+                  </div>
+                </div>
+                <div
+                  class="d-flex mt-2 flex-column flex-md-row small align-content-center"
+                >
+                  <p class="col-md-4">
+                    <a
+                      href=""
+                      class="text-black text-decoration-none small"
+                      target="_top"
+                      ><span><i class="bi bi-heart"></i></span> ADD TO
+                      WISHLIST</a
+                    >
+                  </p>
+                  <p class="col-md-4">
+                    <a
+                      href=""
+                      class="text-black text-decoration-none small"
+                      target="_top"
+                    >
+                      <span><i class="bi bi-stack"></i></span> ADD TO COMPARE</a
+                    >
+                  </p>
+                  <p class="col-md-4">
+                    <a
+                      href=""
+                      class="text-black text-decoration-none small"
+                      target="_top"
+                    >
+                      <span><i class="bi bi-share"></i></span> SHARE</a
+                    >
+                  </p>
+                </div>
+                <span class="small" style="color: #2d2a6e"
+                  >Availability:
+                  <span class="text-uppercase" style="color: #fbda41">
+                    54 Instock</span
+                  ></span
+                >
+                <p class="mt-3 small" style="color: #2d2a6e">
+                  Categories: Vegetables, Meat & Eggs, Fruit Drink
+                </p>
+                <p class="small" style="color: #2d2a6e">
+                  Tags: Chicken, Natural, Organic
+                </p>
+                <div class="bg-secondary-subtle text-center p-3 rounded">
+                  <img src="./payment.png" alt="" />
+                  <p class="text-secondary">Guarantee safe & Secure checkout</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- product ,info,review -->
+          <div class="col-md-12 bg-white p-3 rounded-3 py-4 mt-3">
+            <ul
+              class="nav nav-item justify-content-center gap-3 tabs-links"
+              id="myTab"
+              role="tablist"
+            >
+              <li class="nav-item">
+                <a
+                  class="nav-link active fs-6 fw-semibold"
+                  style="color: #2d2a6e"
+                  id="home-tab"
+                  data-bs-toggle="tab"
+                  href="#home"
+                  role="tab"
+                  aria-controls="home"
+                  aria-selected="true"
+                  >Product Description
+                </a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link fs-6 fw-semibold"
+                  style="color: #2d2a6e"
+                  id="profile-tab"
+                  data-bs-toggle="tab"
+                  href="#profile"
+                  role="tab"
+                  >ADDITIONAL INFORMATION
+                </a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link fs-6 fw-semibold"
+                  style="color: #2d2a6e"
+                  id="contact-tab"
+                  data-bs-toggle="tab"
+                  href="#contact"
+                  role="tab"
+                  aria-controls="contact"
+                  aria-selected="false"
+                  >Reviews (1)</a
+                >
+              </li>
+            </ul>
+            <div class="tab-content mt-3" id="myTabContent">
+              <div
+                class="tab-pane fade show active px-1"
+                id="home"
+                role="tabpanel"
+                aria-labelledby="home-tab"
+              >
+                <p class="text-secondary">
+                  Designed by Puik in 1949 as one of the first models created
+                  especially for Carl Hansen & Son, and produced since 1950. The
+                  last of a series of chairs wegner designed based on
+                  inspiration from antique chinese armchairs. Excepteur sint
+                  occaecat cupidatat non proident, sunt in culpa qui officia
+                  eserunt mollit anim id est laborum. Sed ut perspiciatis unde
+                  omnis iste natus error sit voluptatem accusantium doloremque
+                  laudantium, totam rem aperiam, aque ipsa quae ab illo
+                  inventore veritatis et quasi architecto beatae vitae dicta
+                  sunt explicabo.
+                </p>
+                <h6 class="fw-bold small" style="color: #2d2a6e">
+                  PRODUCT DETAILS
+                </h6>
+                <div class="row">
+                  <ul class="col-md-6 list-unstyled fs-6 text-secondary">
+                    <li>Material: Plastic, Wood</li>
+                    <li>Legs: Lacquered oak and black painted oak</li>
+                    <li>
+                      Dimensions and Weight: Height: 80 cm, Weight: 5.3 kg
+                    </li>
+                    <li>Length: 48cm</li>
+                    <li>Depth: 52 cm</li>
+                    <li>
+                      Lemo enim ipsam voluptatem quia voluptas sit aspernatur
+                      aut odit aut
+                    </li>
+                    <li>
+                      fugit, sed quia consequuntur magni dolores eos qui ratione
+                      voluptatem sequi nesciunt.
+                    </li>
+                  </ul>
+                  <div class="col-md-6">
+                    <img
+                      src="./product-single.png"
+                      class="img-fluid rounded"
+                      alt=""
+                    />
+                  </div>
+                </div>
+                <h6 class="fw-bold" style="color: #2d2a6e">PRODUCT DETAILS</h6>
+                <p class="text-secondary small">
+                  Form is an armless modern chair with a minimalistic
+                  expression. With a simple and contemporary design Form Chair
+                  has a soft and welcoming ilhouette and a distinctly
+                  residential look. The legs appear almost as if they are
+                  growing out of the shell. This gives the design flexibility
+                  and makes it possible to vary the frame. Unika is a mouth
+                  blown series of small, glass pendant lamps, originally
+                  designed for the Restaurant Gronbech. Est eum itaque maiores
+                  qui blanditiis architecto. Eligendi saepe rem ut. Cumque quia
+                  earum eligendi.
+                </p>
+                <!-- Button trigger modal -->
+                <div
+                  class="d-flex justify-content-center text-center yt-vid align-items-center rounded mb-4"
+                >
+                  <button
+                    type="button "
+                    class="btn"
+                    data-bs-toggle="modal"
+                    data-bs-target="#exampleModal"
+                  >
+                    <i class="bi bi-play-circle text-white display-3"></i>
+                  </button>
+
+                  <!-- Modal -->
+                  <div
+                    class="modal fade modal-lg"
+                    id="exampleModal"
+                    tabindex="-1"
+                    aria-labelledby="exampleModalLabel"
+                    aria-hidden="true"
+                  >
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-body vid-con" style="height: 90vh">
+                          <iframe
+                            src="https://www.youtube.com/watch?v=rLrV5Tel7zw &autoplay=0?mute=1?fs=1"
+                            class="w-100 h-100 object-fit-cover"
+                            aria-controls="false"
+                            allowfullscreen
+                          >
+                          </iframe>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <h6 class="fw-bold small" style="color: #2d2a6e">
+                  PRODUCT DETAILS
+                </h6>
+                <p class="text-secondary small">
+                  Form is an armless modern chair with a minimalistic
+                  expression. With a simple and contemporary design Form Chair
+                  has a soft and welcoming ilhouette and a distinctly
+                  residential look. The legs appear almost as if they are
+                  growing out of the shell. This gives the design flexibility
+                  and makes it possible to vary the frame. Unika is a mouth
+                  blown series of small, glass pendant lamps, originally
+                  designed for the Restaurant Gronbech. Est eum itaque maiores
+                  qui blanditiis architecto. Eligendi saepe rem ut. Cumque quia
+                  earum eligendi. <br /><br />
+                  Duis semper erat mauris, sed egestas purus commodo. Cras
+                  imperdiet est in nunc tristique lacinia. Nullam aliquam mauris
+                  eu accumsan tincidunt. Suspendisse velit ex, aliquet vel
+                  ornare vel, dignissim a tortor. Ut enim ad minim veniam, quis
+                  nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                  commodo consequat. Duis aute irure dolor in reprehenderit in
+                  voluptate.
+                </p>
+              </div>
+              <div
+                class="tab-pane fade px-1"
+                id="profile"
+                role="tabpanel"
+                aria-labelledby="profile-tab"
+              >
+                <p class="text-secondary">
+                  Designed by Puik in 1949 as one of the first models created
+                  especially for Carl Hansen & Son, and produced since 1950. The
+                  last of a series of chairs wegner designed based on
+                  inspiration from antique chinese armchairs. Excepteur sint
+                  occaecat cupidatat non proident, sunt in culpa qui officia
+                  eserunt mollit anim id est laborum. Sed ut perspiciatis unde
+                  omnis iste natus error sit voluptatem accusantium doloremque
+                  laudantium, totam rem aperiam, aque ipsa quae ab illo
+                  inventore veritatis et quasi architecto beatae vitae dicta
+                  sunt explicabo.
+                </p>
+                <h6 class="fw-bold small" style="color: #2d2a6e">
+                  PRODUCT DETAILS
+                </h6>
+                <div class="row">
+                  <ul class="col-md-6 list-unstyled fs-6 text-secondary">
+                    <li>Material: Plastic, Wood</li>
+                    <li>Legs: Lacquered oak and black painted oak</li>
+                    <li>
+                      Dimensions and Weight: Height: 80 cm, Weight: 5.3 kg
+                    </li>
+                    <li>Length: 48cm</li>
+                    <li>Depth: 52 cm</li>
+                    <li>
+                      Lemo enim ipsam voluptatem quia voluptas sit aspernatur
+                      aut odit aut
+                    </li>
+                    <li>
+                      fugit, sed quia consequuntur magni dolores eos qui ratione
+                      voluptatem sequi nesciunt.
+                    </li>
+                  </ul>
+                  <div class="col-md-6">
+                    <img
+                      src="./product-single.png"
+                      class="img-fluid rounded"
+                      alt=""
+                    />
+                  </div>
+                </div>
+                <h6 class="fw-bold" style="color: #2d2a6e">PRODUCT DETAILS</h6>
+                <p class="text-secondary small">
+                  Form is an armless modern chair with a minimalistic
+                  expression. With a simple and contemporary design Form Chair
+                  has a soft and welcoming ilhouette and a distinctly
+                  residential look. The legs appear almost as if they are
+                  growing out of the shell. This gives the design flexibility
+                  and makes it possible to vary the frame. Unika is a mouth
+                  blown series of small, glass pendant lamps, originally
+                  designed for the Restaurant Gronbech. Est eum itaque maiores
+                  qui blanditiis architecto. Eligendi saepe rem ut. Cumque quia
+                  earum eligendi.
+                </p>
+              </div>
+              <div
+                class="tab-pane fade px-1"
+                id="contact"
+                role="tabpanel"
+                aria-labelledby="contact-tab"
+              >
+                <h3 class="fw-semibold mb-4" style="color: #2d2a6e">
+                  1 review for Cheap and delicious fresh chicken
+                </h3>
+                <div class="d-flex">
+                  <div class="">
+                    <img
+                      src="./test-avatar.png"
+                      class="img-fluid rounded-circle"
+                      alt=""
+                    />
+                  </div>
+                  <div class="card ms-3">
+                    <div class="card-body small">
+                      <div
+                        class="row align-items-center"
+                        style="color: #2d2a6e"
+                      >
+                        <div class="fw-semibold col-8">
+                          Admin <i class="bi bi-star ms-2 text-warning"></i>
+                          <i class="bi bi-star text-warning"></i>
+                          <i class="bi bi-star text-warning"></i>
+                          <i class="bi bi-star text-warning"></i>
+                          <i class="bi bi-star text-warning"></i>
+                        </div>
+                        <p class="mt-2" style="color: #2d2a6e">
+                          --April 9, 2022:
+                        </p>
+                        <p style="color: #2d2a6e">Very Good</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <hr class="mt-3" />
+                <p class="fw-semibold fs-5" style="color: #2d2a6e">
+                  Add a Review
+                </p>
+                <form action="">
+                  <div class="row justify-content-between">
+                    <div class="col-md-6">
+                      <input
+                        type="text"
+                        class="form-control rounded-5 py-4 px-5"
+                        placeholder="Name"
+                      />
+                    </div>
+                    <div class="col-md-6">
+                      <input
+                        type="email"
+                        class="form-control rounded-5 py-4 px-5"
+                        placeholder="Email"
+                      />
+                    </div>
+                    <div class="col-md-8 text-start mt-3 ms-md-3">
+                      <p>Your Rating</p>
+                      <p class="rating">
+                        <i class="bi bi-star"></i>
+                        <i class="bi bi-star"></i>
+                        <i class="bi bi-star"></i>
+                        <i class="bi bi-star"></i>
+                        <i class="bi bi-star"></i>
+                      </p>
+                    </div>
+                    <div class="col-md-12">
+                      <textarea
+                        class="form-control"
+                        placeholder="Meassage"
+                        rows="10"
+                      ></textarea>
+                    </div>
+                    <div class="col-md-3 mt-3">
+                      <button
+                        class="btn btn-warning w-100 px-3 py-2 rounded-4 text-white submit"
+                        type="submit"
+                      >
+                        Submit
+                      </button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+          <!-- product ,info,review end -->
+        </div>
+        <!-- part1 end -->
+
+        <!-- part2 -->
+        <div class="col-md-3 col-8">
+          <div
+            class="d-flex flex-column border rounded py-5 px-3 text-secondary gap-3"
+          >
+            <div class="fw-light small text-center px-5">
+              <i class="bi bi-box-fill"></i>
+              <p>Free shipping apply to all orders over $90</p>
+            </div>
+            <div class="border"></div>
+            <div class="fw-light small text-center px-5">
+              <i class="bi bi-shield-fill"></i>
+              <p>Guaranteed 100% Organic from nature farms</p>
+            </div>
+            <div class="border"></div>
+            <div class="fw-light small text-center px-5">
+              <i class="bi bi-box-fill"></i>
+              <p>60 days returns if you change your mind</p>
+            </div>
+          </div>
+          <div class="d-flex mt-4 justify-content-center">
+            <img src="./sidebar-product.png" class="img-fluid" alt="" />
+          </div>
+          <div
+            class="d-flex flex-column px-3 py-3 mt-4 rounded bg-white recent"
+          >
+            <p class="fs-5 fw-semibold" style="color: #2d2a6e">
+              Recent Products
+            </p>
+            <div class="border"></div>
+            <div class="mt-3">
+              <div class="card bg-white border-0">
+                <div class="card-body">
+                  <img
+                    src="./sidebar-pro-1.jpg"
+                    class="img-fluid card-img"
+                    alt=""
+                  />
+                  <div class="card-img-overlay">
+                    <div
+                      class="bg-secondary-subtle d-inline-block px-2 py-1 rounded text-danger small"
+                    >
+                      Hot
+                    </div>
+                  </div>
+                  <a
+                    href="#"
+                    class="stretched-link rating link-dark text-decoration-none"
+                  >
+                    Fresh Fruits Fresh Mangosteen 100% Organic From</a
+                  >
+                  <div class="" style="font-size: small; color: #fbda41">
+                    <i class="bi bi-star"></i>
+                    <i class="bi bi-star"></i>
+                    <i class="bi bi-star"></i>
+                    <i class="bi bi-star"></i>
+                    <i class="bi bi-star"></i>
+                  </div>
+                  <div class="d-flex align-items-baseline gap-1">
+                    <span class="text-danger fs-5 fw-semibold mt-2"
+                      >$56.00</span
+                    >
+                    <span
+                      class="text-danger small text-decoration-line-through fw-semibold mt-2"
+                      >$19.00</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="border"></div>
+            <div class="mt-3">
+              <div class="card bg-white border-0">
+                <div class="card-body">
+                  <img
+                    src="./sidebar-pro-2.jpg"
+                    class="img-fluid card-img"
+                    alt=""
+                  />
+                  <div class="card-img-overlay">
+                    <div
+                      class="bg-secondary-subtle d-inline-block px-2 py-1 rounded text-danger small"
+                    >
+                      Hot
+                    </div>
+                  </div>
+                  <a
+                    href="#"
+                    class="stretched-link rating link-dark text-decoration-none"
+                  >
+                    Fresh Fruits Fresh Mangosteen 100% Organic From</a
+                  >
+                  <div class="" style="font-size: small; color: #fbda41">
+                    <i class="bi bi-star"></i>
+                    <i class="bi bi-star"></i>
+                    <i class="bi bi-star"></i>
+                    <i class="bi bi-star"></i>
+                    <i class="bi bi-star"></i>
+                  </div>
+                  <div class="d-flex align-items-baseline gap-1">
+                    <span class="text-danger fs-5 fw-semibold mt-2"
+                      >$56.00</span
+                    >
+                    <span
+                      class="text-danger small text-decoration-line-through fw-semibold mt-2"
+                      >$19.00</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="border"></div>
+            <div class="mt-3">
+              <div class="card bg-white border-0">
+                <div class="card-body">
+                  <img
+                    src="./sidebar-pro-3.jpg"
+                    class="img-fluid card-img"
+                    alt=""
+                  />
+                  <div class="card-img-overlay">
+                    <div
+                      class="bg-secondary-subtle d-inline-block px-2 py-1 rounded text-danger small"
+                    >
+                      Hot
+                    </div>
+                  </div>
+                  <a
+                    href="#"
+                    class="stretched-link rating link-dark text-decoration-none"
+                  >
+                    Fresh Fruits Fresh Mangosteen 100% Organic From</a
+                  >
+                  <div class="" style="font-size: small; color: #fbda41">
+                    <i class="bi bi-star"></i>
+                    <i class="bi bi-star"></i>
+                    <i class="bi bi-star"></i>
+                    <i class="bi bi-star"></i>
+                    <i class="bi bi-star"></i>
+                  </div>
+                  <div class="d-flex align-items-baseline gap-1">
+                    <span class="text-danger fs-5 fw-semibold mt-2"
+                      >$56.00</span
+                    >
+                    <span
+                      class="text-danger small text-decoration-line-through fw-semibold mt-2"
+                      >$19.00</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- part2 end -->
+      </div>
+      <div
+        class="row justify-content-center mt-md-5 justify-content-center overflow-x-hidden"
+      >
+        <div class="d-flex gap-1 prod pb-5" draggable="false">
+          <div class="col-md-2 prod-item col-12 gap-2">
+            <div class="card card-prod mb-4 shadow-sm">
+              <div class="card-imgs-1">
+                <img
+                  src="./products27-min.jpg"
+                  class="card-img def"
+                  alt="Pure Irish Organic Beef Quarter"
+                />
+                <img
+                  src="./products14-min.jpg"
+                  class="card-img hov-img"
+                  alt="Pure Irish Organic Beef Quarter"
+                />
+              </div>
+
+              <div class="card-body">
+                <h5 class="card-title">
+                  Pure Irish Organic Beef Quarter <br /><br />
+                </h5>
+                <p class="card-img-overlay gap-1">
+                  <span class="badge bg-primary p-2 rounded-0">90% OFF</span>
+                  <span
+                    class="badge bg-secondary-subtle text-danger rounded-0 p-2"
+                    >HOT</span
+                  >
+                </p>
+                <div class="">
+                  <a
+                    href="#"
+                    class="stretched-link rating link-dark text-decoration-none"
+                  >
+                    Fresh Fruits Fresh Mangosteen 100% Organic From</a
+                  >
+                  <div class="" style="font-size: small; color: #fbda41">
+                    <i class="bi bi-star"></i>
+                    <i class="bi bi-star"></i>
+                    <i class="bi bi-star"></i>
+                    <i class="bi bi-star"></i>
+                    <i class="bi bi-star"></i>
+                  </div>
+                  <div class="d-flex align-items-baseline gap-1">
+                    <span class="text-danger fs-5 fw-semibold mt-2"
+                      >$56.00</span
+                    >
+                    <span
+                      class="text-danger small text-decoration-line-through fw-semibold mt-2"
+                      >$19.00</span
+                    >
+                  </div>
+                  <ul
+                    class="text-secondary mt-3 prod-ul"
+                    style="font-size: small"
+                  >
+                    <li>Type: Organic</li>
+                    <li>MFG: August 4 2021</li>
+                    <li>LIFE: 60 days</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-2 prod-item col-12 gap-2">
+            <div class="card card-prod mb-4 shadow-sm">
+              <div class="card-imgs-1">
+                <img
+                  src="./sidebar-pro-1.jpg"
+                  class="card-img def"
+                  alt="Pure Irish Organic Beef Quarter"
+                />
+                <img
+                  src="./products32-min.jpg"
+                  class="card-img hov-img"
+                  alt="Pure Irish Organic Beef Quarter"
+                />
+              </div>
+
+              <div class="card-body">
+                <h5 class="card-title">
+                  Ginger Fresh, Whole, Organic - 250gram
+                </h5>
+                <p class="card-img-overlay gap-1">
+                  <span class="badge bg-primary p-2 rounded-0">90% OFF</span>
+                  <span
+                    class="badge bg-secondary-subtle text-danger rounded-0 p-2"
+                    >HOT</span
+                  >
+                </p>
+                <div class="">
+                  <a
+                    href="#"
+                    class="stretched-link small rating link-dark text-decoration-none"
+                  >
+                    Fresh Fruits Fresh Mangosteen 100% Organic From</a
+                  >
+                  <div class="" style="font-size: small; color: #fbda41">
+                    <i class="bi bi-star"></i>
+                    <i class="bi bi-star"></i>
+                    <i class="bi bi-star"></i>
+                    <i class="bi bi-star"></i>
+                    <i class="bi bi-star"></i>
+                  </div>
+                  <div class="d-flex align-items-baseline gap-1">
+                    <span class="text-danger fs-5 fw-semibold mt-2"
+                      >$56.00</span
+                    >
+                    <span
+                      class="text-danger small text-decoration-line-through fw-semibold mt-2"
+                      >$19.00</span
+                    >
+                  </div>
+                  <ul
+                    class="text-secondary mt-3 prod-ul"
+                    style="font-size: small"
+                  >
+                    <li>Type: Organic</li>
+                    <li>MFG: August 4 2021</li>
+                    <li>LIFE: 60 days</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-2 prod-item col-12 gap-2">
+            <div class="card card-prod mb-4 shadow-sm">
+              <div class="card-imgs-1">
+                <img
+                  src="./sidebar-pro-3.jpg"
+                  class="card-img def"
+                  alt="Pure Irish Organic Beef Quarter"
+                />
+                <img
+                  src="./products28-min.jpg"
+                  class="card-img hov-img"
+                  alt="Pure Irish Organic Beef Quarter"
+                />
+              </div>
+
+              <div class="card-body">
+                <h5 class="card-title">
+                  Laffy Taffy Laff Bites Gone Bananas - 4 Packs
+                </h5>
+                <p class="card-img-overlay gap-1">
+                  <span class="badge bg-primary p-2 rounded-0">90% OFF</span>
+                  <span
+                    class="badge bg-secondary-subtle text-danger rounded-0 p-2"
+                    >HOT</span
+                  >
+                </p>
+                <div class="">
+                  <a
+                    href="#"
+                    class="stretched-link small rating link-dark text-decoration-none"
+                  >
+                    Fresh Fruits Fresh Mangosteen 100% Organic From</a
+                  >
+                  <div class="" style="font-size: small; color: #fbda41">
+                    <i class="bi bi-star"></i>
+                    <i class="bi bi-star"></i>
+                    <i class="bi bi-star"></i>
+                    <i class="bi bi-star"></i>
+                    <i class="bi bi-star"></i>
+                  </div>
+                  <div class="d-flex align-items-baseline gap-1">
+                    <span class="text-danger fs-5 fw-semibold mt-2"
+                      >$56.00</span
+                    >
+                    <span
+                      class="text-danger small text-decoration-line-through fw-semibold mt-2"
+                      >$19.00</span
+                    >
+                  </div>
+                  <ul
+                    class="text-secondary mt-3 prod-ul"
+                    style="font-size: small"
+                  >
+                    <li>Type: Organic</li>
+                    <li>MFG: August 4 2021</li>
+                    <li>LIFE: 60 days</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-2 prod-item col-12 gap-2">
+            <div class="card card-prod mb-4 shadow-sm">
+              <div class="card-imgs-1">
+                <img
+                  src="./products30-min.jpg"
+                  class="card-img def"
+                  alt="Pure Irish Organic Beef Quarter"
+                />
+                <img
+                  src="./products29-min.jpg"
+                  class="card-img hov-img"
+                  alt="Pure Irish Organic Beef Quarter"
+                />
+              </div>
+
+              <div class="card-body">
+                <h5 class="card-title">Mangosteen Organic From VietNamese</h5>
+                <p class="card-img-overlay gap-1">
+                  <span class="badge bg-primary p-2 rounded-0">90% OFF</span>
+                  <span
+                    class="badge bg-secondary-subtle text-danger rounded-0 p-2"
+                    >HOT</span
+                  >
+                </p>
+                <div class="">
+                  <a
+                    href="#"
+                    class="stretched-link small rating link-dark text-decoration-none"
+                  >
+                    Fresh Fruits Fresh Mangosteen 100% Organic From</a
+                  >
+                  <div class="" style="font-size: small; color: #fbda41">
+                    <i class="bi bi-star"></i>
+                    <i class="bi bi-star"></i>
+                    <i class="bi bi-star"></i>
+                    <i class="bi bi-star"></i>
+                    <i class="bi bi-star"></i>
+                  </div>
+                  <div class="d-flex align-items-baseline gap-1">
+                    <span class="text-danger fs-5 fw-semibold mt-2"
+                      >$56.00</span
+                    >
+                    <span
+                      class="text-danger small text-decoration-line-through fw-semibold mt-2"
+                      >$19.00</span
+                    >
+                  </div>
+                  <ul
+                    class="text-secondary mt-3 prod-ul"
+                    style="font-size: small"
+                  >
+                    <li>Type: Organic</li>
+                    <li>MFG: August 4 2021</li>
+                    <li>LIFE: 60 days</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-2 prod-item col-12 gap-2">
+            <div class="card card-prod mb-4 shadow-sm">
+              <div class="card-imgs-1">
+                <img
+                  src="./products1-min.jpg"
+                  class="card-img def"
+                  alt="Pure Irish Organic Beef Quarter"
+                />
+                <img
+                  src="./products10-min.jpg"
+                  class="card-img hov-img"
+                  alt="Pure Irish Organic Beef Quarter"
+                />
+              </div>
+
+              <div class="card-body">
+                <h5 class="card-title">
+                  Soda Sparkling Water Maker (Rose Gold)
+                </h5>
+                <p class="card-img-overlay gap-1">
+                  <span class="badge bg-primary p-2 rounded-0">90% OFF</span>
+                  <span
+                    class="badge bg-secondary-subtle text-danger rounded-0 p-2"
+                    >HOT</span
+                  >
+                </p>
+                <div class="">
+                  <a
+                    href="#"
+                    class="stretched-link small rating link-dark text-decoration-none"
+                  >
+                    Fresh Fruits Fresh Mangosteen 100% Organic From</a
+                  >
+                  <div class="" style="font-size: small; color: #fbda41">
+                    <i class="bi bi-star"></i>
+                    <i class="bi bi-star"></i>
+                    <i class="bi bi-star"></i>
+                    <i class="bi bi-star"></i>
+                    <i class="bi bi-star"></i>
+                  </div>
+                  <div class="d-flex align-items-baseline gap-1">
+                    <span class="text-danger fs-5 fw-semibold mt-2"
+                      >$56.00</span
+                    >
+                    <span
+                      class="text-danger small text-decoration-line-through fw-semibold mt-2"
+                      >$19.00</span
+                    >
+                  </div>
+                  <ul
+                    class="text-secondary mt-3 prod-ul"
+                    style="font-size: small"
+                  >
+                    <li>Type: Organic</li>
+                    <li>MFG: August 4 2021</li>
+                    <li>LIFE: 60 days</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-2 prod-item col-12 gap-2">
+            <div class="card card-prod mb-4 shadow-sm">
+              <div class="card-imgs-1">
+                <img
+                  src="./products13-min.jpg"
+                  class="card-img def"
+                  alt="Pure Irish Organic Beef Quarter"
+                />
+                <img
+                  src="./products35-min.jpg"
+                  class="card-img hov-img"
+                  alt="Pure Irish Organic Beef Quarter"
+                />
+              </div>
+
+              <div class="card-body">
+                <h5 class="card-title">
+                  Soda Sparkling Water Maker (Rose Gold)
+                </h5>
+                <p class="card-img-overlay gap-1">
+                  <span class="badge bg-primary p-2 rounded-0">90% OFF</span>
+                  <span
+                    class="badge bg-secondary-subtle text-danger rounded-0 p-2"
+                    >HOT</span
+                  >
+                </p>
+                <div class="">
+                  <a
+                    href="#"
+                    class="stretched-link small rating link-dark text-decoration-none"
+                  >
+                    Fresh Fruits Fresh Mangosteen 100% Organic From</a
+                  >
+                  <div class="" style="font-size: small; color: #fbda41">
+                    <i class="bi bi-star"></i>
+                    <i class="bi bi-star"></i>
+                    <i class="bi bi-star"></i>
+                    <i class="bi bi-star"></i>
+                    <i class="bi bi-star"></i>
+                  </div>
+                  <div class="d-flex align-items-baseline gap-1">
+                    <span class="text-danger fs-5 fw-semibold mt-2"
+                      >$56.00</span
+                    >
+                    <span
+                      class="text-danger small text-decoration-line-through fw-semibold mt-2"
+                      >$19.00</span
+                    >
+                  </div>
+                </div>
+                <ul
+                  class="text-secondary mt-3 prod-ul"
+                  style="font-size: small"
+                >
+                  <li>Type: Organic</li>
+                  <li>MFG: August 4 2021</li>
+                  <li>LIFE: 60 days</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      let count = 0;
+
+      function updateDisplay() {
+        document.getElementById("qty").innerText = count;
+      }
+
+      function addOne() {
+        count++;
+        updateDisplay();
+      }
+
+      function subtractOne() {
+        if (count > 0) {
+          count--;
+          updateDisplay();
+        }
+      }
+    </script>
+    <script>
+      $(document).ready(function () {
+        $("#infiniteCarousel").on("slide.bs.carousel", function (event) {
+          var $next = $(event.relatedTarget);
+          var index = $next.index();
+          var totalItems = $(".carousel-item").length;
+
+          if (index === 0) {
+            var $last = $(".carousel-item").last();
+            $last.after($(".carousel-item").first().clone());
+            $(".carousel-item").first().remove();
+            $("#infiniteCarousel").carousel(0);
+          } else if (index === totalItems - 1) {
+            var $first = $(".carousel-item").first();
+            $first.before($(".carousel-item").last().clone());
+            $(".carousel-item").last().remove();
+            $("#infiniteCarousel").carousel(totalItems - 1);
+          }
+        });
+      });
+    </script>
+    <script>
+      const carouselTrack = document.querySelector(".prod");
+      const items = document.querySelectorAll(".prod-item");
+      let currentIndex = 0;
+      const totalItems = items.length;
+
+      function moveCarousel() {
+        carouselTrack.appendChild(items[0]);
+        carouselTrack.style.transition = "none";
+        carouselTrack.style.transform = "translateX(0)";
+        carouselTrack.appendChild(carouselTrack.children[0]);
+      }
+
+      setInterval(moveCarousel, 5000);
+    </script>
+  </body>
+</html>

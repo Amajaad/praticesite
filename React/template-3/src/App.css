@@ -1,0 +1,35 @@
+html,body{
+    overflow-x: hidden;
+}
+.footer{
+    position: relative;
+    bottom: -16px;
+
+}
+.orange{
+background-color: #fb8705;
+    
+}
+.black{
+    background-color: #1f4947 !important;
+}
+.gray{
+    background-color: #055f5a !important;
+}
+.about-btn
+{
+    background-color: transparent !important;
+}
+.about-btn:focus
+{
+    background-color: #055f5a !important;
+}
+.footer-link
+{
+    color: #adcce9 !important;
+}
+.footer-link:hover
+{
+    color: #808080 !important;
+    text-decoration: none;
+}

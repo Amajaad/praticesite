@@ -1,0 +1,171 @@
+html,
+body {
+  overflow-x: hidden !important;
+  height: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+#root {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.shoping-link:hover {
+  background-color: color-mix(in lab, gold 80%, #f00 20%) !important;
+  color: white !important;
+  transition: color 0.3s ease;
+}
+.socials a {
+  background-color: #6c757d !important;
+  color: white !important;
+  transition: color 11s ease;
+}
+.socials a:hover {
+  background-color: color-mix(in lab, gold 70%, #f00 30%) !important;
+  color: white !important;
+  transition: background-color 0.5s ease, color 0.3s ease;
+}
+.nav-link:hover {
+  color: gold !important;
+}
+.footer {
+  margin-top: auto;
+  position: static;
+}
+.Tabs {
+  background-color: #f6f6f6;
+}
+.Tabs .nav-link {
+  background-color: white !important; /* Change to your desired color */
+  color: #000000 !important;
+  border-radius: 20px;
+  margin: 0 5px;
+}
+.Tabs .nav-link.active {
+  background-color: #ff9800 !important; /* Active tab color */
+  color: #fff !important;
+  border-radius: 0%;
+}
+form textarea::placeholder {
+  color: #707589 !important;
+  font-size: smaller;
+}
+form input::placeholder {
+  color: #707589 !important;
+  font-size: smaller;
+}
+form select {
+  color: #707589 !important;
+  font-size: smaller !important;
+}
+
+.btn-inv:hover {
+  color: #ff9800 !important;
+
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+.btn-inv1 {
+  color: #ffffff !important;
+  background-color: #71cd14 !important;
+
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+.btn-inv1:hover {
+  color: #ff9800 !important;
+  background-color: transparent !important;
+  border: #ff9800 1px solid !important;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+.category-link a {
+  color: #6c757d !important;
+  text-decoration: none;
+  border-bottom: #707589 1px solid;
+  padding-bottom: 5px;
+  padding-top: 5px;
+}
+.category-link a:hover {
+  color: #ff9800 !important;
+  font-weight: 200;
+  transition: color 0.2s ease-in;
+}
+.post-link a {
+  color: #6c757d !important;
+  text-decoration: none;
+}
+.post-link a:hover {
+  color: #ff9800 !important;
+  font-weight: 200;
+  transition: color 0.2s ease-in;
+}
+.btn-outline-warning2 {
+  border: #6c757d 1px solid !important;
+  color: #6c757d !important;
+  font-size: small !important;
+}
+.btn-outline-warning2:hover {
+  color: white !important;
+  background-color: #71cd14 !important;
+}
+.post .post-arrow {
+  color: #ff9800 !important;
+  transition: color 0.3s ease;
+  display: none;
+}
+.post:hover .post-arrow {
+  color: #ffffff !important;
+  transition: color 0.3s ease;
+  display: block !important;
+}
+/* Darken background image on hover */
+.post:hover {
+  position: relative;
+  cursor: pointer;
+}
+.post:hover::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4); /* Adjust opacity as needed */
+  pointer-events: none;
+  z-index: 1;
+}
+.post > * {
+  position: relative;
+  z-index: 2;
+}
+.home-banner {
+  background-image: url("./img/home/banner-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+}
+.limited-offer {
+  background-image: url("./img/home/offer-bg.png");
+  background-size: cover;
+  background-position: center;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+}
+.home-blog:hover {
+  .blog-img {
+    transform: scale(1.04);
+    transition: transform 0.2s ease-in-out;
+  }
+}
+
+.blogs-link:hover {
+  a {
+    color: #ff9800 !important;
+    transition: color 0.3s ease;
+  }
+}
